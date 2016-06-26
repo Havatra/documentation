@@ -1,0 +1,16 @@
+site_name: Demonsaw Guide
+pages:
+- Home: index.md
+- Client Setup:
+   - 'Get Started': 'client/quickstart.md'
+   - 'Advanced': 'client/advanced.md'
+   - 'Theming': 'client/theming.md'
+   - 'CLI Client': 'client/cli.md'
+   - 'Resources': 'client/resources.md'
+- Router:
+   - 'Get Started':  'router/quickstart.md'
+   - 'Advanced': 'router/advanced.md'
+- Troubleshooting:
+   - 'Client': 'client/troubleshoot.md'
+   - 'Router/CLI': 'router/troubleshoot.md'
+theme: slate

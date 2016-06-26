@@ -1,0 +1,89 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Demonsaw 3.0+ Documentation\n\n\nOverview\n\n\nClient Guide\n\n\nRouter Guide\n\n\nHow it Works\n\n\nThe Network\n\n\nMore Resources", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#demonsaw-30-documentation", 
+            "text": "", 
+            "title": "Demonsaw 3.0+ Documentation"
+        }, 
+        {
+            "location": "/#overview", 
+            "text": "", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/#client-guide", 
+            "text": "", 
+            "title": "Client Guide"
+        }, 
+        {
+            "location": "/#router-guide", 
+            "text": "", 
+            "title": "Router Guide"
+        }, 
+        {
+            "location": "/#how-it-works", 
+            "text": "", 
+            "title": "How it Works"
+        }, 
+        {
+            "location": "/#the-network", 
+            "text": "", 
+            "title": "The Network"
+        }, 
+        {
+            "location": "/#more-resources", 
+            "text": "", 
+            "title": "More Resources"
+        }, 
+        {
+            "location": "/client/quickstart/", 
+            "text": "", 
+            "title": "Get Started"
+        }, 
+        {
+            "location": "/client/advanced/", 
+            "text": "", 
+            "title": "Advanced"
+        }, 
+        {
+            "location": "/client/theming/", 
+            "text": "", 
+            "title": "Theming"
+        }, 
+        {
+            "location": "/client/cli/", 
+            "text": "", 
+            "title": "CLI Client"
+        }, 
+        {
+            "location": "/client/resources/", 
+            "text": "", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/router/quickstart/", 
+            "text": "", 
+            "title": "Get Started"
+        }, 
+        {
+            "location": "/router/advanced/", 
+            "text": "", 
+            "title": "Advanced"
+        }, 
+        {
+            "location": "/client/troubleshoot/", 
+            "text": "", 
+            "title": "Client"
+        }, 
+        {
+            "location": "/router/troubleshoot/", 
+            "text": "", 
+            "title": "Router/CLI"
+        }
+    ]
+}
