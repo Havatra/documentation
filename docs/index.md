@@ -41,10 +41,14 @@ TL;DR;
 * You specify the security of the crypto handshake, you control your level of protection.
 * At minimum, your communication is wrapped in two layers of crypto.
 
+<p style="color:red;font-weight:bold;">More details are needed from Eijah</p>
 
 
 ## The Network
-blah
 
-## More Resources
-blah
+<iframe width="750px" height="480px" class="embed-responsive embed-responsive-16by9" src="net-diagram.html" style="background-color:transparent;border:0;"></iframe>
+
+
+## Setup a Client
+
+Click 'Next' at the top right to continue.

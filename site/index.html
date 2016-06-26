@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="./img/favicon.ico">
 
-	<title>Demonsaw Community</title>
+	<title>Demonsaw Guide</title>
 
         <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -41,7 +41,7 @@
             </button>
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">Demonsaw Community</a>
+            <a class="navbar-brand" href=".">Demonsaw Guide</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -56,62 +56,20 @@
             
             
             
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Client Setup <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
-<li >
-    <a href="client/quickstart/">Get Started</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="client/advanced/">Advanced</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="client/theming/">Theming</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="client/cli/">CLI Client</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="client/resources/">Resources</a>
-</li>
-
-                    
-                    </ul>
+                <li >
+                    <a href="client/">Client Setup</a>
                 </li>
             
             
             
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Router <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
-<li >
-    <a href="router/quickstart/">Get Started</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="router/advanced/">Advanced</a>
-</li>
-
-                    
-                    </ul>
+                <li >
+                    <a href="router/">Router Setup</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="headless/">Headless Setup</a>
                 </li>
             
             
@@ -122,17 +80,23 @@
                     
                         
 <li >
-    <a href="client/troubleshoot/">Client</a>
+    <a href="client/troubleshooting/">Client</a>
 </li>
 
                     
                         
 <li >
-    <a href="router/troubleshoot/">Router/CLI</a>
+    <a href="router/troubleshooting/">Router</a>
 </li>
 
                     
                     </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="resources/">Resources</a>
                 </li>
             
             
@@ -151,7 +115,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="client/quickstart/">
+                    <a rel="prev" href="client/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -169,15 +133,13 @@
         
             <li><a href="#overview">Overview</a></li>
         
-            <li><a href="#client-guide">Client Guide</a></li>
-        
-            <li><a href="#router-guide">Router Guide</a></li>
+            <li><a href="#getting-started">Getting Started</a></li>
         
             <li><a href="#how-it-works">How it Works</a></li>
         
             <li><a href="#the-network">The Network</a></li>
         
-            <li><a href="#more-resources">More Resources</a></li>
+            <li><a href="#setup-a-client">Setup a Client</a></li>
         
     
     </ul>
@@ -186,11 +148,36 @@
 
 <h1 id="demonsaw-30-documentation">Demonsaw 3.0+ Documentation</h1>
 <h2 id="overview">Overview</h2>
-<h2 id="client-guide">Client Guide</h2>
-<h2 id="router-guide">Router Guide</h2>
+<p>Demonsaw is a secure and anonymous information sharing application that makes security simple and gives you back control of your data. Demonsaw provides you with a way to create your own network or join a public Demonsaw network so that you can share and communicate securely.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>First thing first! You need to <a href="https://demonsaw.com/">download Demonsaw</a>!</p>
+<p>Demonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.</p>
+<h4 id="want-an-installer">Want an Installer?</h4>
+<p>The community (dekka) has provided a Linux repository for Debian and Ubuntu, and also has rpm packages for Fedora/Redhat.</p>
+<p>Want to learn more? Check out <a href="https://repo.dsrouters.com/">repo.dsrouters.com</a></p>
 <h2 id="how-it-works">How it Works</h2>
+<p>This section will be a rough overview of how Demonsaw works, how it is designed to protect you, and will hopefully take some of the confusion out of the network.</p>
+<h3 id="communication">Communication</h3>
+<p>TL;DR;</p>
+<ul>
+<li>Clients do not communicate with clients, Demonsaw is not peer to peer. </li>
+<li>All client communication goes through message routers and data routers.</li>
+</ul>
+<p>If you were to sniff your local traffic and peer into the Demonsaw communication, you'd see TCP traffic that looks just like HTTP web traffic... but with encrypted payloads. Clients can pass user-agent strings, making them appear more like a web browser. Demonsaw routers can listen on any port you want, including 80 and 8080, and can even redirect actual web browsers to another website with a 301 permanent redirect.</p>
+<p>In essence, Demonsaw clients and routers are both behaving as both an HTTP server and a client, allowing them to send messages and data back and forth all while looking like normal web traffic.</p>
+<h3 id="crypto">Crypto</h3>
+<p>TL;DR;</p>
+<ul>
+<li>You specify the security of the crypto handshake, you control your level of protection.</li>
+<li>At minimum, your communication is wrapped in two layers of crypto.</li>
+</ul>
+<p style="color:red;font-weight:bold;">More details are needed from Eijah</p>
+
 <h2 id="the-network">The Network</h2>
-<h2 id="more-resources">More Resources</h2></div>
+<iframe width="750px" height="480px" class="embed-responsive embed-responsive-16by9" src="net-diagram.html" style="background-color:transparent;border:0;"></iframe>
+
+<h2 id="setup-a-client">Setup a Client</h2>
+<p>Click 'Next' at the top right to continue.</p></div>
         </div>
 
         <footer class="col-md-12">

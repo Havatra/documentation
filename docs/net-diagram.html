@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+  body{background-color:transparent;font-weight: bold;text-align: center; color:white;}
+  </style>
+</head>
+<body>
+
+<div class="container" style="background-color:transparent;">
+  <br>
+  <div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <p class="label">Basic network layout. Clients communicate through routers, NO P2P.</p>
+        <img src="img/TheNetwork.png" alt="Chania">
+        <div class="carousel-caption">
+          <a href="img/TheNetwork.png" target="_blank">VIEW</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <p class="label">Basic router setup with 2 transfer routers connected to a message router.</p>
+        <img src="img/TheRouters.png" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <a href="img/TheRouters.png" target="_blank">VIEW</a>
+        </div>
+      </div>
+    
+      <div class="item">
+        <p class="label">2 clients in a group, isolated from the rest of the network.</p>
+        <img src="img/ClientGroups.png" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <a href="img/ClientGroups.png" target="_blank">VIEW</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <p class="label">The atmosphere in Chania has a touch of Florence and Venice.</p>
+        <img src="img/NetworkAttack.png" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <a href="img/NetworkAttack.png" target="_blank">VIEW</a>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
+

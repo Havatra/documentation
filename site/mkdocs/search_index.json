@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Demonsaw 3.0+ Documentation\n\n\nOverview\n\n\nClient Guide\n\n\nRouter Guide\n\n\nHow it Works\n\n\nThe Network\n\n\nMore Resources", 
+            "text": "Demonsaw 3.0+ Documentation\n\n\nOverview\n\n\nDemonsaw is a secure and anonymous information sharing application that makes security simple and gives you back control of your data. Demonsaw provides you with a way to create your own network or join a public Demonsaw network so that you can share and communicate securely.\n\n\nGetting Started\n\n\nFirst thing first! You need to \ndownload Demonsaw\n!\n\n\nDemonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.\n\n\nWant an Installer?\n\n\nThe community (dekka) has provided a Linux repository for Debian and Ubuntu, and also has rpm packages for Fedora/Redhat.\n\n\nWant to learn more? Check out \nrepo.dsrouters.com\n\n\nHow it Works\n\n\nThis section will be a rough overview of how Demonsaw works, how it is designed to protect you, and will hopefully take some of the confusion out of the network.\n\n\nCommunication\n\n\nTL;DR;\n\n\n\n\nClients do not communicate with clients, Demonsaw is not peer to peer. \n\n\nAll client communication goes through message routers and data routers.\n\n\n\n\nIf you were to sniff your local traffic and peer into the Demonsaw communication, you'd see TCP traffic that looks just like HTTP web traffic... but with encrypted payloads. Clients can pass user-agent strings, making them appear more like a web browser. Demonsaw routers can listen on any port you want, including 80 and 8080, and can even redirect actual web browsers to another website with a 301 permanent redirect.\n\n\nIn essence, Demonsaw clients and routers are both behaving as both an HTTP server and a client, allowing them to send messages and data back and forth all while looking like normal web traffic.\n\n\nCrypto\n\n\nTL;DR;\n\n\n\n\nYou specify the security of the crypto handshake, you control your level of protection.\n\n\nAt minimum, your communication is wrapped in two layers of crypto.\n\n\n\n\nMore details are needed from Eijah\n\n\n\nThe Network\n\n\n\n\n\nSetup a Client\n\n\nClick 'Next' at the top right to continue.", 
             "title": "Home"
         }, 
         {
@@ -12,23 +12,33 @@
         }, 
         {
             "location": "/#overview", 
-            "text": "", 
+            "text": "Demonsaw is a secure and anonymous information sharing application that makes security simple and gives you back control of your data. Demonsaw provides you with a way to create your own network or join a public Demonsaw network so that you can share and communicate securely.", 
             "title": "Overview"
         }, 
         {
-            "location": "/#client-guide", 
-            "text": "", 
-            "title": "Client Guide"
+            "location": "/#getting-started", 
+            "text": "First thing first! You need to  download Demonsaw !  Demonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.", 
+            "title": "Getting Started"
         }, 
         {
-            "location": "/#router-guide", 
-            "text": "", 
-            "title": "Router Guide"
+            "location": "/#want-an-installer", 
+            "text": "The community (dekka) has provided a Linux repository for Debian and Ubuntu, and also has rpm packages for Fedora/Redhat.  Want to learn more? Check out  repo.dsrouters.com", 
+            "title": "Want an Installer?"
         }, 
         {
             "location": "/#how-it-works", 
-            "text": "", 
+            "text": "This section will be a rough overview of how Demonsaw works, how it is designed to protect you, and will hopefully take some of the confusion out of the network.", 
             "title": "How it Works"
+        }, 
+        {
+            "location": "/#communication", 
+            "text": "TL;DR;   Clients do not communicate with clients, Demonsaw is not peer to peer.   All client communication goes through message routers and data routers.   If you were to sniff your local traffic and peer into the Demonsaw communication, you'd see TCP traffic that looks just like HTTP web traffic... but with encrypted payloads. Clients can pass user-agent strings, making them appear more like a web browser. Demonsaw routers can listen on any port you want, including 80 and 8080, and can even redirect actual web browsers to another website with a 301 permanent redirect.  In essence, Demonsaw clients and routers are both behaving as both an HTTP server and a client, allowing them to send messages and data back and forth all while looking like normal web traffic.", 
+            "title": "Communication"
+        }, 
+        {
+            "location": "/#crypto", 
+            "text": "TL;DR;   You specify the security of the crypto handshake, you control your level of protection.  At minimum, your communication is wrapped in two layers of crypto.   More details are needed from Eijah", 
+            "title": "Crypto"
         }, 
         {
             "location": "/#the-network", 
@@ -36,54 +46,99 @@
             "title": "The Network"
         }, 
         {
-            "location": "/#more-resources", 
-            "text": "", 
-            "title": "More Resources"
+            "location": "/#setup-a-client", 
+            "text": "Click 'Next' at the top right to continue.", 
+            "title": "Setup a Client"
         }, 
         {
-            "location": "/client/quickstart/", 
-            "text": "", 
-            "title": "Get Started"
+            "location": "/client/", 
+            "text": "Getting Started\n\n\nDownload Demonsaw\n\n\nFirst thing first! You need to \ndownload Demonsaw\n!\n\n\nDemonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.\n\n\nWant an Installer?\n\n\nThe community (dekka) has provided a Linux repository for Debian and Ubuntu, and also has rpm packages for Fedora/Redhat.\n\n\nWant to learn more? Check out \nrepo.dsrouters.com\n\n\nAdd / Manage Message Routers\n\n\nManage Transfer Routers\n\n\nAdd / Create Groups\n\n\nUsing Themes", 
+            "title": "Client Setup"
         }, 
         {
-            "location": "/client/advanced/", 
+            "location": "/client/#getting-started", 
             "text": "", 
-            "title": "Advanced"
+            "title": "Getting Started"
         }, 
         {
-            "location": "/client/theming/", 
-            "text": "", 
-            "title": "Theming"
+            "location": "/client/#download-demonsaw", 
+            "text": "First thing first! You need to  download Demonsaw !  Demonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.", 
+            "title": "Download Demonsaw"
         }, 
         {
-            "location": "/client/cli/", 
-            "text": "", 
-            "title": "CLI Client"
+            "location": "/client/#want-an-installer", 
+            "text": "The community (dekka) has provided a Linux repository for Debian and Ubuntu, and also has rpm packages for Fedora/Redhat.  Want to learn more? Check out  repo.dsrouters.com", 
+            "title": "Want an Installer?"
         }, 
         {
-            "location": "/client/resources/", 
+            "location": "/client/#add-manage-message-routers", 
+            "text": "", 
+            "title": "Add / Manage Message Routers"
+        }, 
+        {
+            "location": "/client/#manage-transfer-routers", 
+            "text": "", 
+            "title": "Manage Transfer Routers"
+        }, 
+        {
+            "location": "/client/#add-create-groups", 
+            "text": "", 
+            "title": "Add / Create Groups"
+        }, 
+        {
+            "location": "/client/#using-themes", 
+            "text": "", 
+            "title": "Using Themes"
+        }, 
+        {
+            "location": "/router/", 
+            "text": "", 
+            "title": "Router Setup"
+        }, 
+        {
+            "location": "/headless/", 
+            "text": "", 
+            "title": "Headless Setup"
+        }, 
+        {
+            "location": "/client/troubleshooting/", 
+            "text": "Client Troubleshooting", 
+            "title": "Client"
+        }, 
+        {
+            "location": "/client/troubleshooting/#client-troubleshooting", 
+            "text": "", 
+            "title": "Client Troubleshooting"
+        }, 
+        {
+            "location": "/router/troubleshooting/", 
+            "text": "Router Troubleshooting", 
+            "title": "Router"
+        }, 
+        {
+            "location": "/router/troubleshooting/#router-troubleshooting", 
+            "text": "", 
+            "title": "Router Troubleshooting"
+        }, 
+        {
+            "location": "/resources/", 
+            "text": "Resources\n\n\nOfficial Resources \n Sites\n\n\n\n\nDemonsaw Website\n\n\nDemonsaw Issue Tracker\n\n\n\n\nCommunity Resources \n Sites\n\n\n\n\nDemonBucket Website\n\n\nDSRouters Website\n\n\nDemonsaw Linux Repository\n\n\nDemonsaw Themes", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/resources/#resources", 
             "text": "", 
             "title": "Resources"
         }, 
         {
-            "location": "/router/quickstart/", 
-            "text": "", 
-            "title": "Get Started"
+            "location": "/resources/#official-resources-sites", 
+            "text": "Demonsaw Website  Demonsaw Issue Tracker", 
+            "title": "Official Resources &amp; Sites"
         }, 
         {
-            "location": "/router/advanced/", 
-            "text": "", 
-            "title": "Advanced"
-        }, 
-        {
-            "location": "/client/troubleshoot/", 
-            "text": "", 
-            "title": "Client"
-        }, 
-        {
-            "location": "/router/troubleshoot/", 
-            "text": "", 
-            "title": "Router/CLI"
+            "location": "/resources/#community-resources-sites", 
+            "text": "DemonBucket Website  DSRouters Website  Demonsaw Linux Repository  Demonsaw Themes", 
+            "title": "Community Resources &amp; Sites"
         }
     ]
 }
