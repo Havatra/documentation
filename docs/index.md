@@ -51,4 +51,4 @@ TL;DR;
 
 ## Setup a Client
 
-Click 'Next' at the top right to continue.
+<a href="./client/">Click 'Next' here or at the top right to continue.</a>
