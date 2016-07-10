@@ -282,7 +282,7 @@
         }, 
         {
             "location": "/resources/", 
-            "text": "Resources\n\n\nOfficial Resources \n Sites\n\n\n\n\nDemonsaw Website\n\n\nDemonsaw Issue Tracker \n Feature Requests- GitHub\n\n\nDemonsaw Documentation - GitHub\n\n\nDemonsaw Themes - GitHub\n\n\nDemoncrypt (Demonsaw Crypto Layer) - GitHub\n\n\n\n\nCommunity Resources \n Sites\n\n\n\n\nDemonBucket Website\n\n\nDemonsaw Linux Repository", 
+            "text": "Resources\n\n\nOfficial Resources \n Sites\n\n\n\n\nDemonsaw Website\n\n\nDemonsaw Issue Tracker \n Feature Requests- GitHub\n\n\n\n\nDemonsaw Documentation - GitHub\n\n\n\n\n\n\nDemoncrypt (Demonsaw Crypto Layer) - GitHub\n\n\n\n\n\n\nCommunity Resources \n Sites\n\n\n\n\nDemonBucket Website\n\n\nDemonsaw Linux Repository\n\n\n\n\nTheme Resources\n\n\n\n\nDemonsaw Themes - GitHub\n\n\nQt5 Stylesheet Reference", 
             "title": "Resources"
         }, 
         {
@@ -292,13 +292,18 @@
         }, 
         {
             "location": "/resources/#official-resources-sites", 
-            "text": "Demonsaw Website  Demonsaw Issue Tracker   Feature Requests- GitHub  Demonsaw Documentation - GitHub  Demonsaw Themes - GitHub  Demoncrypt (Demonsaw Crypto Layer) - GitHub", 
+            "text": "Demonsaw Website  Demonsaw Issue Tracker   Feature Requests- GitHub   Demonsaw Documentation - GitHub    Demoncrypt (Demonsaw Crypto Layer) - GitHub", 
             "title": "Official Resources &amp; Sites"
         }, 
         {
             "location": "/resources/#community-resources-sites", 
             "text": "DemonBucket Website  Demonsaw Linux Repository", 
             "title": "Community Resources &amp; Sites"
+        }, 
+        {
+            "location": "/resources/#theme-resources", 
+            "text": "Demonsaw Themes - GitHub  Qt5 Stylesheet Reference", 
+            "title": "Theme Resources"
         }
     ]
 }
