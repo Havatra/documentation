@@ -23,7 +23,7 @@ body {
 }
 
 body.clicky :target::before {
-    animation-name: collapse-anchor-padding-2;
+  animation-name: collapse-anchor-padding-2;
 }
 
 @keyframes collapse-anchor-padding-1 {
@@ -61,10 +61,8 @@ div.col-md-9 img {
 }
 
 code {
-    padding: 1px 3px;
-    background: #1c1e22;
-    border: solid 1px #0c0d0e;
-    color: #c8c8c8;
+    background: #151515;
+    color: #888;
 }
 
 pre code {
@@ -73,7 +71,7 @@ pre code {
 }
 
 a > code {
-    color: #fff;
+    color: #2a9fd6;
 }
 
 /*

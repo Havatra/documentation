@@ -4,31 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-06-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>None/client/</loc>
-     <lastmod>2016-06-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>None/router/</loc>
-     <lastmod>2016-06-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>None/headless/</loc>
-     <lastmod>2016-06-26</lastmod>
+     <lastmod>2016-07-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -36,14 +12,42 @@
     
         
     <url>
+     <loc>None/client/</loc>
+     <lastmod>2016-07-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/client/headless/</loc>
+     <lastmod>2016-07-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>None/client/troubleshooting/</loc>
-     <lastmod>2016-06-26</lastmod>
+     <lastmod>2016-07-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/router/</loc>
+     <lastmod>2016-07-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/router/headless/</loc>
+     <lastmod>2016-07-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/router/troubleshooting/</loc>
-     <lastmod>2016-06-26</lastmod>
+     <lastmod>2016-07-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -52,7 +56,7 @@
     
     <url>
      <loc>None/resources/</loc>
-     <lastmod>2016-06-26</lastmod>
+     <lastmod>2016-07-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

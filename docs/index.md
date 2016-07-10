@@ -1,4 +1,4 @@
-# Demonsaw 3.0+ Documentation
+# Short Intro to Demonsaw
 
 ## Overview
 
@@ -46,7 +46,7 @@ TL;DR;
 
 ## The Network
 
-<iframe width="750px" height="480px" class="embed-responsive embed-responsive-16by9" src="net-diagram.html" style="background-color:transparent;border:0;"></iframe>
+<iframe width="100%" height="480px" frameborder="no" scrolling="no" class="embed-responsive embed-responsive-16by9" src="net-diagram.html" style="background-color:transparent;border:0;"></iframe>
 
 
 ## Setup a Client

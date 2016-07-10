@@ -2,13 +2,13 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Demonsaw 3.0+ Documentation\n\n\nOverview\n\n\nDemonsaw is a secure and anonymous information sharing application that makes security simple and gives you back control of your data. Demonsaw provides you with a way to create your own network or join a public Demonsaw network so that you can share and communicate securely.\n\n\nGetting Started\n\n\nFirst thing first! You need to \ndownload Demonsaw\n!\n\n\nDemonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.\n\n\nWant an Installer?\n\n\nThe community (dekka) has provided a Linux repository for Debian and Ubuntu, and also has rpm packages for Fedora/Redhat.\n\n\nWant to learn more? Check out \nrepo.dsrouters.com\n\n\nHow it Works\n\n\nThis section will be a rough overview of how Demonsaw works, how it is designed to protect you, and will hopefully take some of the confusion out of the network.\n\n\nCommunication\n\n\nTL;DR;\n\n\n\n\nClients do not communicate with clients, Demonsaw is not peer to peer. \n\n\nAll client communication goes through message routers and data routers.\n\n\n\n\nIf you were to sniff your local traffic and peer into the Demonsaw communication, you'd see TCP traffic that looks just like HTTP web traffic... but with encrypted payloads. Clients can pass user-agent strings, making them appear more like a web browser. Demonsaw routers can listen on any port you want, including 80 and 8080, and can even redirect actual web browsers to another website with a 301 permanent redirect.\n\n\nIn essence, Demonsaw clients and routers are both behaving as both an HTTP server and a client, allowing them to send messages and data back and forth all while looking like normal web traffic.\n\n\nCrypto\n\n\nTL;DR;\n\n\n\n\nYou specify the security of the crypto handshake, you control your level of protection.\n\n\nAt minimum, your communication is wrapped in two layers of crypto.\n\n\n\n\nMore details are needed from Eijah\n\n\n\nThe Network\n\n\n\n\n\nSetup a Client\n\n\nClick 'Next' at the top right to continue.", 
+            "text": "Short Intro to Demonsaw\n\n\nOverview\n\n\nDemonsaw is a secure and anonymous information sharing application that makes security simple and gives you back control of your data. Demonsaw provides you with a way to create your own network or join a public Demonsaw network so that you can share and communicate securely.\n\n\nGetting Started\n\n\nFirst thing first! You need to \ndownload Demonsaw\n!\n\n\nDemonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.\n\n\nWant an Installer?\n\n\nThe community (dekka) has provided a Linux repository for Debian and Ubuntu, and also has rpm packages for Fedora/Redhat.\n\n\nWant to learn more? Check out \nrepo.dsrouters.com\n\n\nHow it Works\n\n\nThis section will be a rough overview of how Demonsaw works, how it is designed to protect you, and will hopefully take some of the confusion out of the network.\n\n\nCommunication\n\n\nTL;DR;\n\n\n\n\nClients do not communicate with clients, Demonsaw is not peer to peer. \n\n\nAll client communication goes through message routers and data routers.\n\n\n\n\nIf you were to sniff your local traffic and peer into the Demonsaw communication, you'd see TCP traffic that looks just like HTTP web traffic... but with encrypted payloads. Clients can pass user-agent strings, making them appear more like a web browser. Demonsaw routers can listen on any port you want, including 80 and 8080, and can even redirect actual web browsers to another website with a 301 permanent redirect.\n\n\nIn essence, Demonsaw clients and routers are both behaving as both an HTTP server and a client, allowing them to send messages and data back and forth all while looking like normal web traffic.\n\n\nCrypto\n\n\nTL;DR;\n\n\n\n\nYou specify the security of the crypto handshake, you control your level of protection.\n\n\nAt minimum, your communication is wrapped in two layers of crypto.\n\n\n\n\nMore details are needed from Eijah\n\n\n\nThe Network\n\n\n\n\n\nSetup a Client\n\n\nClick 'Next' here or at the top right to continue.", 
             "title": "Home"
         }, 
         {
-            "location": "/#demonsaw-30-documentation", 
+            "location": "/#short-intro-to-demonsaw", 
             "text": "", 
-            "title": "Demonsaw 3.0+ Documentation"
+            "title": "Short Intro to Demonsaw"
         }, 
         {
             "location": "/#overview", 
@@ -47,13 +47,13 @@
         }, 
         {
             "location": "/#setup-a-client", 
-            "text": "Click 'Next' at the top right to continue.", 
+            "text": "Click 'Next' here or at the top right to continue.", 
             "title": "Setup a Client"
         }, 
         {
             "location": "/client/", 
             "text": "Getting Started\n\n\nDownload Demonsaw\n\n\nFirst thing first! You need to \ndownload Demonsaw\n!\n\n\nDemonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.\n\n\nWant an Installer?\n\n\nThe community (dekka) has provided a Linux repository for Debian and Ubuntu, and also has rpm packages for Fedora/Redhat.\n\n\nWant to learn more? Check out \nrepo.dsrouters.com\n\n\nAdd / Manage Message Routers\n\n\nManage Transfer Routers\n\n\nAdd / Create Groups\n\n\nUsing Themes", 
-            "title": "Client Setup"
+            "title": "Getting Started"
         }, 
         {
             "location": "/client/#getting-started", 
@@ -91,34 +91,209 @@
             "title": "Using Themes"
         }, 
         {
-            "location": "/router/", 
-            "text": "", 
-            "title": "Router Setup"
-        }, 
-        {
-            "location": "/headless/", 
-            "text": "", 
+            "location": "/client/headless/", 
+            "text": "Headless Demonsaw Client Setup\n\n\nThis post documents what it takes to setup a Demonsaw client on a Linux host. We chose to document the setup for a Linux host because it is more common to have a headless client or router on a Linux host than on a Windows host.\n\n\nSteps\n\n\n\n\nDownload the Demonsaw\n\n\nExtract the archive and verify permissions\n\n\nSetup your demonsaw config file\n\n\nLaunch and test\n\n\nOther considerations\n\n\n\n\nDownload Demonsaw\n\n\nDemonsaw has builds for multiple operating systems, for Linux you have the \nDebian\n build the \nUbuntu\n build and the \nRaspian\n build. Choose the version that you need for your specific Linux distro and download it.\n\n\nExtract \n Verify\n\n\nYou can extract Demonsaw and run it from wherever you want. If you're running a Demonsaw client off of a headless server it's perfectly fine to put the Demonsaw folder under your home directory. On a desktop Linux Debian distro you might want to put it somewhere better, I like /opt/demonsaw/ so that is what I'll show how to do.\n\n\nsudo mkdir /opt/demonsaw\nsudo tar xzf demonsaw.tar.gz -C /opt/demonsaw/\n\n\n\nThe above command extracts far more than you need for a headless router/client, if you want you can just extract 'demonsaw_cli' with \ntar -zxcf demonsaw_cli\n, this is also a good way to update demonsaw without over-writing your toml.\n\n\nNow you need to ensure that the permissions for the /opt/demonsaw/ folder are for your user, in the example our user is named joe.\n\n\nsudo chown -R joe /opt/demonsaw\n\n\n\nOne more important thing to verify is that demonsaw_cli has execute permissions, because sometimes mistakes are made.\n\n\nsudo chmod +x /opt/demonsaw/demonsaw_cli\n\n\n\nYou should now be able to launch demonsaw but you'll be missing the demonsaw.toml configuration, currently the demonsaw_cli will not automatically create this file because it is for a headless client.\n\n\nSetup your demonsaw config file\n\n\nThe easiest way to setup the demonsaw config file is to use the GUI to create the setup you want; You can do it from any operating system as the toml is basically the same, just drop the demonsaw GUI binary somewhere like your desktop and run it, add a client and change all the settings to suit your needs, then save the toml and move it over the the machine running the headless client.\n\n\nIf you're in a rush or don't want to fool around with the GUI, below are links to demonsaw config file examples that you can wget from your host and edit.\n\n\ntoml examples\n\n\n\n\nHeadless client\n\n\nHeadless client w/ group\n\n\n\n\nWith the above example toml file you will need to set the client name, the router to connect to, and the paths and files you would like to share.\n\n\nLaunch \n Test\n\n\nAt this point you should be able to launch \ndemonsaw_cli\n from the command line, press \nC\n to see the status of the client/client. It will take a seconds of waiting, but it should land on success if everything worked, you should see your clients connected to the router now.\n\n\nConsiderations\n\n\nSo you have a working Demonsaw client now, what is next? If you plan to scale and build your own private network then you still have a few things that you'll want to work on.\n\n\nStartup Scripts\n\n\nYou're now hosting your own Demonsaw network, you probably have it on a VPS somewhere and won't always be able to ssh in to restart demonsaw_cli should it have some issue, or you might not want to have to ssh in just to start demonsaw_cli everytime the server is rebooted; Startup scripts.\nThere are a few ways to do this, I recommend using \nDaniel Stinebaugh's startup script\n.", 
             "title": "Headless Setup"
         }, 
         {
+            "location": "/client/headless/#headless-demonsaw-client-setup", 
+            "text": "This post documents what it takes to setup a Demonsaw client on a Linux host. We chose to document the setup for a Linux host because it is more common to have a headless client or router on a Linux host than on a Windows host.", 
+            "title": "Headless Demonsaw Client Setup"
+        }, 
+        {
+            "location": "/client/headless/#steps", 
+            "text": "Download the Demonsaw  Extract the archive and verify permissions  Setup your demonsaw config file  Launch and test  Other considerations", 
+            "title": "Steps"
+        }, 
+        {
+            "location": "/client/headless/#download-demonsaw", 
+            "text": "Demonsaw has builds for multiple operating systems, for Linux you have the  Debian  build the  Ubuntu  build and the  Raspian  build. Choose the version that you need for your specific Linux distro and download it.", 
+            "title": "Download Demonsaw"
+        }, 
+        {
+            "location": "/client/headless/#extract-verify", 
+            "text": "You can extract Demonsaw and run it from wherever you want. If you're running a Demonsaw client off of a headless server it's perfectly fine to put the Demonsaw folder under your home directory. On a desktop Linux Debian distro you might want to put it somewhere better, I like /opt/demonsaw/ so that is what I'll show how to do.  sudo mkdir /opt/demonsaw\nsudo tar xzf demonsaw.tar.gz -C /opt/demonsaw/  The above command extracts far more than you need for a headless router/client, if you want you can just extract 'demonsaw_cli' with  tar -zxcf demonsaw_cli , this is also a good way to update demonsaw without over-writing your toml.  Now you need to ensure that the permissions for the /opt/demonsaw/ folder are for your user, in the example our user is named joe.  sudo chown -R joe /opt/demonsaw  One more important thing to verify is that demonsaw_cli has execute permissions, because sometimes mistakes are made.  sudo chmod +x /opt/demonsaw/demonsaw_cli  You should now be able to launch demonsaw but you'll be missing the demonsaw.toml configuration, currently the demonsaw_cli will not automatically create this file because it is for a headless client.", 
+            "title": "Extract &amp; Verify"
+        }, 
+        {
+            "location": "/client/headless/#setup-your-demonsaw-config-file", 
+            "text": "The easiest way to setup the demonsaw config file is to use the GUI to create the setup you want; You can do it from any operating system as the toml is basically the same, just drop the demonsaw GUI binary somewhere like your desktop and run it, add a client and change all the settings to suit your needs, then save the toml and move it over the the machine running the headless client.  If you're in a rush or don't want to fool around with the GUI, below are links to demonsaw config file examples that you can wget from your host and edit.", 
+            "title": "Setup your demonsaw config file"
+        }, 
+        {
+            "location": "/client/headless/#toml-examples", 
+            "text": "Headless client  Headless client w/ group   With the above example toml file you will need to set the client name, the router to connect to, and the paths and files you would like to share.", 
+            "title": "toml examples"
+        }, 
+        {
+            "location": "/client/headless/#launch-test", 
+            "text": "At this point you should be able to launch  demonsaw_cli  from the command line, press  C  to see the status of the client/client. It will take a seconds of waiting, but it should land on success if everything worked, you should see your clients connected to the router now.", 
+            "title": "Launch &amp; Test"
+        }, 
+        {
+            "location": "/client/headless/#considerations", 
+            "text": "So you have a working Demonsaw client now, what is next? If you plan to scale and build your own private network then you still have a few things that you'll want to work on.", 
+            "title": "Considerations"
+        }, 
+        {
+            "location": "/client/headless/#startup-scripts", 
+            "text": "You're now hosting your own Demonsaw network, you probably have it on a VPS somewhere and won't always be able to ssh in to restart demonsaw_cli should it have some issue, or you might not want to have to ssh in just to start demonsaw_cli everytime the server is rebooted; Startup scripts.\nThere are a few ways to do this, I recommend using  Daniel Stinebaugh's startup script .", 
+            "title": "Startup Scripts"
+        }, 
+        {
             "location": "/client/troubleshooting/", 
-            "text": "Client Troubleshooting", 
-            "title": "Client"
+            "text": "Client Troubleshooting\n\n\nSetting up Demonsaw is very straight forward, but sometimes you might run into a simple problem that you overlook. Here we'll cover some of the most common problems when working with Demonsaw, from Client to Router, and aim to be mostly platform neutral.\n\n\nUnable to launching Demonsaw\n\n\n\n\nmake sure that demonsaw.xml is in the same directory and has permissions to write to it.\n\n\nmake sure you are running the correct build for your operating system.\n\n\non *nix based operating system, make sure that demonsaw/demonsaw_cli has execute permissions.\n\n\n\n\n\n\n\nConnectivity Issues\n\n\nClient icon won't stay green\n\n\nThis is usually a sign that your ISP is not handling sockets correctly or your internet could be suffering problems. If it is not either of these it is likely one of the below issues with the router you're connected to.\n\n\n\n\nRouter is running out of entropy\n\n\nToo many sockets open to router (Caused by ISP)\n\n\nRouter is having connectivity issues or DDOS\n\n\n\n\nCannot connect to a router\n\n\n\n\nMake sure router address and port are correct\n\n\nMake sure the passphrase is correct, or empty of the router has no passphrase\n\n\nMake sure a firewall isn't blocking outbound connections or Internet is working\n\n\nIf Message or Transfer key/prime size is set too high it could cause a long delay in connecting to a router. If you need to set it lower you will want to also save and restart demonsaw.\n\n\n\n\n\n\n\nCrashes\n\n\nIf your client crashes when trying to save settings then Demonsaw isn't running with the permissions to save demonsaw.xml.\nFor most all other crashes it would be a problem with Demonsaw, take note of what you did when the crash occured and report the error with as much detail as possible, there might already be a fix in progress.\n\n\n\n\n\nDownload/Upload\n\n\nReasons for downloads not starting\n\n\n\n\nUploader has a full queue (you're waiting in line)\n\n\nUploader is gone away (No one else has the file for it to be swarmed)\n\n\nThe message router assigned you to a data router that is busy (you're waiting for your client to retry download from another data router)\n\n\n\n\nReasons for uploads not starting\n\n\n\n\nThe data router is busy or slow\n\n\nThe downloading client is not ready", 
+            "title": "Troubleshooting"
         }, 
         {
             "location": "/client/troubleshooting/#client-troubleshooting", 
-            "text": "", 
+            "text": "Setting up Demonsaw is very straight forward, but sometimes you might run into a simple problem that you overlook. Here we'll cover some of the most common problems when working with Demonsaw, from Client to Router, and aim to be mostly platform neutral.", 
             "title": "Client Troubleshooting"
         }, 
         {
+            "location": "/client/troubleshooting/#unable-to-launching-demonsaw", 
+            "text": "make sure that demonsaw.xml is in the same directory and has permissions to write to it.  make sure you are running the correct build for your operating system.  on *nix based operating system, make sure that demonsaw/demonsaw_cli has execute permissions.", 
+            "title": "Unable to launching Demonsaw"
+        }, 
+        {
+            "location": "/client/troubleshooting/#connectivity-issues", 
+            "text": "", 
+            "title": "Connectivity Issues"
+        }, 
+        {
+            "location": "/client/troubleshooting/#client-icon-wont-stay-green", 
+            "text": "This is usually a sign that your ISP is not handling sockets correctly or your internet could be suffering problems. If it is not either of these it is likely one of the below issues with the router you're connected to.   Router is running out of entropy  Too many sockets open to router (Caused by ISP)  Router is having connectivity issues or DDOS", 
+            "title": "Client icon won't stay green"
+        }, 
+        {
+            "location": "/client/troubleshooting/#cannot-connect-to-a-router", 
+            "text": "Make sure router address and port are correct  Make sure the passphrase is correct, or empty of the router has no passphrase  Make sure a firewall isn't blocking outbound connections or Internet is working  If Message or Transfer key/prime size is set too high it could cause a long delay in connecting to a router. If you need to set it lower you will want to also save and restart demonsaw.", 
+            "title": "Cannot connect to a router"
+        }, 
+        {
+            "location": "/client/troubleshooting/#crashes", 
+            "text": "If your client crashes when trying to save settings then Demonsaw isn't running with the permissions to save demonsaw.xml.\nFor most all other crashes it would be a problem with Demonsaw, take note of what you did when the crash occured and report the error with as much detail as possible, there might already be a fix in progress.", 
+            "title": "Crashes"
+        }, 
+        {
+            "location": "/client/troubleshooting/#downloadupload", 
+            "text": "", 
+            "title": "Download/Upload"
+        }, 
+        {
+            "location": "/client/troubleshooting/#reasons-for-downloads-not-starting", 
+            "text": "Uploader has a full queue (you're waiting in line)  Uploader is gone away (No one else has the file for it to be swarmed)  The message router assigned you to a data router that is busy (you're waiting for your client to retry download from another data router)", 
+            "title": "Reasons for downloads not starting"
+        }, 
+        {
+            "location": "/client/troubleshooting/#reasons-for-uploads-not-starting", 
+            "text": "The data router is busy or slow  The downloading client is not ready", 
+            "title": "Reasons for uploads not starting"
+        }, 
+        {
+            "location": "/router/", 
+            "text": "", 
+            "title": "Getting Started"
+        }, 
+        {
+            "location": "/router/headless/", 
+            "text": "Headless Demonsaw Router Setup\n\n\nThis post documents what it takes to setup a Demonsaw router on a Linux host, the process is very simple but we'll cover the thinks to look out for and things to think about when setting up a router.\n\n\nSteps\n\n\n\n\nDownload the Demonsaw\n\n\nExtract the archive and verify permissions\n\n\nSetup your demonsaw config file\n\n\nLaunch and test\n\n\nOther considerations\n\n\n\n\nDownload Demonsaw\n\n\nDemonsaw has builds for multiple operating systems, for Linux you have the \nDebian\n build the \nUbuntu\n build and the \nRaspian\n build. Choose the version that you need for your specific Linux distro and download it.\n\n\nExtract \n Verify\n\n\nYou can extract Demonsaw and run it from wherever you want. If you're running a Demonsaw router off of a headless server it's perfectly fine to put the Demonsaw folder under your home directory. On a desktop Linux Debian distro you might want to put it somewhere better, I like /opt/demonsaw/ so that is what I'll show how to do.\n\n\nsudo mkdir /opt/demonsaw\nsudo tar xzf demonsaw.tar.gz -C /opt/demonsaw/\n\n\n\nThe above command extracts far more than you need for a headless client/router, if you want you can just extract 'demonsaw_cli' with \ntar -zxcf demonsaw_cli\n, this is also a good way to update demonsaw without over-writing your toml.\n\n\nNow you need to ensure that the permissions for the /opt/demonsaw/ folder are for your user, in the example our user is named frank.\n\n\nsudo chown -R frank /opt/demonsaw\n\n\n\nOne more important thing to verify is that demonsaw and demonsaw_cli have execute permissions, because sometimes mistakes are made.\n\n\nsudo chmod +x /opt/demonsaw/demonsaw_cli\n\n\n\nYou should now be able to launch demonsaw but you'll be missing the demonsaw.toml configuration, currently the demonsaw_cli will not automatically create this file because it is for a headless router.\n\n\nSetup your demonsaw config file\n\n\nThe easiest way to setup the demonsaw config file is to use the GUI to create the setup you want; You can do it from any operating system as the toml is basically the same, just drop the demonsaw GUI binary somewhere like your desktop and run it, add a router and change all the settings to suit your needs.\n\n\nIf you're in a rush or don't want to fool around with the GUI, below are links to demonsaw config file examples.\n\n\ntoml examples\n\n\n\n\nHeadless Router\n\n\nHeadless Router and Client\n\n\n\n\nWith any of the above example toml files you will need to set the address to the external IP Address for the router, the Download and Share paths must be valid (it's recommended to leave a trailing slash), passphrase is left empty so you can easily fill it in if needed. And examples with groups need to be changed to match your group setup.\n\n\nLaunch \n Test\n\n\nAt this point you should be able to launch \ndemonsaw_cli\n from the command line, press \nC\n to see the status of the client/router. It will take a seconds of waiting, but it should land on success if everything worked.\n\n\nConsiderations\n\n\nSo you have a working Demonsaw router now, what is next? If you plan to scale and build your own private network then you still have a few things that you'll want to work on.\n\n\nStartup Scripts\n\n\nYou're now hosting your own Demonsaw network, you probably have it on a VPS somewhere and won't always be able to ssh in to restart demonsaw_cli should it have some issue, or you might not want to have to ssh in just to start demonsaw_cli everytime the server is rebooted; Startup scripts.\nThere are a few ways to do this, I recommend using \nDaniel Stinebaugh's startup script\n.\n\n\nAdding data routers\n\n\nThe above toml examples are setup so that the router you setup handles the messaging, client search and browse, and the data transfers. If you've ever connected to the Demonbucket network you'll notice that you connect to Bucket1 but when you download something your download goes through another router. You can add as many data routers as you want, in Demonsaw 2.x these are just normal Demonsaw routers (you can disable messaging, search/browse, etc if you want). The easiest way to set this up is again to use the GUI and get your configuration as close as you want it, save it, then edit and move the demonsaw.toml to the router you want to use it on.\n\n\nEntropy (Linux hosts only)\n\n\nYour Demonsaw router, even with 10 people connecting, is using more crypto than a simple https site with 10 people connected. Everything you do in Demonsaw is encrypted, and each client connecting drains a bit of entropy from the server you're running the Demonsaw router off of.\nFor a Demonsaw router you will want an entropy pool size around 2500 or higher, you can check your entropy with the below command.\n\n\nwatch cat /proc/sys/kernel/random/entropy_avail\n\n\n\nThere are a few ways to boost your entropy if it is low, the easiest is to install \nHaveged\n or \nrng-tools\n or both. Below are the commands for Debian, but both tools should be available for other Linux distros. Once you install them you can check your entropy again, you should see an immediate boost.\n\n\nsudo apt-get install haveged\nsudo apt-get install rng-tools\n\n\n\nKeeping your entropy at a usable value will prevent your router from having handshake issues when you start to build your userbase.", 
+            "title": "Headless Setup"
+        }, 
+        {
+            "location": "/router/headless/#headless-demonsaw-router-setup", 
+            "text": "This post documents what it takes to setup a Demonsaw router on a Linux host, the process is very simple but we'll cover the thinks to look out for and things to think about when setting up a router.", 
+            "title": "Headless Demonsaw Router Setup"
+        }, 
+        {
+            "location": "/router/headless/#steps", 
+            "text": "Download the Demonsaw  Extract the archive and verify permissions  Setup your demonsaw config file  Launch and test  Other considerations", 
+            "title": "Steps"
+        }, 
+        {
+            "location": "/router/headless/#download-demonsaw", 
+            "text": "Demonsaw has builds for multiple operating systems, for Linux you have the  Debian  build the  Ubuntu  build and the  Raspian  build. Choose the version that you need for your specific Linux distro and download it.", 
+            "title": "Download Demonsaw"
+        }, 
+        {
+            "location": "/router/headless/#extract-verify", 
+            "text": "You can extract Demonsaw and run it from wherever you want. If you're running a Demonsaw router off of a headless server it's perfectly fine to put the Demonsaw folder under your home directory. On a desktop Linux Debian distro you might want to put it somewhere better, I like /opt/demonsaw/ so that is what I'll show how to do.  sudo mkdir /opt/demonsaw\nsudo tar xzf demonsaw.tar.gz -C /opt/demonsaw/  The above command extracts far more than you need for a headless client/router, if you want you can just extract 'demonsaw_cli' with  tar -zxcf demonsaw_cli , this is also a good way to update demonsaw without over-writing your toml.  Now you need to ensure that the permissions for the /opt/demonsaw/ folder are for your user, in the example our user is named frank.  sudo chown -R frank /opt/demonsaw  One more important thing to verify is that demonsaw and demonsaw_cli have execute permissions, because sometimes mistakes are made.  sudo chmod +x /opt/demonsaw/demonsaw_cli  You should now be able to launch demonsaw but you'll be missing the demonsaw.toml configuration, currently the demonsaw_cli will not automatically create this file because it is for a headless router.", 
+            "title": "Extract &amp; Verify"
+        }, 
+        {
+            "location": "/router/headless/#setup-your-demonsaw-config-file", 
+            "text": "The easiest way to setup the demonsaw config file is to use the GUI to create the setup you want; You can do it from any operating system as the toml is basically the same, just drop the demonsaw GUI binary somewhere like your desktop and run it, add a router and change all the settings to suit your needs.  If you're in a rush or don't want to fool around with the GUI, below are links to demonsaw config file examples.", 
+            "title": "Setup your demonsaw config file"
+        }, 
+        {
+            "location": "/router/headless/#toml-examples", 
+            "text": "Headless Router  Headless Router and Client   With any of the above example toml files you will need to set the address to the external IP Address for the router, the Download and Share paths must be valid (it's recommended to leave a trailing slash), passphrase is left empty so you can easily fill it in if needed. And examples with groups need to be changed to match your group setup.", 
+            "title": "toml examples"
+        }, 
+        {
+            "location": "/router/headless/#launch-test", 
+            "text": "At this point you should be able to launch  demonsaw_cli  from the command line, press  C  to see the status of the client/router. It will take a seconds of waiting, but it should land on success if everything worked.", 
+            "title": "Launch &amp; Test"
+        }, 
+        {
+            "location": "/router/headless/#considerations", 
+            "text": "So you have a working Demonsaw router now, what is next? If you plan to scale and build your own private network then you still have a few things that you'll want to work on.", 
+            "title": "Considerations"
+        }, 
+        {
+            "location": "/router/headless/#startup-scripts", 
+            "text": "You're now hosting your own Demonsaw network, you probably have it on a VPS somewhere and won't always be able to ssh in to restart demonsaw_cli should it have some issue, or you might not want to have to ssh in just to start demonsaw_cli everytime the server is rebooted; Startup scripts.\nThere are a few ways to do this, I recommend using  Daniel Stinebaugh's startup script .", 
+            "title": "Startup Scripts"
+        }, 
+        {
+            "location": "/router/headless/#adding-data-routers", 
+            "text": "The above toml examples are setup so that the router you setup handles the messaging, client search and browse, and the data transfers. If you've ever connected to the Demonbucket network you'll notice that you connect to Bucket1 but when you download something your download goes through another router. You can add as many data routers as you want, in Demonsaw 2.x these are just normal Demonsaw routers (you can disable messaging, search/browse, etc if you want). The easiest way to set this up is again to use the GUI and get your configuration as close as you want it, save it, then edit and move the demonsaw.toml to the router you want to use it on.", 
+            "title": "Adding data routers"
+        }, 
+        {
+            "location": "/router/headless/#entropy-linux-hosts-only", 
+            "text": "Your Demonsaw router, even with 10 people connecting, is using more crypto than a simple https site with 10 people connected. Everything you do in Demonsaw is encrypted, and each client connecting drains a bit of entropy from the server you're running the Demonsaw router off of.\nFor a Demonsaw router you will want an entropy pool size around 2500 or higher, you can check your entropy with the below command.  watch cat /proc/sys/kernel/random/entropy_avail  There are a few ways to boost your entropy if it is low, the easiest is to install  Haveged  or  rng-tools  or both. Below are the commands for Debian, but both tools should be available for other Linux distros. Once you install them you can check your entropy again, you should see an immediate boost.  sudo apt-get install haveged\nsudo apt-get install rng-tools  Keeping your entropy at a usable value will prevent your router from having handshake issues when you start to build your userbase.", 
+            "title": "Entropy (Linux hosts only)"
+        }, 
+        {
             "location": "/router/troubleshooting/", 
-            "text": "Router Troubleshooting", 
-            "title": "Router"
+            "text": "Router Troubleshooting\n\n\nSetting up a Demonsaw router takes a bit more effort than starting a client. Here we'll cover troubleshooting steps that will apply to both the headless demonsaw_cli and a Demonsaw router that you started from GUI.\n\n\nIssues starting the router\n\n\n\n\n(*nix) Make sure demonsaw_cli has execute permissions\n\n\n(*nix) If the router is setup for a port below 1024, the router must be run with sudo or moved to a higher port.\n\n\n\n\n\n\n\nConnectivity Issues\n\n\nClients cannot connect\n\n\n\n\n(*nix) If the router is setup for a port below 1024 the router must be run with sudo or moved to a higher port.\n\n\nMake sure that the router is listening on the correct IP Address. (DO NOT USE 0.0.0.0, localhost, 127.0.0.1, etc)\n\n\nMake sure that the router port is not blocked by firewall.\n\n\nIf router is behind a gateway, make sure the port is forwarded to allow outside network connections.\n\n\nVerify that a passphrase wasn't set on the router or the clients are using the correct passphrase.\n\n\nVerify that the clients are using the correct port number to connect to the router.\n\n\nIf connecting to the router by domain name, make sure DNS is working correctly.\n\n\n\n\n\n\n\nFile transfer Issues\n\n\nThe notes are assuming that all clients are unable to perform file transfers.\n\n\n\n\nEnsure that transfer and timeout settings are at defaults. (no crazy changes or errors in configuration)\n\n\nEnsure that transfer is enabled in the router config. (\ntrue\n under action)\n\n\nEnsure that the router hasn't run out of connection sockets or bandwidth.\n\n\nCheck that any data routers added to the 'server' section are in working order.\n\n\n\n\n\n\n\nReliability Issues\n\n\nClients bouncing (Client color bounces between green and blue)\n\n\n\n\nServer could be out of entropy", 
+            "title": "Troubleshooting"
         }, 
         {
             "location": "/router/troubleshooting/#router-troubleshooting", 
-            "text": "", 
+            "text": "Setting up a Demonsaw router takes a bit more effort than starting a client. Here we'll cover troubleshooting steps that will apply to both the headless demonsaw_cli and a Demonsaw router that you started from GUI.", 
             "title": "Router Troubleshooting"
+        }, 
+        {
+            "location": "/router/troubleshooting/#issues-starting-the-router", 
+            "text": "(*nix) Make sure demonsaw_cli has execute permissions  (*nix) If the router is setup for a port below 1024, the router must be run with sudo or moved to a higher port.", 
+            "title": "Issues starting the router"
+        }, 
+        {
+            "location": "/router/troubleshooting/#connectivity-issues", 
+            "text": "", 
+            "title": "Connectivity Issues"
+        }, 
+        {
+            "location": "/router/troubleshooting/#clients-cannot-connect", 
+            "text": "(*nix) If the router is setup for a port below 1024 the router must be run with sudo or moved to a higher port.  Make sure that the router is listening on the correct IP Address. (DO NOT USE 0.0.0.0, localhost, 127.0.0.1, etc)  Make sure that the router port is not blocked by firewall.  If router is behind a gateway, make sure the port is forwarded to allow outside network connections.  Verify that a passphrase wasn't set on the router or the clients are using the correct passphrase.  Verify that the clients are using the correct port number to connect to the router.  If connecting to the router by domain name, make sure DNS is working correctly.", 
+            "title": "Clients cannot connect"
+        }, 
+        {
+            "location": "/router/troubleshooting/#file-transfer-issues", 
+            "text": "The notes are assuming that all clients are unable to perform file transfers.   Ensure that transfer and timeout settings are at defaults. (no crazy changes or errors in configuration)  Ensure that transfer is enabled in the router config. ( true  under action)  Ensure that the router hasn't run out of connection sockets or bandwidth.  Check that any data routers added to the 'server' section are in working order.", 
+            "title": "File transfer Issues"
+        }, 
+        {
+            "location": "/router/troubleshooting/#reliability-issues", 
+            "text": "", 
+            "title": "Reliability Issues"
+        }, 
+        {
+            "location": "/router/troubleshooting/#clients-bouncing-client-color-bounces-between-green-and-blue", 
+            "text": "Server could be out of entropy", 
+            "title": "Clients bouncing (Client color bounces between green and blue)"
         }, 
         {
             "location": "/resources/", 

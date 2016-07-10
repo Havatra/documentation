@@ -5,11 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        
+        <meta name="author" content="The Community">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Client - Demonsaw Guide</title>
+	<title>Troubleshooting - Demonsaw Docs</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -41,7 +41,7 @@
             </button>
 
             <!-- Main title -->
-            <a class="navbar-brand" href="../..">Demonsaw Guide</a>
+            <a class="navbar-brand" href="../..">Demonsaw Docs</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -56,37 +56,52 @@
             
             
             
-                <li >
-                    <a href="../">Client Setup</a>
-                </li>
-            
-            
-            
-                <li >
-                    <a href="../../router/">Router Setup</a>
-                </li>
-            
-            
-            
-                <li >
-                    <a href="../../headless/">Headless Setup</a>
-                </li>
-            
-            
-            
                 <li class="dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Troubleshooting <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Client Docs <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
-<li class="active">
-    <a href="./">Client</a>
+<li >
+    <a href="../">Getting Started</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../router/troubleshooting/">Router</a>
+    <a href="../headless/">Headless Setup</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">Troubleshooting</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Router Docs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../router/">Getting Started</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../router/headless/">Headless Setup</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../router/troubleshooting/">Troubleshooting</a>
 </li>
 
                     
@@ -110,13 +125,22 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../../headless/">
+                    <a rel="next" href="../headless/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../../router/troubleshooting/">
+                    <a rel="prev" href="../../router/">
                         Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/DemonsawCommunity/documentation">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
                     </a>
                 </li>
                 
@@ -131,12 +155,63 @@
     
         <li class="main active"><a href="#client-troubleshooting">Client Troubleshooting</a></li>
         
+            <li><a href="#unable-to-launching-demonsaw">Unable to launching Demonsaw</a></li>
+        
+            <li><a href="#connectivity-issues">Connectivity Issues</a></li>
+        
+            <li><a href="#crashes">Crashes</a></li>
+        
+            <li><a href="#downloadupload">Download/Upload</a></li>
+        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="client-troubleshooting">Client Troubleshooting</h1></div>
+<h1 id="client-troubleshooting">Client Troubleshooting</h1>
+<p>Setting up Demonsaw is very straight forward, but sometimes you might run into a simple problem that you overlook. Here we'll cover some of the most common problems when working with Demonsaw, from Client to Router, and aim to be mostly platform neutral.</p>
+<h2 id="unable-to-launching-demonsaw">Unable to launching Demonsaw</h2>
+<ul>
+<li>make sure that demonsaw.xml is in the same directory and has permissions to write to it.</li>
+<li>make sure you are running the correct build for your operating system.</li>
+<li>on *nix based operating system, make sure that demonsaw/demonsaw_cli has execute permissions.</li>
+</ul>
+<hr/>
+
+<h2 id="connectivity-issues">Connectivity Issues</h2>
+<h3 id="client-icon-wont-stay-green">Client icon won't stay green</h3>
+<p>This is usually a sign that your ISP is not handling sockets correctly or your internet could be suffering problems. If it is not either of these it is likely one of the below issues with the router you're connected to.</p>
+<ul>
+<li>Router is running out of entropy</li>
+<li>Too many sockets open to router (Caused by ISP)</li>
+<li>Router is having connectivity issues or DDOS</li>
+</ul>
+<h3 id="cannot-connect-to-a-router">Cannot connect to a router</h3>
+<ul>
+<li>Make sure router address and port are correct</li>
+<li>Make sure the passphrase is correct, or empty of the router has no passphrase</li>
+<li>Make sure a firewall isn't blocking outbound connections or Internet is working</li>
+<li>If Message or Transfer key/prime size is set too high it could cause a long delay in connecting to a router. If you need to set it lower you will want to also save and restart demonsaw.</li>
+</ul>
+<hr/>
+
+<h2 id="crashes">Crashes</h2>
+<p>If your client crashes when trying to save settings then Demonsaw isn't running with the permissions to save demonsaw.xml.
+For most all other crashes it would be a problem with Demonsaw, take note of what you did when the crash occured and report the error with as much detail as possible, there might already be a fix in progress.</p>
+<hr/>
+
+<h2 id="downloadupload">Download/Upload</h2>
+<h3 id="reasons-for-downloads-not-starting">Reasons for downloads not starting</h3>
+<ul>
+<li>Uploader has a full queue (you're waiting in line)</li>
+<li>Uploader is gone away (No one else has the file for it to be swarmed)</li>
+<li>The message router assigned you to a data router that is busy (you're waiting for your client to retry download from another data router)</li>
+</ul>
+<h3 id="reasons-for-uploads-not-starting">Reasons for uploads not starting</h3>
+<ul>
+<li>The data router is busy or slow</li>
+<li>The downloading client is not ready</li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">

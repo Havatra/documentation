@@ -1,0 +1,10 @@
+[demonsaw]
+	version = 0
+[[client]]
+	name = "Havatra"
+	color = 4294871296
+	shares = ["C:/Users/vm/Downloads"]
+	[[client.message]]
+		address = "127.0.0.1
+		port = 80
+

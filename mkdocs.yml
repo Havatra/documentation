@@ -1,11 +1,21 @@
-site_name: Demonsaw Guide
+site_name: Demonsaw Docs
+site_description: "Demonsaw documentation and user guides."
+site_author: 'The Community'
+repo_name: GitHub
+repo_url: https://github.com/DemonsawCommunity/documentation
+theme: cyborg
+
+extra_css:
+extra_javascript:
+
 pages:
 - Home: index.md
-- Client Setup: 'client/index.md'
-- Router Setup: 'router/index.md'
-- Headless Setup: 'headless.md'
-- Troubleshooting:
-   - 'Client': 'client/troubleshooting.md'
-   - 'Router': 'router/troubleshooting.md'
+- Client Docs: 
+   - 'Getting Started': 'client/index.md'
+   - 'Headless Setup': 'client/headless.md'
+   - 'Troubleshooting': 'client/troubleshooting.md'
+- Router Docs:
+   - 'Getting Started': 'router/index.md'
+   - 'Headless Setup': 'router/headless.md'
+   - 'Troubleshooting': 'router/troubleshooting.md'
 - Resources: resources.md
-theme: slate

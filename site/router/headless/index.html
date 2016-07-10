@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Community">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Headless Setup - Demonsaw Docs</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">Demonsaw Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Client Docs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../client/">Getting Started</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../client/headless/">Headless Setup</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../client/troubleshooting/">Troubleshooting</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Router Docs <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../">Getting Started</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">Headless Setup</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../troubleshooting/">Troubleshooting</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../resources/">Resources</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../troubleshooting/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/DemonsawCommunity/documentation">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#headless-demonsaw-router-setup">Headless Demonsaw Router Setup</a></li>
+        
+            <li><a href="#steps">Steps</a></li>
+        
+            <li><a href="#download-demonsaw">Download Demonsaw</a></li>
+        
+            <li><a href="#extract-verify">Extract &amp; Verify</a></li>
+        
+            <li><a href="#setup-your-demonsaw-config-file">Setup your demonsaw config file</a></li>
+        
+            <li><a href="#launch-test">Launch &amp; Test</a></li>
+        
+            <li><a href="#considerations">Considerations</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="headless-demonsaw-router-setup">Headless Demonsaw Router Setup</h1>
+<p>This post documents what it takes to setup a Demonsaw router on a Linux host, the process is very simple but we'll cover the thinks to look out for and things to think about when setting up a router.</p>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>Download the Demonsaw</li>
+<li>Extract the archive and verify permissions</li>
+<li>Setup your demonsaw config file</li>
+<li>Launch and test</li>
+<li>Other considerations</li>
+</ol>
+<h2 id="download-demonsaw">Download Demonsaw</h2>
+<p>Demonsaw has builds for multiple operating systems, for Linux you have the <a href="https://demonsaw.com/#debian">Debian</a> build the <a href="https://demonsaw.com/#ubuntu">Ubuntu</a> build and the <a href="https://demonsaw.com/#raspian">Raspian</a> build. Choose the version that you need for your specific Linux distro and download it.</p>
+<h2 id="extract-verify">Extract &amp; Verify</h2>
+<p>You can extract Demonsaw and run it from wherever you want. If you're running a Demonsaw router off of a headless server it's perfectly fine to put the Demonsaw folder under your home directory. On a desktop Linux Debian distro you might want to put it somewhere better, I like /opt/demonsaw/ so that is what I'll show how to do.</p>
+<pre><code>sudo mkdir /opt/demonsaw
+sudo tar xzf demonsaw.tar.gz -C /opt/demonsaw/
+</code></pre>
+<p>The above command extracts far more than you need for a headless client/router, if you want you can just extract 'demonsaw_cli' with <code>tar -zxcf demonsaw_cli</code>, this is also a good way to update demonsaw without over-writing your toml.</p>
+<p>Now you need to ensure that the permissions for the /opt/demonsaw/ folder are for your user, in the example our user is named frank.</p>
+<pre><code>sudo chown -R frank /opt/demonsaw
+</code></pre>
+<p>One more important thing to verify is that demonsaw and demonsaw_cli have execute permissions, because sometimes mistakes are made.</p>
+<pre><code>sudo chmod +x /opt/demonsaw/demonsaw_cli
+</code></pre>
+<p>You should now be able to launch demonsaw but you'll be missing the demonsaw.toml configuration, currently the demonsaw_cli will not automatically create this file because it is for a headless router.</p>
+<h2 id="setup-your-demonsaw-config-file">Setup your demonsaw config file</h2>
+<p>The easiest way to setup the demonsaw config file is to use the GUI to create the setup you want; You can do it from any operating system as the toml is basically the same, just drop the demonsaw GUI binary somewhere like your desktop and run it, add a router and change all the settings to suit your needs.</p>
+<p>If you're in a rush or don't want to fool around with the GUI, below are links to demonsaw config file examples.</p>
+<h3 id="toml-examples">toml examples</h3>
+<ul>
+<li><a href="../../examples/router-demonsaw.toml">Headless Router</a></li>
+<li><a href="../../examples/router_and_client-demonsaw.toml">Headless Router and Client</a></li>
+</ul>
+<p>With any of the above example toml files you will need to set the address to the external IP Address for the router, the Download and Share paths must be valid (it's recommended to leave a trailing slash), passphrase is left empty so you can easily fill it in if needed. And examples with groups need to be changed to match your group setup.</p>
+<h2 id="launch-test">Launch &amp; Test</h2>
+<p>At this point you should be able to launch <code>demonsaw_cli</code> from the command line, press <code>C</code> to see the status of the client/router. It will take a seconds of waiting, but it should land on success if everything worked.</p>
+<h2 id="considerations">Considerations</h2>
+<p>So you have a working Demonsaw router now, what is next? If you plan to scale and build your own private network then you still have a few things that you'll want to work on.</p>
+<h3 id="startup-scripts">Startup Scripts</h3>
+<p>You're now hosting your own Demonsaw network, you probably have it on a VPS somewhere and won't always be able to ssh in to restart demonsaw_cli should it have some issue, or you might not want to have to ssh in just to start demonsaw_cli everytime the server is rebooted; Startup scripts.
+There are a few ways to do this, I recommend using <a href="http://www.stinebaugh.info/demonsaw-startup-script-linux/">Daniel Stinebaugh's startup script</a>.</p>
+<h3 id="adding-data-routers">Adding data routers</h3>
+<p>The above toml examples are setup so that the router you setup handles the messaging, client search and browse, and the data transfers. If you've ever connected to the Demonbucket network you'll notice that you connect to Bucket1 but when you download something your download goes through another router. You can add as many data routers as you want, in Demonsaw 2.x these are just normal Demonsaw routers (you can disable messaging, search/browse, etc if you want). The easiest way to set this up is again to use the GUI and get your configuration as close as you want it, save it, then edit and move the demonsaw.toml to the router you want to use it on.</p>
+<h3 id="entropy-linux-hosts-only">Entropy (Linux hosts only)</h3>
+<p>Your Demonsaw router, even with 10 people connecting, is using more crypto than a simple https site with 10 people connected. Everything you do in Demonsaw is encrypted, and each client connecting drains a bit of entropy from the server you're running the Demonsaw router off of.
+For a Demonsaw router you will want an entropy pool size around 2500 or higher, you can check your entropy with the below command.</p>
+<pre><code>watch cat /proc/sys/kernel/random/entropy_avail
+</code></pre>
+<p>There are a few ways to boost your entropy if it is low, the easiest is to install <code>Haveged</code> or <code>rng-tools</code> or both. Below are the commands for Debian, but both tools should be available for other Linux distros. Once you install them you can check your entropy again, you should see an immediate boost.</p>
+<pre><code>sudo apt-get install haveged
+sudo apt-get install rng-tools
+</code></pre>
+<p>Keeping your entropy at a usable value will prevent your router from having handshake issues when you start to build your userbase.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
