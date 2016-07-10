@@ -287,7 +287,7 @@
         }, 
         {
             "location": "/resources/", 
-            "text": "Resources\n\n\nOfficial Resources \n Sites\n\n\n\n\nDemonsaw Website\n\n\nDemonsaw Issue Tracker\n\n\n\n\nCommunity Resources \n Sites\n\n\n\n\nDemonBucket Website\n\n\nDSRouters Website\n\n\nDemonsaw Linux Repository\n\n\nDemonsaw Themes", 
+            "text": "Resources\n\n\nOfficial Resources \n Sites\n\n\n\n\nDemonsaw Website\n\n\nDemonsaw Issue Tracker \n Feature Requests- GitHub\n\n\nDemonsaw Documentation - GitHub\n\n\nDemonsaw Themes - GitHub\n\n\n\n\nCommunity Resources \n Sites\n\n\n\n\nDemonBucket Website\n\n\nDemonsaw Linux Repository", 
             "title": "Resources"
         }, 
         {
@@ -297,12 +297,12 @@
         }, 
         {
             "location": "/resources/#official-resources-sites", 
-            "text": "Demonsaw Website  Demonsaw Issue Tracker", 
+            "text": "Demonsaw Website  Demonsaw Issue Tracker   Feature Requests- GitHub  Demonsaw Documentation - GitHub  Demonsaw Themes - GitHub", 
             "title": "Official Resources &amp; Sites"
         }, 
         {
             "location": "/resources/#community-resources-sites", 
-            "text": "DemonBucket Website  DSRouters Website  Demonsaw Linux Repository  Demonsaw Themes", 
+            "text": "DemonBucket Website  Demonsaw Linux Repository", 
             "title": "Community Resources &amp; Sites"
         }
     ]
