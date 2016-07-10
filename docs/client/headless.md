@@ -2,13 +2,6 @@
 
 This post documents what it takes to setup a Demonsaw client on a Linux host. We chose to document the setup for a Linux host because it is more common to have a headless client or router on a Linux host than on a Windows host.
 
-## Steps
-1. Download the Demonsaw
-2. Extract the archive and verify permissions
-3. Setup your demonsaw config file
-4. Launch and test
-5. Other considerations
-
 ## Download Demonsaw
 Demonsaw has builds for multiple operating systems, for Linux you have the [Debian](https://demonsaw.com/#debian) build the [Ubuntu](https://demonsaw.com/#ubuntu) build and the [Raspian](https://demonsaw.com/#raspian) build. Choose the version that you need for your specific Linux distro and download it.
 
