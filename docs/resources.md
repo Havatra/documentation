@@ -4,7 +4,6 @@
 * <a href="https://demonsaw.com/" target="_blank">Demonsaw Website</a>
 * <a href="https://github.com/DemonsawCommunity/demonsaw/issues" target="_blank">Demonsaw Issue Tracker & Feature Requests- GitHub</a>
 * <a href="https://github.com/DemonsawCommunity/documentation" target="_blank">Demonsaw Documentation - GitHub</a>
-
 * <a href="https://github.com/eijah/demoncrypt" target="_blank">Demoncrypt (Demonsaw Crypto Layer) - GitHub</a>
 
 ## Community Resources & Sites
