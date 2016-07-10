@@ -155,8 +155,6 @@
     
         <li class="main active"><a href="#headless-demonsaw-client-setup">Headless Demonsaw Client Setup</a></li>
         
-            <li><a href="#steps">Steps</a></li>
-        
             <li><a href="#download-demonsaw">Download Demonsaw</a></li>
         
             <li><a href="#extract-verify">Extract &amp; Verify</a></li>
@@ -174,14 +172,6 @@
 
 <h1 id="headless-demonsaw-client-setup">Headless Demonsaw Client Setup</h1>
 <p>This post documents what it takes to setup a Demonsaw client on a Linux host. We chose to document the setup for a Linux host because it is more common to have a headless client or router on a Linux host than on a Windows host.</p>
-<h2 id="steps">Steps</h2>
-<ol>
-<li>Download the Demonsaw</li>
-<li>Extract the archive and verify permissions</li>
-<li>Setup your demonsaw config file</li>
-<li>Launch and test</li>
-<li>Other considerations</li>
-</ol>
 <h2 id="download-demonsaw">Download Demonsaw</h2>
 <p>Demonsaw has builds for multiple operating systems, for Linux you have the <a href="https://demonsaw.com/#debian">Debian</a> build the <a href="https://demonsaw.com/#ubuntu">Ubuntu</a> build and the <a href="https://demonsaw.com/#raspian">Raspian</a> build. Choose the version that you need for your specific Linux distro and download it.</p>
 <h2 id="extract-verify">Extract &amp; Verify</h2>
@@ -207,12 +197,13 @@ sudo tar xzf demonsaw.tar.gz -C /opt/demonsaw/
 </ul>
 <p>With the above example toml file you will need to set the client name, the router to connect to, and the paths and files you would like to share.</p>
 <h2 id="launch-test">Launch &amp; Test</h2>
-<p>At this point you should be able to launch <code>demonsaw_cli</code> from the command line, press <code>C</code> to see the status of the client/client. It will take a seconds of waiting, but it should land on success if everything worked, you should see your clients connected to the router now.</p>
-<h2 id="considerations">Considerations</h2>
-<p>So you have a working Demonsaw client now, what is next? If you plan to scale and build your own private network then you still have a few things that you'll want to work on.</p>
+<p>At this point you should be able to launch <code>demonsaw_cli</code> from the command line, press <code>C</code> to see the status of the client/s. It will take a few seconds of waiting, but it should land on success if everything worked, you should see your clients connected to the router now.</p>
 <h3 id="startup-scripts">Startup Scripts</h3>
-<p>You're now hosting your own Demonsaw network, you probably have it on a VPS somewhere and won't always be able to ssh in to restart demonsaw_cli should it have some issue, or you might not want to have to ssh in just to start demonsaw_cli everytime the server is rebooted; Startup scripts.
-There are a few ways to do this, I recommend using <a href="http://www.stinebaugh.info/demonsaw-startup-script-linux/">Daniel Stinebaugh's startup script</a>.</p></div>
+<p>You're now running your own Demonsaw headless client, you probably have it on a VPS somewhere to host files and won't always be able to ssh in to restart demonsaw_cli should it have some issues, or you might not want to have to ssh in just to start demonsaw_cli everytime the server is rebooted; Startup scripts.
+There are a few ways to do this, I recommend using <a href="http://www.stinebaugh.info/demonsaw-startup-script-linux/">Daniel Stinebaugh's startup script</a>, but you can start it how ever you would like, including crontab or init scripts.</p>
+<h2 id="considerations">Considerations</h2>
+<p>So you have a working Demonsaw client now, what is next? The cli has a few options for things such as refreshing so that files added to the share are now visible to demonsaw, restart to enable changes to the client configuration, etc.</p>
+<p>If you are hosting the headless client on a VPS, you should also think about bandwidth usage as well as the security of your VPS. If your VPS is compromised then some hackers could have the credentials to monitor any secret groups that client was connected to.</p></div>
         </div>
 
         <footer class="col-md-12">
