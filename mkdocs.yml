@@ -19,3 +19,7 @@ pages:
    - 'Headless Setup': 'router/headless.md'
    - 'Troubleshooting': 'router/troubleshooting.md'
 - Resources: resources.md
+- More:
+   - 'Demonsaw 2 FAQ': 'more/FAQ2.md'
+   - 'Demonsaw 3 FAQ': 'more/FAQ3.md'
+   - 'DS 3.0 Features': 'more/DS3Features.md'
