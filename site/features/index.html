@@ -7,14 +7,14 @@
         
         <meta name="author" content="The Community">
         
-        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <link rel="shortcut icon" href="../img/favicon.ico">
 
 	<title>DS 3.0 Features - Demonsaw Docs</title>
 
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
-        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/base.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -41,7 +41,7 @@
             </button>
 
             <!-- Main title -->
-            <a class="navbar-brand" href="../..">Demonsaw Docs</a>
+            <a class="navbar-brand" href="..">Demonsaw Docs</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -51,7 +51,7 @@
             
             
                 <li >
-                    <a href="../..">Home</a>
+                    <a href="..">Home</a>
                 </li>
             
             
@@ -62,19 +62,19 @@
                     
                         
 <li >
-    <a href="../../client/">Getting Started</a>
+    <a href="../client/">Getting Started</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../client/headless/">Headless Setup</a>
+    <a href="../client/headless/">Headless Setup</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../client/troubleshooting/">Troubleshooting</a>
+    <a href="../client/troubleshooting/">Troubleshooting</a>
 </li>
 
                     
@@ -89,29 +89,23 @@
                     
                         
 <li >
-    <a href="../../router/">Getting Started</a>
+    <a href="../router/">Getting Started</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../router/headless/">Headless Setup</a>
+    <a href="../router/headless/">Headless Setup</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../router/troubleshooting/">Troubleshooting</a>
+    <a href="../router/troubleshooting/">Troubleshooting</a>
 </li>
 
                     
                     </ul>
-                </li>
-            
-            
-            
-                <li >
-                    <a href="../../resources/">Resources</a>
                 </li>
             
             
@@ -122,13 +116,13 @@
                     
                         
 <li >
-    <a href="../FAQ2/">Demonsaw 2 FAQ</a>
+    <a href="../resources/">Extra Resources</a>
 </li>
 
                     
                         
 <li >
-    <a href="../FAQ3/">Demonsaw 3 FAQ</a>
+    <a href="../FAQ/">Demonsaw FAQ</a>
 </li>
 
                     
@@ -152,7 +146,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../FAQ3/">
+                    <a rel="next" href="../FAQ/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
@@ -180,11 +174,78 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
+        <li class="main active"><a href="#demonsaw-3-features">Demonsaw 3 Features</a></li>
+        
+    
+        <li class="main "><a href="#30-features">3.0 Features</a></li>
+        
+    
+        <li class="main "><a href="#31-and-beyond">3.1 and Beyond</a></li>
+        
+    
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-</div>
+<h1 id="demonsaw-3-features">Demonsaw 3 Features</h1>
+<p>This page aims to document the known features to be released in Demonsaw 3.0 as well as some of the that are on the features request list that were planned for eventual integration with Demonsaw 3.</p>
+<hr />
+<h1 id="30-features">3.0 Features</h1>
+<ul>
+<li>
+<p>Faster networking thanks to full code re-write; making the switch to binary json, LZ4 compression, socket re-use, and multiple tunnels per socket.</p>
+</li>
+<li>
+<p>TOML configuration file (NO MORE XML!!)</p>
+</li>
+<li>
+<p>A client can now connect to multiple message routers at once.</p>
+</li>
+<li>
+<p>Clients can choose which data routers to trust or add additional data routers to use with clients they trust on the network.</p>
+</li>
+<li>
+<p>Better UI; ability to switch themes, move around UI components, and pop-out components.</p>
+</li>
+<li>
+<p>Better Linux support; no more gstreamer !!</p>
+</li>
+<li>
+<p>Clients can choose their own color, can mute themselves, and PM messages show in the public chat list with a message icon next to them so you never miss a PM.</p>
+</li>
+</ul>
+<hr />
+<h1 id="31-and-beyond">3.1 and Beyond</h1>
+<p>The below list is in no specific order, does not promise any timeline for release, and doesn't promise that the feature will be added; these are merely goals for development.</p>
+<ul>
+<li>
+<p>Two-Way file sync (#DropDropbox)</p>
+</li>
+<li>
+<p>Socks5 Proxy</p>
+</li>
+<li>
+<p>Router hops</p>
+</li>
+<li>
+<p>Video streaming (Demoncast)</p>
+</li>
+<li>
+<p>Minimize to notification area</p>
+</li>
+<li>
+<p>Router federation (Linked message routers)</p>
+</li>
+<li>
+<p>Voice over IP</p>
+</li>
+<li>
+<p>Identity system</p>
+</li>
+<li>
+<p>Offline messaging support (receive PM when you come online)</p>
+</li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
@@ -193,12 +254,12 @@
             <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
 
-        <script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script>
-        <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script>
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
             <div class="modal-dialog">

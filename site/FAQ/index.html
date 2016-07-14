@@ -7,14 +7,14 @@
         
         <meta name="author" content="The Community">
         
-        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>Demonsaw 2 FAQ - Demonsaw Docs</title>
+	<title>Demonsaw FAQ - Demonsaw Docs</title>
 
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
-        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/base.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -41,7 +41,7 @@
             </button>
 
             <!-- Main title -->
-            <a class="navbar-brand" href="../..">Demonsaw Docs</a>
+            <a class="navbar-brand" href="..">Demonsaw Docs</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -51,7 +51,7 @@
             
             
                 <li >
-                    <a href="../..">Home</a>
+                    <a href="..">Home</a>
                 </li>
             
             
@@ -62,19 +62,19 @@
                     
                         
 <li >
-    <a href="../../client/">Getting Started</a>
+    <a href="../client/">Getting Started</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../client/headless/">Headless Setup</a>
+    <a href="../client/headless/">Headless Setup</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../client/troubleshooting/">Troubleshooting</a>
+    <a href="../client/troubleshooting/">Troubleshooting</a>
 </li>
 
                     
@@ -89,29 +89,23 @@
                     
                         
 <li >
-    <a href="../../router/">Getting Started</a>
+    <a href="../router/">Getting Started</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../router/headless/">Headless Setup</a>
+    <a href="../router/headless/">Headless Setup</a>
 </li>
 
                     
                         
 <li >
-    <a href="../../router/troubleshooting/">Troubleshooting</a>
+    <a href="../router/troubleshooting/">Troubleshooting</a>
 </li>
 
                     
                     </ul>
-                </li>
-            
-            
-            
-                <li >
-                    <a href="../../resources/">Resources</a>
                 </li>
             
             
@@ -121,20 +115,20 @@
                     <ul class="dropdown-menu">
                     
                         
+<li >
+    <a href="../resources/">Extra Resources</a>
+</li>
+
+                    
+                        
 <li class="active">
-    <a href="./">Demonsaw 2 FAQ</a>
+    <a href="./">Demonsaw FAQ</a>
 </li>
 
                     
                         
 <li >
-    <a href="../FAQ3/">Demonsaw 3 FAQ</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../DS3Features/">DS 3.0 Features</a>
+    <a href="../features/">DS 3.0 Features</a>
 </li>
 
                     
@@ -152,12 +146,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../../resources/">
+                    <a rel="next" href="../resources/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../FAQ3/">
+                    <a rel="prev" href="../features/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -180,30 +174,40 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#demonsaw-2-faq">Demonsaw 2 F.A.Q.</a></li>
+        <li class="main active"><a href="#demonsaw-faq">Demonsaw F.A.Q.</a></li>
         
             <li><a href="#the-client">The Client</a></li>
         
             <li><a href="#the-router">The Router</a></li>
         
-            <li><a href="#the-network">The Network</a></li>
+            <li><a href="#the-network-demonbucket">The Network (DemonBucket)</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="demonsaw-2-faq">Demonsaw 2 F.A.Q.</h1>
-<p>We're going to break the questions down in to three catagories so you can easily find the answers you might have. If you're reading this and have a question you believe should be on here, please let us know in Demonsaw chat. </p>
-<p><i>This FAQ will only cover Demonsaw 2.x, for Demonsaw 3.x FAQ go <a href="../FAQ3/">here</a></i></p>
+<h1 id="demonsaw-faq">Demonsaw F.A.Q.</h1>
+<p>We're going to break the questions down in to three catagories so you can easily find the answers you might have. If you're reading this and have a question you believe should be on here, please let us know in Demonsaw chat.</p>
+<p><i>This FAQ will information that applies to Demonsaw 2 &amp; 3 but will be revised for the release of Demonsaw 3.0</i></p>
+<hr />
 <h2 id="the-client">The Client</h2>
 <h4 id="how-am-i-secure">How am I secure?</h4>
 <p>You get to pick the level of protection connecting to the message router under the security tab. Even connecting to the public group, you will always have at least one layer of crypto.</p>
 <h4 id="how-am-i-anonymous">How am I anonymous?</h4>
+<p>Demonsaw uses routers to handle all data and communications so that clients never have direct contact, preventing clients from identifying clients. That said, the machines running the routers can see the IP addresses, but it is very difficult to correlate a client to an IP, using a private group will prevent anyone from correlating your IP with a client on the network.</p>
 <h4 id="what-are-groups">What are groups?</h4>
+<p>Groups allow you to add layers of crypto to your connection to further protect your communications as well as isolating you from the public group; You can use groups like an especially secure channel on top of the router, where you can communicate and share privately.</p>
 <h4 id="why-dont-i-see-myself-in-browse">Why don't I see myself in browse?</h4>
+<p>This is by design. You will not see your own client in browse, your shared files in search, or your client in the message list.</p>
+<hr />
 <h2 id="the-router">The Router</h2>
-<h2 id="the-network">The Network</h2>
+<h4 id="what-role-does-the-router-play">What role does the router play?</h4>
+<p>Message routers have several settings allowing you to enable/disable public group, messaging, data transfer, search, and browse. These settings allow you to define what a router supports and how you use it. If you want you can have a message only router and attach data routers to it (like the demonbucket network).</p>
+<h4 id="what-type-of-information-does-the-router-store">What type of information does the router store?</h4>
+<p>The Demonsaw router doesn't log or save any data, and cannot save any data. It reads the configuration file, it relays messages and data across the network, but nothing is ever written to disk.</p>
+<hr />
+<h2 id="the-network-demonbucket">The Network (DemonBucket)</h2>
 <p><i>The network that Demonsaw connects to by default is a network started by Demonbucket and was fully funded and provided by Demonbucket and the community. It is to show off how you can use Demonsaw and to test how well it can scale. The below are a few questions and answers regarding this network and demonsaw networking in general.</i></p>
 <h4 id="what-is-bucket1demonbucketcom">What is bucket1.demonbucket.com?</h4>
 <p>This is a sample network created by Osteth of Demonbucket, a public example of the type of network you can create with Demonsaw.</p>
@@ -219,12 +223,12 @@
             <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
 
-        <script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script>
-        <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script>
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
             <div class="modal-dialog">

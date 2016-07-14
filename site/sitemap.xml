@@ -54,29 +54,21 @@
     
 
     
+        
     <url>
      <loc>None/resources/</loc>
      <lastmod>2016-07-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
         
     <url>
-     <loc>None/more/FAQ2/</loc>
+     <loc>None/FAQ/</loc>
      <lastmod>2016-07-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/more/FAQ3/</loc>
-     <lastmod>2016-07-13</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/more/DS3Features/</loc>
+     <loc>None/features/</loc>
      <lastmod>2016-07-13</lastmod>
      <changefreq>daily</changefreq>
     </url>

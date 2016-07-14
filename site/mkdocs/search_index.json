@@ -283,7 +283,7 @@
         {
             "location": "/resources/", 
             "text": "Resources\n\n\nOfficial Resources \n Sites\n\n\n\n\nDemonsaw Website\n\n\nDemonsaw Issue Tracker \n Feature Requests- GitHub\n\n\nDemonsaw Documentation - GitHub\n\n\nDemoncrypt (Demonsaw Crypto Layer) - GitHub\n\n\n\n\nCommunity Resources \n Sites\n\n\n\n\nDemonBucket Website\n\n\nDemonsaw Linux Repository\n\n\n\n\nTheme Resources\n\n\n\n\nDemonsaw Themes - GitHub\n\n\nQt5 Stylesheet Reference", 
-            "title": "Resources"
+            "title": "Extra Resources"
         }, 
         {
             "location": "/resources/#resources", 
@@ -306,94 +306,94 @@
             "title": "Theme Resources"
         }, 
         {
-            "location": "/more/FAQ2/", 
-            "text": "Demonsaw 2 F.A.Q.\n\n\nWe're going to break the questions down in to three catagories so you can easily find the answers you might have. If you're reading this and have a question you believe should be on here, please let us know in Demonsaw chat. \n\n\nThis FAQ will only cover Demonsaw 2.x, for Demonsaw 3.x FAQ go \nhere\n\n\nThe Client\n\n\nHow am I secure?\n\n\nYou get to pick the level of protection connecting to the message router under the security tab. Even connecting to the public group, you will always have at least one layer of crypto.\n\n\nHow am I anonymous?\n\n\nWhat are groups?\n\n\nWhy don't I see myself in browse?\n\n\nThe Router\n\n\nThe Network\n\n\nThe network that Demonsaw connects to by default is a network started by Demonbucket and was fully funded and provided by Demonbucket and the community. It is to show off how you can use Demonsaw and to test how well it can scale. The below are a few questions and answers regarding this network and demonsaw networking in general.\n\n\nWhat is bucket1.demonbucket.com?\n\n\nThis is a sample network created by Osteth of Demonbucket, a public example of the type of network you can create with Demonsaw.\n\n\nWhy are my file transfers going through different routers?\n\n\nTo scale our ability to provide high speed and high bandwidth file transfers, we have disabled transfer on the message router (bucket1.demonbucket.com) and added transfer routers to the message router.\n\n\nHow does Demonsaw determine what data router I get?\n\n\nThe message router goes through the router list in round robin, grabbing the first available data router.", 
-            "title": "Demonsaw 2 FAQ"
+            "location": "/FAQ/", 
+            "text": "Demonsaw F.A.Q.\n\n\nWe're going to break the questions down in to three catagories so you can easily find the answers you might have. If you're reading this and have a question you believe should be on here, please let us know in Demonsaw chat.\n\n\nThis FAQ will information that applies to Demonsaw 2 \n 3 but will be revised for the release of Demonsaw 3.0\n\n\n\n\nThe Client\n\n\nHow am I secure?\n\n\nYou get to pick the level of protection connecting to the message router under the security tab. Even connecting to the public group, you will always have at least one layer of crypto.\n\n\nHow am I anonymous?\n\n\nDemonsaw uses routers to handle all data and communications so that clients never have direct contact, preventing clients from identifying clients. That said, the machines running the routers can see the IP addresses, but it is very difficult to correlate a client to an IP, using a private group will prevent anyone from correlating your IP with a client on the network.\n\n\nWhat are groups?\n\n\nGroups allow you to add layers of crypto to your connection to further protect your communications as well as isolating you from the public group; You can use groups like an especially secure channel on top of the router, where you can communicate and share privately.\n\n\nWhy don't I see myself in browse?\n\n\nThis is by design. You will not see your own client in browse, your shared files in search, or your client in the message list.\n\n\n\n\nThe Router\n\n\nWhat role does the router play?\n\n\nMessage routers have several settings allowing you to enable/disable public group, messaging, data transfer, search, and browse. These settings allow you to define what a router supports and how you use it. If you want you can have a message only router and attach data routers to it (like the demonbucket network).\n\n\nWhat type of information does the router store?\n\n\nThe Demonsaw router doesn't log or save any data, and cannot save any data. It reads the configuration file, it relays messages and data across the network, but nothing is ever written to disk.\n\n\n\n\nThe Network (DemonBucket)\n\n\nThe network that Demonsaw connects to by default is a network started by Demonbucket and was fully funded and provided by Demonbucket and the community. It is to show off how you can use Demonsaw and to test how well it can scale. The below are a few questions and answers regarding this network and demonsaw networking in general.\n\n\nWhat is bucket1.demonbucket.com?\n\n\nThis is a sample network created by Osteth of Demonbucket, a public example of the type of network you can create with Demonsaw.\n\n\nWhy are my file transfers going through different routers?\n\n\nTo scale our ability to provide high speed and high bandwidth file transfers, we have disabled transfer on the message router (bucket1.demonbucket.com) and added transfer routers to the message router.\n\n\nHow does Demonsaw determine what data router I get?\n\n\nThe message router goes through the router list in round robin, grabbing the first available data router.", 
+            "title": "Demonsaw FAQ"
         }, 
         {
-            "location": "/more/FAQ2/#demonsaw-2-faq", 
-            "text": "We're going to break the questions down in to three catagories so you can easily find the answers you might have. If you're reading this and have a question you believe should be on here, please let us know in Demonsaw chat.   This FAQ will only cover Demonsaw 2.x, for Demonsaw 3.x FAQ go  here", 
-            "title": "Demonsaw 2 F.A.Q."
+            "location": "/FAQ/#demonsaw-faq", 
+            "text": "We're going to break the questions down in to three catagories so you can easily find the answers you might have. If you're reading this and have a question you believe should be on here, please let us know in Demonsaw chat.  This FAQ will information that applies to Demonsaw 2   3 but will be revised for the release of Demonsaw 3.0", 
+            "title": "Demonsaw F.A.Q."
         }, 
         {
-            "location": "/more/FAQ2/#the-client", 
+            "location": "/FAQ/#the-client", 
             "text": "", 
             "title": "The Client"
         }, 
         {
-            "location": "/more/FAQ2/#how-am-i-secure", 
+            "location": "/FAQ/#how-am-i-secure", 
             "text": "You get to pick the level of protection connecting to the message router under the security tab. Even connecting to the public group, you will always have at least one layer of crypto.", 
             "title": "How am I secure?"
         }, 
         {
-            "location": "/more/FAQ2/#how-am-i-anonymous", 
-            "text": "", 
+            "location": "/FAQ/#how-am-i-anonymous", 
+            "text": "Demonsaw uses routers to handle all data and communications so that clients never have direct contact, preventing clients from identifying clients. That said, the machines running the routers can see the IP addresses, but it is very difficult to correlate a client to an IP, using a private group will prevent anyone from correlating your IP with a client on the network.", 
             "title": "How am I anonymous?"
         }, 
         {
-            "location": "/more/FAQ2/#what-are-groups", 
-            "text": "", 
+            "location": "/FAQ/#what-are-groups", 
+            "text": "Groups allow you to add layers of crypto to your connection to further protect your communications as well as isolating you from the public group; You can use groups like an especially secure channel on top of the router, where you can communicate and share privately.", 
             "title": "What are groups?"
         }, 
         {
-            "location": "/more/FAQ2/#why-dont-i-see-myself-in-browse", 
-            "text": "", 
+            "location": "/FAQ/#why-dont-i-see-myself-in-browse", 
+            "text": "This is by design. You will not see your own client in browse, your shared files in search, or your client in the message list.", 
             "title": "Why don't I see myself in browse?"
         }, 
         {
-            "location": "/more/FAQ2/#the-router", 
+            "location": "/FAQ/#the-router", 
             "text": "", 
             "title": "The Router"
         }, 
         {
-            "location": "/more/FAQ2/#the-network", 
-            "text": "The network that Demonsaw connects to by default is a network started by Demonbucket and was fully funded and provided by Demonbucket and the community. It is to show off how you can use Demonsaw and to test how well it can scale. The below are a few questions and answers regarding this network and demonsaw networking in general.", 
-            "title": "The Network"
+            "location": "/FAQ/#what-role-does-the-router-play", 
+            "text": "Message routers have several settings allowing you to enable/disable public group, messaging, data transfer, search, and browse. These settings allow you to define what a router supports and how you use it. If you want you can have a message only router and attach data routers to it (like the demonbucket network).", 
+            "title": "What role does the router play?"
         }, 
         {
-            "location": "/more/FAQ2/#what-is-bucket1demonbucketcom", 
+            "location": "/FAQ/#what-type-of-information-does-the-router-store", 
+            "text": "The Demonsaw router doesn't log or save any data, and cannot save any data. It reads the configuration file, it relays messages and data across the network, but nothing is ever written to disk.", 
+            "title": "What type of information does the router store?"
+        }, 
+        {
+            "location": "/FAQ/#the-network-demonbucket", 
+            "text": "The network that Demonsaw connects to by default is a network started by Demonbucket and was fully funded and provided by Demonbucket and the community. It is to show off how you can use Demonsaw and to test how well it can scale. The below are a few questions and answers regarding this network and demonsaw networking in general.", 
+            "title": "The Network (DemonBucket)"
+        }, 
+        {
+            "location": "/FAQ/#what-is-bucket1demonbucketcom", 
             "text": "This is a sample network created by Osteth of Demonbucket, a public example of the type of network you can create with Demonsaw.", 
             "title": "What is bucket1.demonbucket.com?"
         }, 
         {
-            "location": "/more/FAQ2/#why-are-my-file-transfers-going-through-different-routers", 
+            "location": "/FAQ/#why-are-my-file-transfers-going-through-different-routers", 
             "text": "To scale our ability to provide high speed and high bandwidth file transfers, we have disabled transfer on the message router (bucket1.demonbucket.com) and added transfer routers to the message router.", 
             "title": "Why are my file transfers going through different routers?"
         }, 
         {
-            "location": "/more/FAQ2/#how-does-demonsaw-determine-what-data-router-i-get", 
+            "location": "/FAQ/#how-does-demonsaw-determine-what-data-router-i-get", 
             "text": "The message router goes through the router list in round robin, grabbing the first available data router.", 
             "title": "How does Demonsaw determine what data router I get?"
         }, 
         {
-            "location": "/more/FAQ3/", 
-            "text": "Demonsaw 3 F.A.Q.\n\n\nWe're going to break the questions down in to three catagories so you can easily find the answers you might have. If you're reading this and have a question you believe should be on here, please let us know in Demonsaw chat. \n\n\nThe Network\n\n\nThis is a bit of an explaination of our public network, how we have it setup and how you can scale yours.\n\n\nThe Router\n\n\nThe Client", 
-            "title": "Demonsaw 3 FAQ"
-        }, 
-        {
-            "location": "/more/FAQ3/#demonsaw-3-faq", 
-            "text": "We're going to break the questions down in to three catagories so you can easily find the answers you might have. If you're reading this and have a question you believe should be on here, please let us know in Demonsaw chat.", 
-            "title": "Demonsaw 3 F.A.Q."
-        }, 
-        {
-            "location": "/more/FAQ3/#the-network", 
-            "text": "This is a bit of an explaination of our public network, how we have it setup and how you can scale yours.", 
-            "title": "The Network"
-        }, 
-        {
-            "location": "/more/FAQ3/#the-router", 
-            "text": "", 
-            "title": "The Router"
-        }, 
-        {
-            "location": "/more/FAQ3/#the-client", 
-            "text": "", 
-            "title": "The Client"
-        }, 
-        {
-            "location": "/more/DS3Features/", 
-            "text": "", 
+            "location": "/features/", 
+            "text": "Demonsaw 3 Features\n\n\nThis page aims to document the known features to be released in Demonsaw 3.0 as well as some of the that are on the features request list that were planned for eventual integration with Demonsaw 3.\n\n\n\n\n3.0 Features\n\n\n\n\n\n\nFaster networking thanks to full code re-write; making the switch to binary json, LZ4 compression, socket re-use, and multiple tunnels per socket.\n\n\n\n\n\n\nTOML configuration file (NO MORE XML!!)\n\n\n\n\n\n\nA client can now connect to multiple message routers at once.\n\n\n\n\n\n\nClients can choose which data routers to trust or add additional data routers to use with clients they trust on the network.\n\n\n\n\n\n\nBetter UI; ability to switch themes, move around UI components, and pop-out components.\n\n\n\n\n\n\nBetter Linux support; no more gstreamer !!\n\n\n\n\n\n\nClients can choose their own color, can mute themselves, and PM messages show in the public chat list with a message icon next to them so you never miss a PM.\n\n\n\n\n\n\n\n\n3.1 and Beyond\n\n\nThe below list is in no specific order, does not promise any timeline for release, and doesn't promise that the feature will be added; these are merely goals for development.\n\n\n\n\n\n\nTwo-Way file sync (#DropDropbox)\n\n\n\n\n\n\nSocks5 Proxy\n\n\n\n\n\n\nRouter hops\n\n\n\n\n\n\nVideo streaming (Demoncast)\n\n\n\n\n\n\nMinimize to notification area\n\n\n\n\n\n\nRouter federation (Linked message routers)\n\n\n\n\n\n\nVoice over IP\n\n\n\n\n\n\nIdentity system\n\n\n\n\n\n\nOffline messaging support (receive PM when you come online)", 
             "title": "DS 3.0 Features"
+        }, 
+        {
+            "location": "/features/#demonsaw-3-features", 
+            "text": "This page aims to document the known features to be released in Demonsaw 3.0 as well as some of the that are on the features request list that were planned for eventual integration with Demonsaw 3.", 
+            "title": "Demonsaw 3 Features"
+        }, 
+        {
+            "location": "/features/#30-features", 
+            "text": "Faster networking thanks to full code re-write; making the switch to binary json, LZ4 compression, socket re-use, and multiple tunnels per socket.    TOML configuration file (NO MORE XML!!)    A client can now connect to multiple message routers at once.    Clients can choose which data routers to trust or add additional data routers to use with clients they trust on the network.    Better UI; ability to switch themes, move around UI components, and pop-out components.    Better Linux support; no more gstreamer !!    Clients can choose their own color, can mute themselves, and PM messages show in the public chat list with a message icon next to them so you never miss a PM.", 
+            "title": "3.0 Features"
+        }, 
+        {
+            "location": "/features/#31-and-beyond", 
+            "text": "The below list is in no specific order, does not promise any timeline for release, and doesn't promise that the feature will be added; these are merely goals for development.    Two-Way file sync (#DropDropbox)    Socks5 Proxy    Router hops    Video streaming (Demoncast)    Minimize to notification area    Router federation (Linked message routers)    Voice over IP    Identity system    Offline messaging support (receive PM when you come online)", 
+            "title": "3.1 and Beyond"
         }
     ]
 }
