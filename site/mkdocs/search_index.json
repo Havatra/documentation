@@ -47,7 +47,7 @@
         }, 
         {
             "location": "/client/", 
-            "text": "Getting Started\n\n\nDownload Demonsaw\n\n\nFirst thing first! You need to \ndownload Demonsaw\n!\n\n\nDemonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.\n\n\nWant an Installer?\n\n\nThe community (dekka) has provided a Linux repository for Debian and Ubuntu, and also has rpm packages for Fedora/Redhat.\n\n\nWant to learn more? Check out \nrepo.dsrouters.com\n\n\nAdd / Manage Message Routers\n\n\nManage Transfer Routers\n\n\nAdd / Create Groups\n\n\nUsing Themes", 
+            "text": "Getting Started\n\n\n\n\nDownload Demonsaw\n\n\nFirst thing first! You need to \ndownload Demonsaw\n!\n\n\nDemonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.\n\n\nWant an Installer?\n\n\nThe community (dekka) has provided a Linux repository for Debian and Ubuntu, and also has rpm packages for Fedora/Redhat.\n\n\nWant to learn more? Check out \nrepo.dsrouters.com\n\n\n\n\nManage Client Settings\n\n\nAdd a Client\n\n\nDemonsaw allows you to add as many clients as you need so that you can connect to other private groups and routers.\n\n\nTo add a client:\n\n\n\n\nClick the \n at the very top left of the demonsaw window.\n\n\nFill out the new client wizard or click cancel and set the client name and color manually from the options tab.\n\n\n\n\nEnable/Disable a client:\n\n\n\n\nSimply double-click on the client icon that you wish to enable/disable\n\n\n\n\nSharing Files\n\n\nAdd files or folders to your shares\n\n\n\n\nSelect the Message Router tab in the center of Demonsaw \n\n\n\n\n\n\nUsing Themes\n\n\nDemonsaw 3 now allows you to select, apply, and reset themes directly from the options pane. You can now save your themes wherever you'd like without having to name it demonsaw.css or put it in the root directory of your demonsaw binary. \n\n\nTo select, apply, or reset your theme:\n\n\n\n\nSelect the options tab (the gear icon)\n\n\nScroll to the bottom of the options to the theme settings\n\n\n\n\n\n\n\nManage Message Routers\n\n\nSlightly different from Demonsaw 2, you are now able to connect a single client to multiple message routers.\n\n\nAdd a message router:\n\n\n\n\nSelect the Message Router tab in the center of Demonsaw \n\n\nClick the add button \n at the top right of the Message Router pane\n\n\nFill out the connection details and click the checkbox to enable it\n\n\n\n\nEdit an existing message router:\n\n\n\n\nSimply double-click the specific setting on an existing message router that you'd like to change\n\n\nClick the lightning icon \n at the top right of the Message Router pane to apply the settings\n\n\n\n\nMessage Router Groups\n\n\n\n\nManage Transfer Routers\n\n\nA new feature added to Demonsaw 3 is way you manage transfer (data) routers. When you connect to a message router it sends you a list of the transfer routers it uses, you can find these under the transfer router tab. This allows you to uncheck transfer routers you don't trust and add transfer routers that only you and your friends know about. Additionally, you can only transfer files with individuals that have a common transfer router enabled.\n\n\nTo add a transfer router:\n\n\n\n\nSelect the Transfer Router tab in the center of Demonsaw \n\n\nClick the add button \n at the top right of the Transfer Router pane\n\n\nFill out the connection details and click the checkbox to enable it\n\n\n\n\nTo disable a transfer router:\n\n\n\n\nSimply uncheck the transfer routers you wish to disable\n\n\n\n\nTransfer Router Groups\n\n\n\n\nAdd / Create Groups\n\n\nGroups in Demonsaw allow you to add additional layers of cryptography to your connection with the Demonsaw router, as well as allowing you to have a private area for friends or trusted associates to communicate on a public router.\n\n\nTo add a group:\n\n\n\n\nSelect the Group tab from the center of Demonsaw \n\n\nClick the add button \n at the top right of the group pane\n\n\nFill out the group settings to be as secure as you want or fill them in to match an existing group.\n\n\n\n\n\nAdditionally, at the top of the group pane next to the 'group' label, your client will show a Group ID so that you can easily confirm with others that the group settings are matching.", 
             "title": "Getting Started"
         }, 
         {
@@ -66,24 +66,94 @@
             "title": "Want an Installer?"
         }, 
         {
-            "location": "/client/#add-manage-message-routers", 
+            "location": "/client/#manage-client-settings", 
             "text": "", 
-            "title": "Add / Manage Message Routers"
+            "title": "Manage Client Settings"
         }, 
         {
-            "location": "/client/#manage-transfer-routers", 
-            "text": "", 
-            "title": "Manage Transfer Routers"
+            "location": "/client/#add-a-client", 
+            "text": "Demonsaw allows you to add as many clients as you need so that you can connect to other private groups and routers.", 
+            "title": "Add a Client"
         }, 
         {
-            "location": "/client/#add-create-groups", 
+            "location": "/client/#to-add-a-client", 
+            "text": "Click the   at the very top left of the demonsaw window.  Fill out the new client wizard or click cancel and set the client name and color manually from the options tab.", 
+            "title": "To add a client:"
+        }, 
+        {
+            "location": "/client/#enabledisable-a-client", 
+            "text": "Simply double-click on the client icon that you wish to enable/disable", 
+            "title": "Enable/Disable a client:"
+        }, 
+        {
+            "location": "/client/#sharing-files", 
             "text": "", 
-            "title": "Add / Create Groups"
+            "title": "Sharing Files"
+        }, 
+        {
+            "location": "/client/#add-files-or-folders-to-your-shares", 
+            "text": "Select the Message Router tab in the center of Demonsaw", 
+            "title": "Add files or folders to your shares"
         }, 
         {
             "location": "/client/#using-themes", 
-            "text": "", 
+            "text": "Demonsaw 3 now allows you to select, apply, and reset themes directly from the options pane. You can now save your themes wherever you'd like without having to name it demonsaw.css or put it in the root directory of your demonsaw binary.", 
             "title": "Using Themes"
+        }, 
+        {
+            "location": "/client/#to-select-apply-or-reset-your-theme", 
+            "text": "Select the options tab (the gear icon)  Scroll to the bottom of the options to the theme settings", 
+            "title": "To select, apply, or reset your theme:"
+        }, 
+        {
+            "location": "/client/#manage-message-routers", 
+            "text": "Slightly different from Demonsaw 2, you are now able to connect a single client to multiple message routers.", 
+            "title": "Manage Message Routers"
+        }, 
+        {
+            "location": "/client/#add-a-message-router", 
+            "text": "Select the Message Router tab in the center of Demonsaw   Click the add button   at the top right of the Message Router pane  Fill out the connection details and click the checkbox to enable it", 
+            "title": "Add a message router:"
+        }, 
+        {
+            "location": "/client/#edit-an-existing-message-router", 
+            "text": "Simply double-click the specific setting on an existing message router that you'd like to change  Click the lightning icon   at the top right of the Message Router pane to apply the settings", 
+            "title": "Edit an existing message router:"
+        }, 
+        {
+            "location": "/client/#message-router-groups", 
+            "text": "", 
+            "title": "Message Router Groups"
+        }, 
+        {
+            "location": "/client/#manage-transfer-routers", 
+            "text": "A new feature added to Demonsaw 3 is way you manage transfer (data) routers. When you connect to a message router it sends you a list of the transfer routers it uses, you can find these under the transfer router tab. This allows you to uncheck transfer routers you don't trust and add transfer routers that only you and your friends know about. Additionally, you can only transfer files with individuals that have a common transfer router enabled.", 
+            "title": "Manage Transfer Routers"
+        }, 
+        {
+            "location": "/client/#to-add-a-transfer-router", 
+            "text": "Select the Transfer Router tab in the center of Demonsaw   Click the add button   at the top right of the Transfer Router pane  Fill out the connection details and click the checkbox to enable it", 
+            "title": "To add a transfer router:"
+        }, 
+        {
+            "location": "/client/#to-disable-a-transfer-router", 
+            "text": "Simply uncheck the transfer routers you wish to disable", 
+            "title": "To disable a transfer router:"
+        }, 
+        {
+            "location": "/client/#transfer-router-groups", 
+            "text": "", 
+            "title": "Transfer Router Groups"
+        }, 
+        {
+            "location": "/client/#add-create-groups", 
+            "text": "Groups in Demonsaw allow you to add additional layers of cryptography to your connection with the Demonsaw router, as well as allowing you to have a private area for friends or trusted associates to communicate on a public router.", 
+            "title": "Add / Create Groups"
+        }, 
+        {
+            "location": "/client/#to-add-a-group", 
+            "text": "Select the Group tab from the center of Demonsaw   Click the add button   at the top right of the group pane  Fill out the group settings to be as secure as you want or fill them in to match an existing group.   Additionally, at the top of the group pane next to the 'group' label, your client will show a Group ID so that you can easily confirm with others that the group settings are matching.", 
+            "title": "To add a group:"
         }, 
         {
             "location": "/client/headless/", 
