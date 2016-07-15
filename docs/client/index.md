@@ -20,7 +20,6 @@ Want to learn more? Check out <a href="https://repo.dsrouters.com/" target="_bla
 
 ## Manage Client Settings
 ### Add a Client
-
 Demonsaw allows you to add as many clients as you need so that you can connect to other private groups and routers.
 
 
@@ -37,7 +36,24 @@ Demonsaw allows you to add as many clients as you need so that you can connect t
 #### Add files or folders to your shares
 
 * Select the Message Router tab in the center of Demonsaw ![Message Router tab](../img/screenshots/messagebutton.png)
-* 
+* Click the add button ![+](../img/screenshots/addbutton.png) at the top right of the Shares pane
+* Select a file or folder to share (repeat as needed)
+* Press the lightning icon ![Lightning button](../img/screenshots/lightningbutton.png) at the top right of the Shares pane to apply the settings
+
+
+### Add / Create Groups
+Groups in Demonsaw allow you to add additional layers of cryptography to your connection with the Demonsaw router, as well as allowing you to have a private area for friends or trusted associates to communicate on a public router.
+
+####To add a group:
+
+* Select the Group tab from the center of Demonsaw ![group tab](../img/screenshots/groupbutton.png)
+* Click the add button ![+](../img/screenshots/addbutton.png) at the top right of the group pane
+* Fill out the group settings to be as secure as you want or fill them in to match an existing group.
+![+](../img/screenshots/GroupSettings.png)
+
+Additionally, at the top of the group pane next to the 'group' label, your client will show a Group ID so that you can easily confirm with others that the group settings are matching.
+
+![+](../img/screenshots/GroupSettings2.png)
 
 ### Using Themes
 
@@ -72,10 +88,14 @@ Slightly different from Demonsaw 2, you are now able to connect a single client 
 
 
 ### Message Router Groups
+Another new addition to Demonsaw 3 is the ability to add additional cryptographic layers to the communication between routers with the use of router groups, these groups can also be used in place of router passphrases to prevent access to unauthorized routers and individuals.
 
+#### Add a message router group:
 
-
-
+ * Select the Message Router tab in the center of Demonsaw ![Message Router tab](../img/screenshots/messagebutton.png)
+* Select a router from the <b>Message Router section</b> then click the add button ![+](../img/screenshots/addbutton.png) at the top right of the <b>Message Router Group</b> pane
+* Fill out the group settings to be as secure as you want or fill them in to match an existing group.
+* Click the lightning icon ![Lightning button](../img/screenshots/lightningbutton.png) at the top right of the <b>Message Router Group</b> section to apply the settings
 
 ---
 
@@ -95,25 +115,11 @@ A new feature added to Demonsaw 3 is way you manage transfer (data) routers. Whe
 
 
 ### Transfer Router Groups
+Another new addition to Demonsaw 3 is the ability to add additional cryptographic layers to the communication between routers with the use of router groups, these groups can also be used in place of router passphrases to prevent access to unauthorized routers and individuals.
 
+#### Add a transfer router group:
 
-
-
-
----
-
-## Add / Create Groups
-
-Groups in Demonsaw allow you to add additional layers of cryptography to your connection with the Demonsaw router, as well as allowing you to have a private area for friends or trusted associates to communicate on a public router.
-
-####To add a group:
-
-* Select the Group tab from the center of Demonsaw ![group tab](../img/screenshots/groupbutton.png)
-* Click the add button ![+](../img/screenshots/addbutton.png) at the top right of the group pane
+ * Select the Transfer Router tab in the center of Demonsaw ![Message Router tab](../img/screenshots/transferbutton.png)
+* Select a router from the <b>Transfer Router section</b> then click the add button ![+](../img/screenshots/addbutton.png) at the top right of the <b>Transfer Router Group</b> pane
 * Fill out the group settings to be as secure as you want or fill them in to match an existing group.
-![+](../img/screenshots/GroupSettings.png)
-
-
-Additionally, at the top of the group pane next to the 'group' label, your client will show a Group ID so that you can easily confirm with others that the group settings are matching.
-
-![+](../img/screenshots/GroupSettings2.png)
+* Click the lightning icon ![Lightning button](../img/screenshots/lightningbutton.png) at the top right of the <b>Transfer Router Group</b> section to apply the settings
