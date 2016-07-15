@@ -1,0 +1,23 @@
+/* CMYK DEMONSAW COLOR 4CBB81
+   WEBSAFE #33CC99
+*/
+a {
+    color: #33CC99;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #33CC99;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:active {
+    color: #33CC99;
+    text-decoration: none;
+}
+
