@@ -41,7 +41,15 @@ TL;DR;
 * You specify the security of the crypto handshake, you control your level of protection.
 * At minimum, your communication is wrapped in two layers of crypto.
 
-<p style="color:red;font-weight:bold;">More details are needed from Eijah</p>
+<!-- <p style="color:red;font-weight:bold;">More details are needed from Eijah</p> -->
+Demonsaw allows you to choose your own level of security through cryptography, both through the first handshake with a router and through the use of groups setup with social cryptography. Demonsaw uses Diffie–Hellman key exchange to connect securely, but allows you to define the prime size, cipher, key size, hash type, salt, and how many iterations.
+
+![router handshake settings](../img/screenshots/routerhandshake.png)
+
+On top of the encrypted connection to a Demonsaw router, a second layer is added for the public group.
+
+If you want to connect to a public router but be hidden from the public group, you can add crypto layers through the additions of groups. Unlike the router crypto settings, you also get to define a file or passphrase as the source of entropy, allowing for extra secure cryptographic layers. Additionally, you can add as many layers as you want.
+![group settings](../img/screenshots/GroupSettings2.png)
 
 
 ## The Network
