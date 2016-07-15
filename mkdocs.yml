@@ -6,6 +6,7 @@ repo_url: https://github.com/DemonsawCommunity/documentation
 theme: cyborg
 
 extra_css:
+   - css/changes.css
 extra_javascript:
 
 pages:
