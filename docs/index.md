@@ -52,7 +52,7 @@ If you want to connect to a public router but be hidden from the public group, y
 ![group settings](../img/screenshots/GroupSettings2.png)
 
 
-## The Network
+## Demonsaw Overview (Slides)
 
 <script async class="speakerdeck-embed" data-id="9b96353422ec4dc988a6e0f26c28c437" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 <!--
