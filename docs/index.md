@@ -54,5 +54,8 @@ If you want to connect to a public router but be hidden from the public group, y
 
 ## The Network
 
+<script async class="speakerdeck-embed" data-id="9b96353422ec4dc988a6e0f26c28c437" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+<!--
 <iframe width="100%" height="480px" frameborder="no" scrolling="no" class="embed-responsive embed-responsive-16by9" src="net-diagram.html" style="background-color:transparent;border:0;"></iframe>
+-->
 
