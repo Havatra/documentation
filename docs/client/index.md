@@ -50,6 +50,8 @@ Demonsaw 3 now allows you to select, apply, and reset themes directly from the o
 
 
 ### Searching for Files
+There are two ways to perform a search. Clicking the ![Search Button](../img/screenshots/SearchButton.png) at the top of Demonsaw, or at the top of the Browse tab is a search bar.
+
 The search in Demonsaw 3 is very basic. If you'd like to search for Van Halen and only want .mp3 files then you will search for "Van Halen mp3" in quotes.
 
 Searches are also ordered based of the accuracy of the results + the highest shared/swarmed files. This is called the search "weight" and is represented graphically with cicles on the left side of the results.

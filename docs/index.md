@@ -4,7 +4,9 @@
 
 Demonsaw is a secure and anonymous information sharing application that makes security simple and gives you back control of your data. Demonsaw provides you with a way to create your own network or join a public Demonsaw network so that you can share and communicate securely.
 
-*<p style="color:#33CC99;">Demonsaw 2 and Demonsaw 3 are not compatible with each other, they connect to competely different networks.</p>*
+<p style="color:#33CC99;">Demonsaw 2 and Demonsaw 3 are not compatible with each other, they connect to competely different networks.</p>
+
+If you don't find answers here, try the [F.A.Q.](https://docs.demonsaw.com/FAQ/)
 
 ## Getting Started
 
