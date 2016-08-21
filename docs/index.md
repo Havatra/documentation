@@ -33,6 +33,12 @@ If you were to sniff your local traffic and peer into the Demonsaw communication
 In essence, Demonsaw clients and routers are both behaving as both an HTTP server and a client, allowing them to send messages and data back and forth all while looking like normal web traffic.
 
 
+### Downloads
+Another big change in Demonsaw 3 is the way downloads are performed. Below is a list of the changes.
+
+* File sharding; file transfers are broken into chunks and transferred across multiple data routers instead of just one.
+* Multi-threaded file transfer; acts as a method for throttling transfer but allows you to use all your upload bandwidth.
+
 
 ### Crypto
 

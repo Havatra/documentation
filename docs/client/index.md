@@ -1,24 +1,7 @@
-# Getting Started
----
-## Download Demonsaw
-
-First thing first! You need to <a href="https://demonsaw.com/" target="_blank">download Demonsaw</a>!
-
-Demonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.
-
-#### Want an Installer?
-
-The community (dekka) has provided a Linux repository for Debian and Ubuntu, and also has rpm packages for Fedora/Redhat.
-
-Want to learn more? Check out <a href="https://repo.dsrouters.com/" target="_blank">repo.dsrouters.com</a>
-
-
-
-
-
+# Client Documentation
 ---
 
-## Manage Client Settings
+## Manage Demonsaw Clients
 ### Add a Client
 Demonsaw allows you to add as many clients as you need so that you can connect to other private groups and routers.
 
@@ -38,7 +21,7 @@ Demonsaw allows you to add as many clients as you need so that you can connect t
 * Select the Message Router tab in the center of Demonsaw ![Message Router tab](../img/screenshots/messagebutton.png)
 * Click the add button ![+](../img/screenshots/addbutton.png) at the top right of the Shares pane
 * Select a file or folder to share (repeat as needed)
-* Press the lightning icon ![Lightning button](../img/screenshots/lightningbutton.png) at the top right of the Shares pane to apply the settings
+* Press the refresh button at the top left of demonsaw or right-click your client and choose "refresh" so that your shares are visible to others.
 
 
 ### Add / Create Groups
@@ -66,14 +49,18 @@ Demonsaw 3 now allows you to select, apply, and reset themes directly from the o
 ![Theme Settings](../img/screenshots/ThemeSettings.png)
 
 
+### Searching for Files
+The search in Demonsaw 3 is very basic. If you'd like to search for Van Halen and only want .mp3 files then you will search for "Van Halen mp3" in quotes.
 
+Searches are also ordered based of the accuracy of the results + the highest shared/swarmed files. This is called the search "weight" and is represented graphically with cicles on the left side of the results.
 
+![Search Bubbles](../img/screenshots/SearchBubbles.png)
 
 ---
 
 ## Manage Message Routers
  
-Slightly different from Demonsaw 2, you are now able to connect a single client to multiple message routers.
+Slightly different from Demonsaw 2, you are now able to add multiple message routers into Demonsaw but you can only select one at a time. When you create a new client with the wizard the public Demonsaw router will be added for you.
 
 ####Add a message router:
 
