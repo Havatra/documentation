@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Demonsaw 3.0 Interactive Tutorial</title>
+  <style>
+    input[type=radio], img, .info{display:none}
+    img{z-index:0}
+    label{z-index:1}
+    .main{position:absolute;top:128px;left:173px}
+    .bottom{position:absolute;top:477px;left:173px}
+    
+    #toggleBrowse:checked ~ #browse, #toggleBrowse:checked ~ #browseInfo,
+    #toggleMessage:checked ~ #message, #toggleMessage:checked ~ #messageInfo,
+    #toggleChat:checked ~ #chat, #toggleChat:checked ~ #chatInfo,
+    #toggleGroup:checked ~ #group, #toggleGroup:checked ~ #groupInfo,
+    #toggleTransferRouter:checked ~ #transferRouter, #toggleTransferRouter:checked ~ #transferRouterInfo,
+    #toggleMessageRouter:checked ~ #messageRouter, #toggleMessageRouter:checked ~ #messageRouterInfo,
+    #toggleShare:checked ~ #share, #toggleShare:checked ~ #shareInfo,
+    #toggleOptions:checked ~ #options, #toggleOptions:checked ~ #optionsInfo,
+    #toggleSearch:checked ~ #search, #toggleSearch:checked ~ #searchInfo,
+    #toggleDownload:checked ~ #download, #toggleDownload:checked ~ #downloadInfo,
+    #toggleUpload:checked ~ #upload, #toggleUpload:checked ~ #uploadInfo,
+    #toggleError:checked ~ #error, #toggleError:checked ~ #errorInfo
+    {display:block}
+  </style>
+</head>
+<body>
+  <img src="img/ia/ia-back.jpg" width="1122" height="682" usemap="#ia-image" style="position:static;z-index:-1;display:block" />
+  <div>
+    <input type="radio" checked="true" name="hotbar" id="toggleChat"></input>
+    <img class="main" id="chat" src="img/ia/ia-chat.jpg" width="956" height="348" />
+    <label for="toggleChat" style="width:24px;height:24px;position:absolute;top:451px;left:178px"></label>
+    <input type="radio" name="hotbar" id="toggleBrowse"></input>
+    <img class="main" id="browse" src="img/ia/ia-browse.jpg" width="956" height="348" />
+    <label for="toggleBrowse" style="width:24px;height:24px;position:absolute;top:451px;left:203px"></label>
+    <input type="radio" name="hotbar" id="toggleGroup"></input>
+    <img class="main" id="group" src="img/ia/ia-group.jpg" width="956" height="348" />
+    <label for="toggleGroup" style="width:24px;height:24px;position:absolute;top:451px;left:230px"></label>
+    <input type="radio" name="hotbar" id="toggleMessageRouter"></input>
+    <img class="main" id="messageRouter" src="img/ia/ia-messagerouter.jpg" width="956" height="348" />
+    <label for="toggleMessageRouter" style="width:24px;height:24px;position:absolute;top:451px;left:258px"></label>
+    <input type="radio" name="hotbar" id="toggleTransferRouter"></input>
+    <img class="main" id="transferRouter" src="img/ia/ia-transferrouter.jpg" width="956" height="348" />
+    <label for="toggleTransferRouter" style="width:24px;height:24px;position:absolute;top:451px;left:286px"></label>
+    <input type="radio" name="hotbar" id="toggleShare"></input>
+    <img class="main" id="share" src="img/ia/ia-share.jpg" width="956" height="348" />
+    <label for="toggleShare" style="width:24px;height:24px;position:absolute;top:451px;left:315px"></label>
+    <input type="radio" name="hotbar" id="toggleOptions"></input>
+    <img class="main" id="options" src="img/ia/ia-options.jpg" width="956" height="348" />
+    <label for="toggleOptions" style="width:24px;height:24px;position:absolute;top:451px;left:342px"></label>
+    <input type="radio" name="hotbar" id="toggleSearch"></input>
+    <img class="main" id="search" src="img/ia/ia-search.jpg" width="956" height="348" />
+    <label for="toggleSearch" style="width:24px;height:24px;position:absolute;top:451px;left:369px"></label>
+    <input type="radio" name="hotbar" id="toggleMessage"></input>
+    <img class="main" id="message" src="img/ia/ia-message.jpg" width="956" height="348" />
+    <label for="toggleMessage" style="width:24px;height:24px;position:absolute;top:451px;left:399px"></label>
+    <input type="radio" name="hotbar2" id="toggleDownload"></input>
+    <img class="bottom" id="download" src="img/ia/ia-download.jpg" width="955" height="187" />
+    <label for="toggleDownload" style="width:24px;height:24px;position:absolute;top:640px;left:174px"></label>
+    <input type="radio" name="hotbar2" id="toggleUpload"></input>
+    <img class="bottom" id="upload" src="img/ia/ia-upload.jpg" width="955" height="187" />
+    <label for="toggleUpload" style="width:24px;height:24px;position:absolute;top:640px;left:201px"></label>
+    <input type="radio" name="hotbar2" id="toggleError"></input>
+    <img class="bottom" id="error" src="img/ia/ia-error.jpg" width="955" height="187" />
+    <label for="toggleError" style="width:24px;height:24px;position:absolute;top:640px;left:229px"></label>
+    <div class="info" id="chatInfo">
+      <h2>Chat</h2>
+      <p>Here you can chat with other clients that are connected to the same router(s) and in the same group as you.</p>
+      <p>You can locally mute other clients in the chat by right clicking them either in the Chat window or the Clients window, and pressing "Mute". You will now not receive messages from the client(s) you've muted, until you've unmuted them using the same method. Note that the client(s) you've muted can still receive your messages.</p>
+    </div>
+    <div class="info" id="browseInfo">
+      <h2>Browse</h2>
+      <p>This is the Browse window. Here you can see what other clients on the same router(s) and group as you share. Only clients who share something will appear here. You can download anything by either double-clicking it, or right clicking and pressing "Download".</p>
+    </div>
+    <div class="info" id="groupInfo">
+      <h2>Group</h2>
+      <p>To make a group, you use social crypto by adding layer(s) of encryption in this window. All transfers are encrypted using the layer(s) specified. Note that when you add layer(s), you'll put yourself in a "group" with only clients who have the exact same layers specified. You can remove layers by marking the layer, and pressing the minus button in the top right of the window.</p>
+      <p>If no layers are present, you'll be put in the default/public group, with default encryption.</p>
+    </div>
+    <div class="info" id="messageRouterInfo">
+      <h2>Message Router</h2>
+      <p>Here you can add message routers you want to connect to. Message routers can specify transfer routers to automatically connect to.</p>
+    </div>
+    <div class="info" id="transferRouterInfo">
+      <h2>Transfer Router</h2>
+      <p>This is where you add transfer routers.</p>
+    </div>
+    <div class="info" id="shareInfo">
+      <h2>Share</h2>
+      <p>To share your stuff, you'll have to add folders here by pressing the plus button in the top right of this window. After selecting your folder(s), your client will automatically refresh, and other clients should now be able to browse and download your stuff.</p>
+    </div>
+    <div class="info" id="optionsInfo">
+      <h2>Options</h2>
+      <p>This is where you change all your options in your client. All your settings will be saved in your local folder where the demonsaw application is saved. The file will be called "demonsaw.toml".</p>
+      <p>Click on a setting to get a detailed description.</p>
+    </div>
+    <div class="info" id="searchInfo">
+      <h2>Search</h2>
+      <p>If you need to search for a specific file, this is where you do it.</p>
+      <p>To search for an exact string, enclose your text in quotes, like this: <code>"my public SSH key"</code></p>
+    </div>
+    <div class="info" id="messageInfo">
+      <h2>Message</h2>
+      <p>This is the Message window. This is where you can send private messages (PMs) to other clients on the same router(s) and group as you. Note that only you and the other client can see these messages, and are encrypted equally with all the other messages sent through demonsaw.</p>
+    </div>
+    <div class="info" id="downloadInfo">
+      <h2>Download</h2>
+      <p>This is your downlaod window. This is where all your downloads will appear, both active and finished. You can right click on any or several items in this list to get more options on what to do with your downloaded items.</p>
+    </div>
+    <div class="info" id="uploadInfo">
+      <h2>Upload</h2>
+      <p>This is your upload window. This is where all your uploads will appear, both active and finished. You can right click on any or several items in this list to get more options on what to do with your uploaded items.</p>
+    </div>
+    <div class="info" id="errorInfo">
+      <h2>Errors</h2>
+      <p>This is your Errors window. Here all your errors and warnings will appear, if demonsaw would somehow stop working properly. You can find a list of all known errors (and maybe how to fix them) on <a href="errors" target="_blank">this page</a>.</p>
+      <p>Please report any errors to <a href="mailto:eijah@demonsaw.com" target="_blank">Eijah</a>, or our <a href="https://www.github.com/demonsaw/demonsaw" target="_blank">Github</a>, thank you.</p>
+    </div>
+  </div>
+</body>
+</html>
