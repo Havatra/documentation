@@ -2,7 +2,7 @@ site_name: Demonsaw Docs
 site_description: "Demonsaw documentation and user guides."
 site_author: 'The Community'
 repo_name: GitHub
-repo_url: https://github.com/DemonsawCommunity/documentation
+repo_url: https://github.com/demonsaw/documentation
 theme: cyborg
 
 extra_css:
