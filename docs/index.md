@@ -11,12 +11,6 @@ First thing first! You need to [download Demonsaw](https://demonsaw.com/)!
 
 Demonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.
 
-#### Want an Installer?
-
-The community (dekka) has provided a Linux repository for Debian and Ubuntu, and also has rpm packages for Fedora/Redhat.
-
-Want to learn more? Check out [repo.dsrouters.com](https://repo.dsrouters.com/)
-
 ## How it Works
 
 This section will be a rough overview of how Demonsaw works, how it is designed to protect you, and will hopefully take some of the confusion out of the network.
