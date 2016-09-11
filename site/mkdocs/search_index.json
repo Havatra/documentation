@@ -358,7 +358,7 @@
         {
             "location": "/resources/", 
             "text": "Resources\n\n\nOfficial Resources \n Sites\n\n\n\n\nDemonsaw Website\n\n\nDemonsaw Issue Tracker \n Feature Requests- GitHub\n\n\nDemonsaw Documentation - GitHub\n\n\nDemoncrypt (Demonsaw Crypto Layer) - GitHub\n\n\n\n\nTheme Resources\n\n\n\n\nQt5 Stylesheet Reference", 
-            "title": "Extra Resources"
+            "title": "Links & Resources"
         }, 
         {
             "location": "/resources/#resources", 
@@ -378,7 +378,7 @@
         {
             "location": "/FAQ/", 
             "text": "Demonsaw F.A.Q.\n\n\nWe're going to break the questions down in to three catagories so you can easily find the answers you might have. If you're reading this and have a question you believe should be on here, please let us know in Demonsaw chat.\n\n\nThis FAQ will information that applies to Demonsaw 2 \n 3 but will be revised for the release of Demonsaw 3.0\n\n\n\n\nThe Client\n\n\nHow am I secure?\n\n\nYou get to pick the level of protection connecting to the message router under the security tab. Even connecting to the public group, you will always have at least one layer of crypto.\n\n\nHow am I anonymous?\n\n\nDemonsaw uses routers to handle all data and communications so that clients never have direct contact, preventing clients from identifying clients. That said, the machines running the routers can see the IP addresses, but it is very difficult to correlate a client to an IP, using a private group will prevent anyone from correlating your IP with a client on the network.\n\n\nWhat are groups?\n\n\nGroups allow you to add layers of crypto to your connection to further protect your communications as well as isolating you from the public group; You can use groups like an especially secure channel on top of the router, where you can communicate and share privately.\n\n\nWhy don't I see myself in browse?\n\n\nThis is by design. You will not see your own client in browse, your shared files in search, or your client in the message list.\n\n\n\n\nThe Router\n\n\nWhat role does the router play?\n\n\nMessage routers have several settings allowing you to enable/disable public group, messaging, data transfer, search, and browse. These settings allow you to define what a router supports and how you use it. If you want you can have a message only router and attach data routers to it (like the demonbucket network).\n\n\nWhat type of information does the router store?\n\n\nThe Demonsaw router doesn't log or save any data, and cannot save any data. It reads the configuration file, it relays messages and data across the network, but nothing is ever written to disk.\n\n\n\n\nThe Network (DemonBucket)\n\n\nThe network that Demonsaw connects to by default is a network started by Demonbucket and was fully funded and provided by Demonbucket and the community. It is to show off how you can use Demonsaw and to test how well it can scale. The below are a few questions and answers regarding this network and demonsaw networking in general.\n\n\nWhat is bucket1.demonbucket.com?\n\n\nThis is a sample network created by Osteth of Demonbucket, a public example of the type of network you can create with Demonsaw.\n\n\nWhy are my file transfers going through different routers?\n\n\nTo scale our ability to provide high speed and high bandwidth file transfers, we have disabled transfer on the message router (bucket1.demonbucket.com) and added transfer routers to the message router.\n\n\nHow does Demonsaw determine what data router I get?\n\n\nThe message router goes through the router list in round robin, grabbing the first available data router.", 
-            "title": "Demonsaw FAQ"
+            "title": "Demonsaw FAQs"
         }, 
         {
             "location": "/FAQ/#demonsaw-faq", 
@@ -446,24 +446,34 @@
             "title": "How does Demonsaw determine what data router I get?"
         }, 
         {
-            "location": "/features/", 
-            "text": "Demonsaw 3 Features\n\n\nThis page aims to document the known features to be released in Demonsaw 3.0 as well as some of the that are on the features request list that were planned for eventual integration with Demonsaw 3.\n\n\n\n\n3.0 Features\n\n\n\n\n\n\nFaster networking thanks to full code re-write; making the switch to binary json, LZ4 compression, socket re-use, and multiple tunnels per socket.\n\n\n\n\n\n\nTOML configuration file (NO MORE XML!!)\n\n\n\n\n\n\nA client can now connect to multiple message routers at once.\n\n\n\n\n\n\nClients can choose which data routers to trust or add additional data routers to use with clients they trust on the network.\n\n\n\n\n\n\nBetter UI; ability to switch themes, move around UI components, and pop-out components.\n\n\n\n\n\n\nBetter Linux support; no more gstreamer !!\n\n\n\n\n\n\nClients can choose their own color, can mute themselves, and PM messages show in the public chat list with a message icon next to them so you never miss a PM.\n\n\n\n\n\n\n\n\n3.1 and Beyond\n\n\nThe below list is in no specific order, does not promise any timeline for release, and doesn't promise that the feature will be added; these are merely goals for development.\n\n\n\n\n\n\nTwo-Way file sync (#DropDropbox)\n\n\n\n\n\n\nSocks5 Proxy\n\n\n\n\n\n\nRouter hops\n\n\n\n\n\n\nVideo streaming (Demoncast)\n\n\n\n\n\n\nMinimize to notification area\n\n\n\n\n\n\nRouter federation (Linked message routers)\n\n\n\n\n\n\nVoice over IP\n\n\n\n\n\n\nIdentity system\n\n\n\n\n\n\nOffline messaging support (receive PM when you come online)", 
-            "title": "DS 3.0 Features"
+            "location": "/roadmap/", 
+            "text": "Demonsaw Roadmap\n\n\nThe below is a rough roadmap for Demonsaw features. There is no guarantee of timeline, release date, or that a feature will drop with the version listed below. This roadmap will change throughout development and as community needs change.\n\n\nDemonsaw 3.1.0\n\n\n\n\nFolder download\n\n\nDownload/Upload Queue\n\n\n\n\nDemonsaw 3.2.0\n\n\n\n\nAudio notifications\n\n\n\n\nDemonsaw 4\n\n\n\n\nTwo-way file sync\n\n\nVOIP\n\n\n\n\nOther items with unknown placement on the roadmap\n\n\nThese items will be moved into the correct roadmap location as development progresses\n\n\n\n\nMinimize to tray\n\n\nSaving transfer router state\n\n\nGroup MOTD\n\n\nncurses/cli build with full cli UI including chat\n\n\nFolder search\n\n\nBandwidth/Rate limiting", 
+            "title": "Roadmap"
         }, 
         {
-            "location": "/features/#demonsaw-3-features", 
-            "text": "This page aims to document the known features to be released in Demonsaw 3.0 as well as some of the that are on the features request list that were planned for eventual integration with Demonsaw 3.", 
-            "title": "Demonsaw 3 Features"
+            "location": "/roadmap/#demonsaw-roadmap", 
+            "text": "The below is a rough roadmap for Demonsaw features. There is no guarantee of timeline, release date, or that a feature will drop with the version listed below. This roadmap will change throughout development and as community needs change.", 
+            "title": "Demonsaw Roadmap"
         }, 
         {
-            "location": "/features/#30-features", 
-            "text": "Faster networking thanks to full code re-write; making the switch to binary json, LZ4 compression, socket re-use, and multiple tunnels per socket.    TOML configuration file (NO MORE XML!!)    A client can now connect to multiple message routers at once.    Clients can choose which data routers to trust or add additional data routers to use with clients they trust on the network.    Better UI; ability to switch themes, move around UI components, and pop-out components.    Better Linux support; no more gstreamer !!    Clients can choose their own color, can mute themselves, and PM messages show in the public chat list with a message icon next to them so you never miss a PM.", 
-            "title": "3.0 Features"
+            "location": "/roadmap/#demonsaw-310", 
+            "text": "Folder download  Download/Upload Queue", 
+            "title": "Demonsaw 3.1.0"
         }, 
         {
-            "location": "/features/#31-and-beyond", 
-            "text": "The below list is in no specific order, does not promise any timeline for release, and doesn't promise that the feature will be added; these are merely goals for development.    Two-Way file sync (#DropDropbox)    Socks5 Proxy    Router hops    Video streaming (Demoncast)    Minimize to notification area    Router federation (Linked message routers)    Voice over IP    Identity system    Offline messaging support (receive PM when you come online)", 
-            "title": "3.1 and Beyond"
+            "location": "/roadmap/#demonsaw-320", 
+            "text": "Audio notifications", 
+            "title": "Demonsaw 3.2.0"
+        }, 
+        {
+            "location": "/roadmap/#demonsaw-4", 
+            "text": "Two-way file sync  VOIP", 
+            "title": "Demonsaw 4"
+        }, 
+        {
+            "location": "/roadmap/#other-items-with-unknown-placement-on-the-roadmap", 
+            "text": "These items will be moved into the correct roadmap location as development progresses   Minimize to tray  Saving transfer router state  Group MOTD  ncurses/cli build with full cli UI including chat  Folder search  Bandwidth/Rate limiting", 
+            "title": "Other items with unknown placement on the roadmap"
         }
     ]
 }
