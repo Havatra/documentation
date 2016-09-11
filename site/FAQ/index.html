@@ -181,7 +181,7 @@
         
             <li><a href="#the-router">The Router</a></li>
         
-            <li><a href="#the-network-demonbucket">The Network (DemonBucket)</a></li>
+            <li><a href="#the-network-official-public-router">The Network (Official Public Router)</a></li>
         
     
     </ul>
@@ -190,7 +190,6 @@
 
 <h1 id="demonsaw-faq">Demonsaw F.A.Q.</h1>
 <p>We're going to break the questions down in to three catagories so you can easily find the answers you might have. If you're reading this and have a question you believe should be on here, please let us know in Demonsaw chat.</p>
-<p><i>This FAQ will information that applies to Demonsaw 2 &amp; 3 but will be revised for the release of Demonsaw 3.0</i></p>
 <hr />
 <h2 id="the-client">The Client</h2>
 <h4 id="how-am-i-secure">How am I secure?</h4>
@@ -208,14 +207,14 @@
 <h4 id="what-type-of-information-does-the-router-store">What type of information does the router store?</h4>
 <p>The Demonsaw router doesn't log or save any data, and cannot save any data. It reads the configuration file, it relays messages and data across the network, but nothing is ever written to disk.</p>
 <hr />
-<h2 id="the-network-demonbucket">The Network (DemonBucket)</h2>
-<p><i>The network that Demonsaw connects to by default is a network started by Demonbucket and was fully funded and provided by Demonbucket and the community. It is to show off how you can use Demonsaw and to test how well it can scale. The below are a few questions and answers regarding this network and demonsaw networking in general.</i></p>
-<h4 id="what-is-bucket1demonbucketcom">What is bucket1.demonbucket.com?</h4>
-<p>This is a sample network created by Osteth of Demonbucket, a public example of the type of network you can create with Demonsaw.</p>
+<h2 id="the-network-official-public-router">The Network (Official Public Router)</h2>
+<p><i>The network that Demonsaw connects to by default is the official Demonsaw public router. It is fully funded and provided by Eijah with a few community routers that were contributed to add bandwidth to the network. It is to show off how you can use Demonsaw and to test how well it can scale. The below are a few questions and answers regarding this network and demonsaw networking in general.</i></p>
+<h4 id="what-is-routerdemonsawcom">What is router.demonsaw.com?</h4>
+<p>This is a sample network, the tutorial level, a public example of the type of network you can create with Demonsaw.</p>
 <h4 id="why-are-my-file-transfers-going-through-different-routers">Why are my file transfers going through different routers?</h4>
-<p>To scale our ability to provide high speed and high bandwidth file transfers, we have disabled transfer on the message router (bucket1.demonbucket.com) and added transfer routers to the message router.</p>
+<p>To scale our ability to provide high speed and high bandwidth file transfers, we have disabled transfer on the message router (router.demonsaw.com) and added transfer routers to the message router. Some or possibly most of the transfer routers are contributed and operated by community members.</p>
 <h4 id="how-does-demonsaw-determine-what-data-router-i-get">How does Demonsaw determine what data router I get?</h4>
-<p>The message router goes through the router list in round robin, grabbing the first available data router.</p></div>
+<p>Demonsaw 'shards' file transfers, this means that file transfers are broken up and transferred through multiple transfer routers at once. To transfer a single file, depending on the size of the file, Demonsaw can transfer the file across anywhere between 1 to 8 transfer routers at once.</p></div>
         </div>
 
         <footer class="col-md-12">
