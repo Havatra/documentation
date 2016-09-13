@@ -2,7 +2,7 @@ site_name: Demonsaw Docs
 site_description: "Demonsaw documentation and user guides."
 site_author: 'The Community'
 repo_name: GitHub
-repo_url: https://github.com/DemonsawCommunity/documentation
+repo_url: https://github.com/demonsaw/documentation
 theme: cyborg
 
 extra_css:
@@ -20,6 +20,6 @@ pages:
    - 'Headless Setup': 'router/headless.md'
    - 'Troubleshooting': 'router/troubleshooting.md'
 - More:
-   - 'Extra Resources' : 'resources.md'
-   - 'Demonsaw FAQ': 'FAQ.md'
-   - 'DS 3.0 Features': 'features.md'
+   - 'Links & Resources' : 'resources.md'
+   - 'Demonsaw FAQs': 'FAQ.md'
+   - 'Roadmap': 'roadmap.md'
