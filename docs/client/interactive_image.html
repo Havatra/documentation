@@ -5,9 +5,9 @@
   <style>
     input[type=radio], img, .info{display:none}
     img{z-index:0}
-    label{z-index:1}
-    .main{position:absolute;top:128px;left:173px}
-    .bottom{position:absolute;top:477px;left:173px}
+    label{z-index:1; cursor:crosshair}
+    .main{position:absolute;top:128px;left:172px}
+    .bottom{position:absolute;top:477px;left:172px}
     
     #toggleBrowse:checked ~ #browse, #toggleBrowse:checked ~ #browseInfo,
     #toggleMessage:checked ~ #message, #toggleMessage:checked ~ #messageInfo,
@@ -25,43 +25,43 @@
   </style>
 </head>
 <body>
-  <img src="img/ia/ia-back.jpg" width="1122" height="682" usemap="#ia-image" style="position:static;z-index:-1;display:block" />
+  <img src="../img/ia/ia-back.jpg" width="1122" height="682" usemap="#ia-image" style="position:static;z-index:-1;display:block" />
   <div>
-    <input type="radio" checked="true" name="hotbar" id="toggleChat"></input>
-    <img class="main" id="chat" src="img/ia/ia-chat.jpg" width="956" height="348" />
+    <input type="radio" checked="true" name="radiobuttonz" id="toggleChat"></input>
+    <img class="main" id="chat" src="../img/ia/ia-chat.jpg" width="956" height="348" />
     <label for="toggleChat" style="width:24px;height:24px;position:absolute;top:451px;left:178px"></label>
-    <input type="radio" name="hotbar" id="toggleBrowse"></input>
-    <img class="main" id="browse" src="img/ia/ia-browse.jpg" width="956" height="348" />
+    <input type="radio" name="radiobuttonz" id="toggleBrowse"></input>
+    <img class="main" id="browse" src="../img/ia/ia-browse.jpg" width="956" height="348" />
     <label for="toggleBrowse" style="width:24px;height:24px;position:absolute;top:451px;left:203px"></label>
-    <input type="radio" name="hotbar" id="toggleGroup"></input>
-    <img class="main" id="group" src="img/ia/ia-group.jpg" width="956" height="348" />
+    <input type="radio" name="radiobuttonz" id="toggleGroup"></input>
+    <img class="main" id="group" src="../img/ia/ia-group.jpg" width="956" height="348" />
     <label for="toggleGroup" style="width:24px;height:24px;position:absolute;top:451px;left:230px"></label>
-    <input type="radio" name="hotbar" id="toggleMessageRouter"></input>
-    <img class="main" id="messageRouter" src="img/ia/ia-messagerouter.jpg" width="956" height="348" />
+    <input type="radio" name="radiobuttonz" id="toggleMessageRouter"></input>
+    <img class="main" id="messageRouter" src="../img/ia/ia-messagerouter.jpg" width="956" height="348" />
     <label for="toggleMessageRouter" style="width:24px;height:24px;position:absolute;top:451px;left:258px"></label>
-    <input type="radio" name="hotbar" id="toggleTransferRouter"></input>
-    <img class="main" id="transferRouter" src="img/ia/ia-transferrouter.jpg" width="956" height="348" />
+    <input type="radio" name="radiobuttonz" id="toggleTransferRouter"></input>
+    <img class="main" id="transferRouter" src="../img/ia/ia-transferrouter.jpg" width="956" height="348" />
     <label for="toggleTransferRouter" style="width:24px;height:24px;position:absolute;top:451px;left:286px"></label>
-    <input type="radio" name="hotbar" id="toggleShare"></input>
-    <img class="main" id="share" src="img/ia/ia-share.jpg" width="956" height="348" />
+    <input type="radio" name="radiobuttonz" id="toggleShare"></input>
+    <img class="main" id="share" src="../img/ia/ia-share.jpg" width="956" height="348" />
     <label for="toggleShare" style="width:24px;height:24px;position:absolute;top:451px;left:315px"></label>
-    <input type="radio" name="hotbar" id="toggleOptions"></input>
-    <img class="main" id="options" src="img/ia/ia-options.jpg" width="956" height="348" />
+    <input type="radio" name="radiobuttonz" id="toggleOptions"></input>
+    <img class="main" id="options" src="../img/ia/ia-options.jpg" width="956" height="348" />
     <label for="toggleOptions" style="width:24px;height:24px;position:absolute;top:451px;left:342px"></label>
-    <input type="radio" name="hotbar" id="toggleSearch"></input>
-    <img class="main" id="search" src="img/ia/ia-search.jpg" width="956" height="348" />
+    <input type="radio" name="radiobuttonz" id="toggleSearch"></input>
+    <img class="main" id="search" src="../img/ia/ia-search.jpg" width="956" height="348" />
     <label for="toggleSearch" style="width:24px;height:24px;position:absolute;top:451px;left:369px"></label>
-    <input type="radio" name="hotbar" id="toggleMessage"></input>
-    <img class="main" id="message" src="img/ia/ia-message.jpg" width="956" height="348" />
+    <input type="radio" name="radiobuttonz" id="toggleMessage"></input>
+    <img class="main" id="message" src="../img/ia/ia-message.jpg" width="956" height="348" />
     <label for="toggleMessage" style="width:24px;height:24px;position:absolute;top:451px;left:399px"></label>
-    <input type="radio" name="hotbar2" id="toggleDownload"></input>
-    <img class="bottom" id="download" src="img/ia/ia-download.jpg" width="955" height="187" />
+    <input type="radio" name="radiobuttonz" id="toggleDownload"></input>
+    <img class="bottom" id="download" src="../img/ia/ia-download.jpg" width="955" height="187" />
     <label for="toggleDownload" style="width:24px;height:24px;position:absolute;top:640px;left:174px"></label>
-    <input type="radio" name="hotbar2" id="toggleUpload"></input>
-    <img class="bottom" id="upload" src="img/ia/ia-upload.jpg" width="955" height="187" />
+    <input type="radio" name="radiobuttonz" id="toggleUpload"></input>
+    <img class="bottom" id="upload" src="../img/ia/ia-upload.jpg" width="955" height="187" />
     <label for="toggleUpload" style="width:24px;height:24px;position:absolute;top:640px;left:201px"></label>
-    <input type="radio" name="hotbar2" id="toggleError"></input>
-    <img class="bottom" id="error" src="img/ia/ia-error.jpg" width="955" height="187" />
+    <input type="radio" name="radiobuttonz" id="toggleError"></input>
+    <img class="bottom" id="error" src="../img/ia/ia-error.jpg" width="955" height="187" />
     <label for="toggleError" style="width:24px;height:24px;position:absolute;top:640px;left:229px"></label>
     <div class="info" id="chatInfo">
       <h2>Chat</h2>

@@ -1,7 +1,0 @@
-input[type=radio], img, .info{display:none}
-img{z-index:0}
-label{z-index:1}
-.image{position:absolute;top:128px;left:173px}
-
-
-#toggleBrowse:checked ~ #browse, #toggleBrowse:checked ~ #browseInfo, #toggleMessage:checked ~ #message, #toggleMessage:checked ~ #messageInfo{display:block}

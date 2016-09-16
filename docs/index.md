@@ -68,4 +68,4 @@ If you want to connect to a public router but be hidden from the public group, y
 <iframe width="100%" height="480px" frameborder="no" scrolling="no" class="embed-responsive embed-responsive-16by9" src="net-diagram.html" style="background-color:transparent;border:0;"></iframe>
 -->
 
-[Interactive Client](../interactive_image.html)
+[Interactive Client](../client/interactive_image.html)
