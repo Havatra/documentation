@@ -1,0 +1,16 @@
+# A hashtag is used to comment in toml
+[demonsaw]
+	version = 1 # This is just a version number, you do not need to change this
+[[router]]
+	port = 80 # The port (may need port forwarding)
+	name = "My Router" # The (local) name of the router
+	color = 1 # color index
+	address = "127.0.0.1" # the local IP address of your router (127.0.0.1 usually works pretty good)
+	[[router.transfer]] # Here you can specify other transfer routers to route transfers to
+		port = 4567 # The port of this router
+		name = "some other transfer router" # The name of the router
+		address = "45.32.215.88" # The IP of this transfer router
+	[router.network]
+		motd = "Hello World!" # The message of the Day (sent in chat when connected) (NOT CURRENTLY SUPPORTED IN CLI)
+		redirect = "https.//demonsaw.com" # A URL can be put here, so that if you connect to your router with a browser, you will be redirected to this URL
+		buffer = 33554432 # The buffer (in bytes) of your router
