@@ -1,484 +1,474 @@
 {
     "docs": [
         {
-            "location": "/",
-            "text": "Short Intro to Demonsaw 3\n\n\nOverview\n\n\nDemonsaw is a secure and anonymous information sharing application that makes security simple and gives you back control of your data. Demonsaw provides you with a way to create your own network or join a public Demonsaw network so that you can share and communicate securely.\n\n\nDemonsaw 2 and Demonsaw 3 are not compatible with each other, they connect to completely different networks.\n\n\n\nIf you don't find answers here, try the \nF.A.Q.\n\n\nGetting Started\n\n\nFirst thing first! You need to \ndownload Demonsaw\n!\n\n\nDemonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.\n\n\nWant an Installer?\n\n\nThe community (dekka) has provided a Linux repository for Debian and Ubuntu, and also has rpm packages for Fedora/Redhat.\n\n\nWant to learn more? Check out \nrepo.dsrouters.com\n\n\nHow it Works\n\n\nThis section will be a rough overview of how Demonsaw works, how it is designed to protect you, and will hopefully take some of the confusion out of the network.\n\n\nCommunication\n\n\nTL;DR;\n\n\n\n\nClients do not communicate with clients, Demonsaw is not peer to peer. \n\n\nAll client communication goes through message routers and data routers.\n\n\n\n\nIf you were to sniff your local traffic and peer into the Demonsaw communication, you'd see TCP traffic that looks just like HTTP web traffic... but with encrypted payloads. Clients can pass user-agent strings, making them appear more like a web browser. Demonsaw routers can listen on any port you want, including 80 and 8080, and can even redirect actual web browsers to another website with a 301 permanent redirect.\n\n\nIn essence, Demonsaw clients and routers are both behaving as both an HTTP server and a client, allowing them to send messages and data back and forth all while looking like normal web traffic.\n\n\nDownloads\n\n\nAnother big change in Demonsaw 3 is the way downloads are performed. Below is a list of the changes.\n\n\n\n\nFile sharding; file transfers are broken into chunks and transferred across multiple data routers instead of just one.\n\n\nMulti-threaded file transfer; acts as a method for throttling transfer but allows you to use all your upload bandwidth.\n\n\n\n\nCrypto\n\n\nTL;DR;\n\n\n\n\nYou specify the security of the crypto handshake, you control your level of protection.\n\n\nAt minimum, your communication is wrapped in two layers of crypto.\n\n\n\n\n\n\n\nDemonsaw allows you to choose your own level of security through cryptography, both through the first handshake with a router and through the use of groups setup with social cryptography. Demonsaw uses Diffie\u2013Hellman key exchange to connect securely, but allows you to define the prime size, cipher, key size, hash type, salt, and how many iterations.\n\n\n\n\nOn top of the encrypted connection to a Demonsaw router, a second layer is added for the public group.\n\n\nIf you want to connect to a public router but be hidden from the public group, you can add crypto layers through the additions of groups. Unlike the router crypto settings, you also get to define a file or passphrase as the source of entropy, allowing for extra secure cryptographic layers. Additionally, you can add as many layers as you want.\n\n\n\nDemonsaw Overview (Slides)\n\n\n\n\n\n\n\n\nInteractive Client",
+            "location": "/", 
+            "text": "Short Intro to Demonsaw\n\n\nOverview\n\n\nDemonsaw is a secure and anonymous information sharing application that makes security simple and gives you back control of your data. Demonsaw provides you with a way to create your own network or join a public Demonsaw network so that you can share and communicate securely.\n\n\nGetting Started\n\n\nFirst thing first! You need to \ndownload Demonsaw\n!\n\n\nDemonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.\n\n\nHow it Works\n\n\nThis section will be a rough overview of how Demonsaw works, how it is designed to protect you, and will hopefully take some of the confusion out of the network.\n\n\nCommunication\n\n\nTL;DR;\n\n\n\n\nClients do not communicate with clients, Demonsaw is not peer to peer. \n\n\nAll client communication goes through message routers and data routers.\n\n\n\n\nIf you were to sniff your local traffic and peer into the Demonsaw communication, you'd see TCP traffic that looks just like HTTP web traffic... but with encrypted payloads. Clients can pass user-agent strings, making them appear more like a web browser. Demonsaw routers can listen on any port you want, including 80 and 8080, and can even redirect actual web browsers to another website with a 301 permanent redirect.\n\n\nIn essence, Demonsaw clients and routers are both behaving as both an HTTP server and a client, allowing them to send messages and data back and forth all while looking like normal web traffic.\n\n\nCrypto\n\n\nTL;DR;\n\n\n\n\nYou specify the security of the crypto handshake, you control your level of protection.\n\n\nAt minimum, your communication is wrapped in two layers of crypto.\n\n\n\n\n\n\n\nDemonsaw allows you to choose your own level of security through cryptography, both through the first handshake with a router and through the use of groups setup with social cryptography. Demonsaw uses Diffie\u2013Hellman key exchange to connect securely, but allows you to define the prime size, cipher, key size, hash type, salt, and how many iterations.\n\n\n\n\nOn top of the encrypted connection to a Demonsaw router, a second layer is added for the public group.\n\n\nIf you want to connect to a public router but be hidden from the public group, you can add crypto layers through the additions of groups. Unlike the router crypto settings, you also get to define a file or passphrase as the source of entropy, allowing for extra secure cryptographic layers. Additionally, you can add as many layers as you want.\n\n\n\nDemonsaw Overview (Slides)", 
             "title": "Home"
-        },
+        }, 
         {
-            "location": "/#short-intro-to-demonsaw-3",
-            "text": "",
-            "title": "Short Intro to Demonsaw 3"
-        },
+            "location": "/#short-intro-to-demonsaw", 
+            "text": "", 
+            "title": "Short Intro to Demonsaw"
+        }, 
         {
-            "location": "/#overview",
-            "text": "Demonsaw is a secure and anonymous information sharing application that makes security simple and gives you back control of your data. Demonsaw provides you with a way to create your own network or join a public Demonsaw network so that you can share and communicate securely.  Demonsaw 2 and Demonsaw 3 are not compatible with each other, they connect to completely different networks.  If you don't find answers here, try the  F.A.Q.",
+            "location": "/#overview", 
+            "text": "Demonsaw is a secure and anonymous information sharing application that makes security simple and gives you back control of your data. Demonsaw provides you with a way to create your own network or join a public Demonsaw network so that you can share and communicate securely.", 
             "title": "Overview"
-        },
+        }, 
         {
-            "location": "/#getting-started",
-            "text": "First thing first! You need to  download Demonsaw !  Demonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.",
+            "location": "/#getting-started", 
+            "text": "First thing first! You need to  download Demonsaw !  Demonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.", 
             "title": "Getting Started"
-        },
+        }, 
         {
-            "location": "/#want-an-installer",
-            "text": "The community (dekka) has provided a Linux repository for Debian and Ubuntu, and also has rpm packages for Fedora/Redhat.  Want to learn more? Check out  repo.dsrouters.com",
-            "title": "Want an Installer?"
-        },
-        {
-            "location": "/#how-it-works",
-            "text": "This section will be a rough overview of how Demonsaw works, how it is designed to protect you, and will hopefully take some of the confusion out of the network.",
+            "location": "/#how-it-works", 
+            "text": "This section will be a rough overview of how Demonsaw works, how it is designed to protect you, and will hopefully take some of the confusion out of the network.", 
             "title": "How it Works"
-        },
+        }, 
         {
-            "location": "/#communication",
-            "text": "TL;DR;   Clients do not communicate with clients, Demonsaw is not peer to peer.   All client communication goes through message routers and data routers.   If you were to sniff your local traffic and peer into the Demonsaw communication, you'd see TCP traffic that looks just like HTTP web traffic... but with encrypted payloads. Clients can pass user-agent strings, making them appear more like a web browser. Demonsaw routers can listen on any port you want, including 80 and 8080, and can even redirect actual web browsers to another website with a 301 permanent redirect.  In essence, Demonsaw clients and routers are both behaving as both an HTTP server and a client, allowing them to send messages and data back and forth all while looking like normal web traffic.",
+            "location": "/#communication", 
+            "text": "TL;DR;   Clients do not communicate with clients, Demonsaw is not peer to peer.   All client communication goes through message routers and data routers.   If you were to sniff your local traffic and peer into the Demonsaw communication, you'd see TCP traffic that looks just like HTTP web traffic... but with encrypted payloads. Clients can pass user-agent strings, making them appear more like a web browser. Demonsaw routers can listen on any port you want, including 80 and 8080, and can even redirect actual web browsers to another website with a 301 permanent redirect.  In essence, Demonsaw clients and routers are both behaving as both an HTTP server and a client, allowing them to send messages and data back and forth all while looking like normal web traffic.", 
             "title": "Communication"
-        },
+        }, 
         {
-            "location": "/#downloads",
-            "text": "Another big change in Demonsaw 3 is the way downloads are performed. Below is a list of the changes.   File sharding; file transfers are broken into chunks and transferred across multiple data routers instead of just one.  Multi-threaded file transfer; acts as a method for throttling transfer but allows you to use all your upload bandwidth.",
-            "title": "Downloads"
-        },
-        {
-            "location": "/#crypto",
-            "text": "TL;DR;   You specify the security of the crypto handshake, you control your level of protection.  At minimum, your communication is wrapped in two layers of crypto.    Demonsaw allows you to choose your own level of security through cryptography, both through the first handshake with a router and through the use of groups setup with social cryptography. Demonsaw uses Diffie\u2013Hellman key exchange to connect securely, but allows you to define the prime size, cipher, key size, hash type, salt, and how many iterations.   On top of the encrypted connection to a Demonsaw router, a second layer is added for the public group.  If you want to connect to a public router but be hidden from the public group, you can add crypto layers through the additions of groups. Unlike the router crypto settings, you also get to define a file or passphrase as the source of entropy, allowing for extra secure cryptographic layers. Additionally, you can add as many layers as you want.",
+            "location": "/#crypto", 
+            "text": "TL;DR;   You specify the security of the crypto handshake, you control your level of protection.  At minimum, your communication is wrapped in two layers of crypto.    Demonsaw allows you to choose your own level of security through cryptography, both through the first handshake with a router and through the use of groups setup with social cryptography. Demonsaw uses Diffie\u2013Hellman key exchange to connect securely, but allows you to define the prime size, cipher, key size, hash type, salt, and how many iterations.   On top of the encrypted connection to a Demonsaw router, a second layer is added for the public group.  If you want to connect to a public router but be hidden from the public group, you can add crypto layers through the additions of groups. Unlike the router crypto settings, you also get to define a file or passphrase as the source of entropy, allowing for extra secure cryptographic layers. Additionally, you can add as many layers as you want.", 
             "title": "Crypto"
-        },
+        }, 
         {
-            "location": "/#demonsaw-overview-slides",
-            "text": "Interactive Client",
+            "location": "/#demonsaw-overview-slides", 
+            "text": "", 
             "title": "Demonsaw Overview (Slides)"
-        },
+        }, 
         {
-            "location": "/client/",
-            "text": "Client Documentation\n\n\n\n\nManage Demonsaw Clients\n\n\nAdd a Client\n\n\nDemonsaw allows you to add as many clients as you need so that you can connect to other private groups and routers.\n\n\nTo add a client:\n\n\n\n\nClick the \n at the very top left of the demonsaw window.\n\n\nFill out the new client wizard or click cancel and set the client name and color manually from the options tab.\n\n\n\n\nEnable/Disable a client:\n\n\n\n\nSimply double-click on the client icon that you wish to enable/disable\n\n\n\n\nSharing Files\n\n\nAdd files or folders to your shares\n\n\n\n\nSelect the Message Router tab in the center of Demonsaw \n\n\nClick the add button \n at the top right of the Shares pane\n\n\nSelect a file or folder to share (repeat as needed)\n\n\nPress the refresh button at the top left of demonsaw or right-click your client and choose \"refresh\" so that your shares are visible to others.\n\n\n\n\nAdd / Create Groups\n\n\nGroups in Demonsaw allow you to add additional layers of cryptography to your connection with the Demonsaw router, as well as allowing you to have a private area for friends or trusted associates to communicate on a public router.\n\n\nTo add a group:\n\n\n\n\nSelect the Group tab from the center of Demonsaw \n\n\nClick the add button \n at the top right of the group pane\n\n\nFill out the group settings to be as secure as you want or fill them in to match an existing group.\n\n\n\n\n\nAdditionally, at the top of the group pane next to the 'group' label, your client will show a Group ID so that you can easily confirm with others that the group settings are matching.\n\n\n\n\nUsing Themes\n\n\nDemonsaw 3 now allows you to select, apply, and reset themes directly from the options pane. You can now save your themes wherever you'd like without having to name it demonsaw.css or put it in the root directory of your demonsaw binary. \n\n\nTo select, apply, or reset your theme:\n\n\n\n\nSelect the options tab (the gear icon)\n\n\nScroll to the bottom of the options to the theme settings\n\n\n\n\n\nSearching for Files\n\n\nThere are two ways to perform a search. Clicking the \n at the top of Demonsaw, or at the top of the Browse tab is a search bar.\n\n\nThe search in Demonsaw 3 is very basic. If you'd like to search for Van Halen and only want .mp3 files then you will search for \"Van Halen mp3\" in quotes.\n\n\nSearches are also ordered based of the accuracy of the results + the highest shared/swarmed files. This is called the search \"weight\" and is represented graphically with cicles on the left side of the results.\n\n\n\n\n\n\nManage Message Routers\n\n\nSlightly different from Demonsaw 2, you are now able to add multiple message routers into Demonsaw but you can only select one at a time. When you create a new client with the wizard the public Demonsaw router will be added for you.\n\n\nAdd a message router:\n\n\n\n\nSelect the Message Router tab in the center of Demonsaw \n\n\nClick the add button \n at the top right of the Message Router pane\n\n\nFill out the connection details and click the checkbox to enable it\n\n\n\n\nEdit an existing message router:\n\n\n\n\nSimply double-click the specific setting on an existing message router that you'd like to change\n\n\nClick the lightning icon \n at the top right of the Message Router pane to apply the settings\n\n\n\n\nMessage Router Groups\n\n\nAnother new addition to Demonsaw 3 is the ability to add additional cryptographic layers to the communication between routers with the use of router groups, these groups can also be used in place of router passphrases to prevent access to unauthorized routers and individuals.\n\n\nAdd a message router group:\n\n\n\n\nSelect the Message Router tab in the center of Demonsaw \n\n\nSelect a router from the \nMessage Router section\n then click the add button \n at the top right of the \nMessage Router Group\n pane\n\n\nFill out the group settings to be as secure as you want or fill them in to match an existing group.\n\n\nClick the lightning icon \n at the top right of the \nMessage Router Group\n section to apply the settings\n\n\n\n\n\n\nManage Transfer Routers\n\n\nA new feature added to Demonsaw 3 is way you manage transfer (data) routers. When you connect to a message router it sends you a list of the transfer routers it uses, you can find these under the transfer router tab. This allows you to uncheck transfer routers you don't trust and add transfer routers that only you and your friends know about. Additionally, you can only transfer files with individuals that have a common transfer router enabled.\n\n\nTo add a transfer router:\n\n\n\n\nSelect the Transfer Router tab in the center of Demonsaw \n\n\nClick the add button \n at the top right of the Transfer Router pane\n\n\nFill out the connection details and click the checkbox to enable it\n\n\n\n\nTo disable a transfer router:\n\n\n\n\nSimply uncheck the transfer routers you wish to disable\n\n\n\n\nTransfer Router Groups\n\n\nAnother new addition to Demonsaw 3 is the ability to add additional cryptographic layers to the communication between routers with the use of router groups, these groups can also be used in place of router passphrases to prevent access to unauthorized routers and individuals.\n\n\nAdd a transfer router group:\n\n\n\n\nSelect the Transfer Router tab in the center of Demonsaw \n\n\nSelect a router from the \nTransfer Router section\n then click the add button \n at the top right of the \nTransfer Router Group\n pane\n\n\nFill out the group settings to be as secure as you want or fill them in to match an existing group.\n\n\nClick the lightning icon \n at the top right of the \nTransfer Router Group\n section to apply the settings",
+            "location": "/client/", 
+            "text": "Getting Started\n\n\n\n\nDownload Demonsaw\n\n\nFirst thing first! You need to \ndownload Demonsaw\n!\n\n\nDemonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.\n\n\n\n\nManage Client Settings\n\n\nAdd a Client\n\n\nDemonsaw allows you to add as many clients as you need so that you can connect to other private groups and routers.\n\n\nTo add a client:\n\n\n\n\nClick the \n at the very top left of the demonsaw window.\n\n\nFill out the new client wizard or click cancel and set the client name and color manually from the options tab.\n\n\n\n\nEnable/Disable a client:\n\n\n\n\nSimply double-click on the client icon that you wish to enable/disable\n\n\n\n\nSharing Files\n\n\nAdd files or folders to your shares\n\n\n\n\nSelect the Message Router tab in the center of Demonsaw \n\n\nClick the add button \n at the top right of the Shares pane\n\n\nSelect a file or folder to share (repeat as needed)\n\n\nPress the lightning icon \n at the top right of the Shares pane to apply the settings\n\n\n\n\nAdd / Create Groups\n\n\nGroups in Demonsaw allow you to add additional layers of cryptography to your connection with the Demonsaw router, as well as allowing you to have a private area for friends or trusted associates to communicate on a public router.\n\n\nTo add a group:\n\n\n\n\nSelect the Group tab from the center of Demonsaw \n\n\nClick the add button \n at the top right of the group pane\n\n\nFill out the group settings to be as secure as you want or fill them in to match an existing group.\n\n\n\n\n\nAdditionally, at the top of the group pane next to the 'group' label, your client will show a Group ID so that you can easily confirm with others that the group settings are matching.\n\n\n\n\nUsing Themes\n\n\nDemonsaw 3 now allows you to select, apply, and reset themes directly from the options pane. You can now save your themes wherever you'd like without having to name it demonsaw.css or put it in the root directory of your demonsaw binary. \n\n\nTo select, apply, or reset your theme:\n\n\n\n\nSelect the options tab (the gear icon)\n\n\nScroll to the bottom of the options to the theme settings\n\n\n\n\n\n\n\nManage Message Routers\n\n\nSlightly different from Demonsaw 2, you are now able to connect a single client to multiple message routers.\n\n\nAdd a message router:\n\n\n\n\nSelect the Message Router tab in the center of Demonsaw \n\n\nClick the add button \n at the top right of the Message Router pane\n\n\nFill out the connection details and click the checkbox to enable it\n\n\n\n\nEdit an existing message router:\n\n\n\n\nSimply double-click the specific setting on an existing message router that you'd like to change\n\n\nClick the lightning icon \n at the top right of the Message Router pane to apply the settings\n\n\n\n\nMessage Router Groups\n\n\nAnother new addition to Demonsaw 3 is the ability to add additional cryptographic layers to the communication between routers with the use of router groups, these groups can also be used in place of router passphrases to prevent access to unauthorized routers and individuals.\n\n\nAdd a message router group:\n\n\n\n\nSelect the Message Router tab in the center of Demonsaw \n\n\nSelect a router from the \nMessage Router section\n then click the add button \n at the top right of the \nMessage Router Group\n pane\n\n\nFill out the group settings to be as secure as you want or fill them in to match an existing group.\n\n\nClick the lightning icon \n at the top right of the \nMessage Router Group\n section to apply the settings\n\n\n\n\n\n\nManage Transfer Routers\n\n\nA new feature added to Demonsaw 3 is way you manage transfer (data) routers. When you connect to a message router it sends you a list of the transfer routers it uses, you can find these under the transfer router tab. This allows you to uncheck transfer routers you don't trust and add transfer routers that only you and your friends know about. Additionally, you can only transfer files with individuals that have a common transfer router enabled.\n\n\nTo add a transfer router:\n\n\n\n\nSelect the Transfer Router tab in the center of Demonsaw \n\n\nClick the add button \n at the top right of the Transfer Router pane\n\n\nFill out the connection details and click the checkbox to enable it\n\n\n\n\nTo disable a transfer router:\n\n\n\n\nSimply uncheck the transfer routers you wish to disable\n\n\n\n\nTransfer Router Groups\n\n\nAnother new addition to Demonsaw 3 is the ability to add additional cryptographic layers to the communication between routers with the use of router groups, these groups can also be used in place of router passphrases to prevent access to unauthorized routers and individuals.\n\n\nAdd a transfer router group:\n\n\n\n\nSelect the Transfer Router tab in the center of Demonsaw \n\n\nSelect a router from the \nTransfer Router section\n then click the add button \n at the top right of the \nTransfer Router Group\n pane\n\n\nFill out the group settings to be as secure as you want or fill them in to match an existing group.\n\n\nClick the lightning icon \n at the top right of the \nTransfer Router Group\n section to apply the settings", 
             "title": "Getting Started"
-        },
+        }, 
         {
-            "location": "/client/#client-documentation",
-            "text": "",
-            "title": "Client Documentation"
-        },
+            "location": "/client/#getting-started", 
+            "text": "", 
+            "title": "Getting Started"
+        }, 
         {
-            "location": "/client/#manage-demonsaw-clients",
-            "text": "",
-            "title": "Manage Demonsaw Clients"
-        },
+            "location": "/client/#download-demonsaw", 
+            "text": "First thing first! You need to  download Demonsaw !  Demonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.", 
+            "title": "Download Demonsaw"
+        }, 
         {
-            "location": "/client/#add-a-client",
-            "text": "Demonsaw allows you to add as many clients as you need so that you can connect to other private groups and routers.",
+            "location": "/client/#manage-client-settings", 
+            "text": "", 
+            "title": "Manage Client Settings"
+        }, 
+        {
+            "location": "/client/#add-a-client", 
+            "text": "Demonsaw allows you to add as many clients as you need so that you can connect to other private groups and routers.", 
             "title": "Add a Client"
-        },
+        }, 
         {
-            "location": "/client/#to-add-a-client",
-            "text": "Click the   at the very top left of the demonsaw window.  Fill out the new client wizard or click cancel and set the client name and color manually from the options tab.",
+            "location": "/client/#to-add-a-client", 
+            "text": "Click the   at the very top left of the demonsaw window.  Fill out the new client wizard or click cancel and set the client name and color manually from the options tab.", 
             "title": "To add a client:"
-        },
+        }, 
         {
-            "location": "/client/#enabledisable-a-client",
-            "text": "Simply double-click on the client icon that you wish to enable/disable",
+            "location": "/client/#enabledisable-a-client", 
+            "text": "Simply double-click on the client icon that you wish to enable/disable", 
             "title": "Enable/Disable a client:"
-        },
+        }, 
         {
-            "location": "/client/#sharing-files",
-            "text": "",
+            "location": "/client/#sharing-files", 
+            "text": "", 
             "title": "Sharing Files"
-        },
+        }, 
         {
-            "location": "/client/#add-files-or-folders-to-your-shares",
-            "text": "Select the Message Router tab in the center of Demonsaw   Click the add button   at the top right of the Shares pane  Select a file or folder to share (repeat as needed)  Press the refresh button at the top left of demonsaw or right-click your client and choose \"refresh\" so that your shares are visible to others.",
+            "location": "/client/#add-files-or-folders-to-your-shares", 
+            "text": "Select the Message Router tab in the center of Demonsaw   Click the add button   at the top right of the Shares pane  Select a file or folder to share (repeat as needed)  Press the lightning icon   at the top right of the Shares pane to apply the settings", 
             "title": "Add files or folders to your shares"
-        },
+        }, 
         {
-            "location": "/client/#add-create-groups",
-            "text": "Groups in Demonsaw allow you to add additional layers of cryptography to your connection with the Demonsaw router, as well as allowing you to have a private area for friends or trusted associates to communicate on a public router.",
+            "location": "/client/#add-create-groups", 
+            "text": "Groups in Demonsaw allow you to add additional layers of cryptography to your connection with the Demonsaw router, as well as allowing you to have a private area for friends or trusted associates to communicate on a public router.", 
             "title": "Add / Create Groups"
-        },
+        }, 
         {
-            "location": "/client/#to-add-a-group",
-            "text": "Select the Group tab from the center of Demonsaw   Click the add button   at the top right of the group pane  Fill out the group settings to be as secure as you want or fill them in to match an existing group.   Additionally, at the top of the group pane next to the 'group' label, your client will show a Group ID so that you can easily confirm with others that the group settings are matching.",
+            "location": "/client/#to-add-a-group", 
+            "text": "Select the Group tab from the center of Demonsaw   Click the add button   at the top right of the group pane  Fill out the group settings to be as secure as you want or fill them in to match an existing group.   Additionally, at the top of the group pane next to the 'group' label, your client will show a Group ID so that you can easily confirm with others that the group settings are matching.", 
             "title": "To add a group:"
-        },
+        }, 
         {
-            "location": "/client/#using-themes",
-            "text": "Demonsaw 3 now allows you to select, apply, and reset themes directly from the options pane. You can now save your themes wherever you'd like without having to name it demonsaw.css or put it in the root directory of your demonsaw binary.",
+            "location": "/client/#using-themes", 
+            "text": "Demonsaw 3 now allows you to select, apply, and reset themes directly from the options pane. You can now save your themes wherever you'd like without having to name it demonsaw.css or put it in the root directory of your demonsaw binary.", 
             "title": "Using Themes"
-        },
+        }, 
         {
-            "location": "/client/#to-select-apply-or-reset-your-theme",
-            "text": "Select the options tab (the gear icon)  Scroll to the bottom of the options to the theme settings",
+            "location": "/client/#to-select-apply-or-reset-your-theme", 
+            "text": "Select the options tab (the gear icon)  Scroll to the bottom of the options to the theme settings", 
             "title": "To select, apply, or reset your theme:"
-        },
+        }, 
         {
-            "location": "/client/#searching-for-files",
-            "text": "There are two ways to perform a search. Clicking the   at the top of Demonsaw, or at the top of the Browse tab is a search bar.  The search in Demonsaw 3 is very basic. If you'd like to search for Van Halen and only want .mp3 files then you will search for \"Van Halen mp3\" in quotes.  Searches are also ordered based of the accuracy of the results + the highest shared/swarmed files. This is called the search \"weight\" and is represented graphically with cicles on the left side of the results.",
-            "title": "Searching for Files"
-        },
-        {
-            "location": "/client/#manage-message-routers",
-            "text": "Slightly different from Demonsaw 2, you are now able to add multiple message routers into Demonsaw but you can only select one at a time. When you create a new client with the wizard the public Demonsaw router will be added for you.",
+            "location": "/client/#manage-message-routers", 
+            "text": "Slightly different from Demonsaw 2, you are now able to connect a single client to multiple message routers.", 
             "title": "Manage Message Routers"
-        },
+        }, 
         {
-            "location": "/client/#add-a-message-router",
-            "text": "Select the Message Router tab in the center of Demonsaw   Click the add button   at the top right of the Message Router pane  Fill out the connection details and click the checkbox to enable it",
+            "location": "/client/#add-a-message-router", 
+            "text": "Select the Message Router tab in the center of Demonsaw   Click the add button   at the top right of the Message Router pane  Fill out the connection details and click the checkbox to enable it", 
             "title": "Add a message router:"
-        },
+        }, 
         {
-            "location": "/client/#edit-an-existing-message-router",
-            "text": "Simply double-click the specific setting on an existing message router that you'd like to change  Click the lightning icon   at the top right of the Message Router pane to apply the settings",
+            "location": "/client/#edit-an-existing-message-router", 
+            "text": "Simply double-click the specific setting on an existing message router that you'd like to change  Click the lightning icon   at the top right of the Message Router pane to apply the settings", 
             "title": "Edit an existing message router:"
-        },
+        }, 
         {
-            "location": "/client/#message-router-groups",
-            "text": "Another new addition to Demonsaw 3 is the ability to add additional cryptographic layers to the communication between routers with the use of router groups, these groups can also be used in place of router passphrases to prevent access to unauthorized routers and individuals.",
+            "location": "/client/#message-router-groups", 
+            "text": "Another new addition to Demonsaw 3 is the ability to add additional cryptographic layers to the communication between routers with the use of router groups, these groups can also be used in place of router passphrases to prevent access to unauthorized routers and individuals.", 
             "title": "Message Router Groups"
-        },
+        }, 
         {
-            "location": "/client/#add-a-message-router-group",
-            "text": "Select the Message Router tab in the center of Demonsaw   Select a router from the  Message Router section  then click the add button   at the top right of the  Message Router Group  pane  Fill out the group settings to be as secure as you want or fill them in to match an existing group.  Click the lightning icon   at the top right of the  Message Router Group  section to apply the settings",
+            "location": "/client/#add-a-message-router-group", 
+            "text": "Select the Message Router tab in the center of Demonsaw   Select a router from the  Message Router section  then click the add button   at the top right of the  Message Router Group  pane  Fill out the group settings to be as secure as you want or fill them in to match an existing group.  Click the lightning icon   at the top right of the  Message Router Group  section to apply the settings", 
             "title": "Add a message router group:"
-        },
+        }, 
         {
-            "location": "/client/#manage-transfer-routers",
-            "text": "A new feature added to Demonsaw 3 is way you manage transfer (data) routers. When you connect to a message router it sends you a list of the transfer routers it uses, you can find these under the transfer router tab. This allows you to uncheck transfer routers you don't trust and add transfer routers that only you and your friends know about. Additionally, you can only transfer files with individuals that have a common transfer router enabled.",
+            "location": "/client/#manage-transfer-routers", 
+            "text": "A new feature added to Demonsaw 3 is way you manage transfer (data) routers. When you connect to a message router it sends you a list of the transfer routers it uses, you can find these under the transfer router tab. This allows you to uncheck transfer routers you don't trust and add transfer routers that only you and your friends know about. Additionally, you can only transfer files with individuals that have a common transfer router enabled.", 
             "title": "Manage Transfer Routers"
-        },
+        }, 
         {
-            "location": "/client/#to-add-a-transfer-router",
-            "text": "Select the Transfer Router tab in the center of Demonsaw   Click the add button   at the top right of the Transfer Router pane  Fill out the connection details and click the checkbox to enable it",
+            "location": "/client/#to-add-a-transfer-router", 
+            "text": "Select the Transfer Router tab in the center of Demonsaw   Click the add button   at the top right of the Transfer Router pane  Fill out the connection details and click the checkbox to enable it", 
             "title": "To add a transfer router:"
-        },
+        }, 
         {
-            "location": "/client/#to-disable-a-transfer-router",
-            "text": "Simply uncheck the transfer routers you wish to disable",
+            "location": "/client/#to-disable-a-transfer-router", 
+            "text": "Simply uncheck the transfer routers you wish to disable", 
             "title": "To disable a transfer router:"
-        },
+        }, 
         {
-            "location": "/client/#transfer-router-groups",
-            "text": "Another new addition to Demonsaw 3 is the ability to add additional cryptographic layers to the communication between routers with the use of router groups, these groups can also be used in place of router passphrases to prevent access to unauthorized routers and individuals.",
+            "location": "/client/#transfer-router-groups", 
+            "text": "Another new addition to Demonsaw 3 is the ability to add additional cryptographic layers to the communication between routers with the use of router groups, these groups can also be used in place of router passphrases to prevent access to unauthorized routers and individuals.", 
             "title": "Transfer Router Groups"
-        },
+        }, 
         {
-            "location": "/client/#add-a-transfer-router-group",
-            "text": "Select the Transfer Router tab in the center of Demonsaw   Select a router from the  Transfer Router section  then click the add button   at the top right of the  Transfer Router Group  pane  Fill out the group settings to be as secure as you want or fill them in to match an existing group.  Click the lightning icon   at the top right of the  Transfer Router Group  section to apply the settings",
+            "location": "/client/#add-a-transfer-router-group", 
+            "text": "Select the Transfer Router tab in the center of Demonsaw   Select a router from the  Transfer Router section  then click the add button   at the top right of the  Transfer Router Group  pane  Fill out the group settings to be as secure as you want or fill them in to match an existing group.  Click the lightning icon   at the top right of the  Transfer Router Group  section to apply the settings", 
             "title": "Add a transfer router group:"
-        },
+        }, 
         {
-            "location": "/client/headless/",
-            "text": "Headless Demonsaw Client Setup\n\n\nThis post documents what it takes to setup a Demonsaw client on a Linux host. We chose to document the setup for a Linux host because it is more common to have a headless client or router on a Linux host than on a Windows host.\n\n\nDownload Demonsaw\n\n\nDemonsaw has builds for multiple operating systems, for Linux you have the \nDebian\n build the \nUbuntu\n build and the \nRaspian\n build. Choose the version that you need for your specific Linux distro and download it.\n\n\nExtract & Verify\n\n\nYou can extract Demonsaw and run it from wherever you want. If you're running a Demonsaw client off of a headless server it's perfectly fine to put the Demonsaw folder under your home directory. On a desktop Linux Debian distro you might want to put it somewhere better, I like /opt/demonsaw/ so that is what I'll show how to do.\n\n\nsudo mkdir /opt/demonsaw\nsudo tar xzf demonsaw.tar.gz -C /opt/demonsaw/\n\n\n\nThe above command extracts far more than you need for a headless router/client, if you want you can just extract 'demonsaw_cli' with \ntar -zxcf demonsaw_cli\n, this is also a good way to update demonsaw without over-writing your toml.\n\n\nNow you need to ensure that the permissions for the /opt/demonsaw/ folder are for your user, in the example our user is named joe.\n\n\nsudo chown -R joe /opt/demonsaw\n\n\n\nOne more important thing to verify is that demonsaw_cli has execute permissions, because sometimes mistakes are made.\n\n\nsudo chmod +x /opt/demonsaw/demonsaw_cli\n\n\n\nYou should now be able to launch demonsaw but you'll be missing the demonsaw.toml configuration, currently the demonsaw_cli will not automatically create this file because it is for a headless client.\n\n\nSetup your demonsaw config file\n\n\nThe easiest way to setup the demonsaw config file is to use the GUI to create the setup you want; You can do it from any operating system as the toml is basically the same, just drop the demonsaw GUI binary somewhere like your desktop and run it, add a client and change all the settings to suit your needs, then save the toml and move it over the the machine running the headless client.\n\n\nIf you're in a rush or don't want to fool around with the GUI, below are links to demonsaw config file examples that you can wget from your host and edit.\n\n\ntoml examples\n\n\n\n\nHeadless client\n\n\nHeadless client w/ group\n\n\n\n\nWith the above example toml file you will need to set the client name, the router to connect to, and the paths and files you would like to share.\n\n\nLaunch & Test\n\n\nAt this point you should be able to launch \ndemonsaw_cli\n from the command line, press \nC\n to see the status of the client/s. It will take a few seconds of waiting, but it should land on success if everything worked, you should see your clients connected to the router now.\n\n\nStartup Scripts\n\n\nYou're now running your own Demonsaw headless client, you probably have it on a VPS somewhere to host files and won't always be able to ssh in to restart demonsaw_cli should it have some issues, or you might not want to have to ssh in just to start demonsaw_cli everytime the server is rebooted; Startup scripts.\nThere are a few ways to do this, I recommend using \nDaniel Stinebaugh's startup script\n, but you can start it how ever you would like, including crontab or init scripts.\n\n\nConsiderations\n\n\nSo you have a working Demonsaw client now, what is next? The cli has a few options for things such as refreshing so that files added to the share are now visible to demonsaw, restart to enable changes to the client configuration, etc.\n\n\nIf you are hosting the headless client on a VPS, you should also think about bandwidth usage as well as the security of your VPS. If your VPS is compromised then some hackers could have the credentials to monitor any secret groups that client was connected to.",
+            "location": "/client/headless/", 
+            "text": "Headless Demonsaw Client Setup\n\n\nThis post documents what it takes to setup a Demonsaw client on a Linux host. We chose to document the setup for a Linux host because it is more common to have a headless client or router on a Linux host than on a Windows host.\n\n\nDownload Demonsaw\n\n\nDemonsaw has builds for multiple operating systems, for Linux you have the \nDebian\n build the \nUbuntu\n build and the \nRaspian\n build. Choose the version that you need for your specific Linux distro and download it.\n\n\nExtract \n Verify\n\n\nYou can extract Demonsaw and run it from wherever you want. If you're running a Demonsaw client off of a headless server it's perfectly fine to put the Demonsaw folder under your home directory. On a desktop Linux Debian distro you might want to put it somewhere better, I like /opt/demonsaw/ so that is what I'll show how to do.\n\n\nsudo mkdir /opt/demonsaw\nsudo tar xzf demonsaw.tar.gz -C /opt/demonsaw/\n\n\n\nThe above command extracts far more than you need for a headless router/client, if you want you can just extract 'demonsaw_cli' with \ntar -zxcf demonsaw_cli\n, this is also a good way to update demonsaw without over-writing your toml.\n\n\nNow you need to ensure that the permissions for the /opt/demonsaw/ folder are for your user, in the example our user is named joe.\n\n\nsudo chown -R joe /opt/demonsaw\n\n\n\nOne more important thing to verify is that demonsaw_cli has execute permissions, because sometimes mistakes are made.\n\n\nsudo chmod +x /opt/demonsaw/demonsaw_cli\n\n\n\nYou should now be able to launch demonsaw but you'll be missing the demonsaw.toml configuration, currently the demonsaw_cli will not automatically create this file because it is for a headless client.\n\n\nSetup your demonsaw config file\n\n\nThe easiest way to setup the demonsaw config file is to use the GUI to create the setup you want; You can do it from any operating system as the toml is basically the same, just drop the demonsaw GUI binary somewhere like your desktop and run it, add a client and change all the settings to suit your needs, then save the toml and move it over the the machine running the headless client.\n\n\nIf you're in a rush or don't want to fool around with the GUI, below are links to demonsaw config file examples that you can wget from your host and edit.\n\n\ntoml examples\n\n\n\n\nHeadless client\n\n\nHeadless client w/ group\n\n\n\n\nWith the above example toml file you will need to set the client name, the router to connect to, and the paths and files you would like to share.\n\n\nLaunch \n Test\n\n\nAt this point you should be able to launch \ndemonsaw_cli\n from the command line, press \nC\n to see the status of the client/s. It will take a few seconds of waiting, but it should land on success if everything worked, you should see your clients connected to the router now.\n\n\nStartup Scripts\n\n\nYou're now running your own Demonsaw headless client, you probably have it on a VPS somewhere to host files and won't always be able to ssh in to restart demonsaw_cli should it have some issues, or you might not want to have to ssh in just to start demonsaw_cli everytime the server is rebooted; Startup scripts.\nThere are a few ways to do this, I recommend using \nDaniel Stinebaugh's startup script\n, but you can start it how ever you would like, including crontab or init scripts.\n\n\nConsiderations\n\n\nSo you have a working Demonsaw client now, what is next? The cli has a few options for things such as refreshing so that files added to the share are now visible to demonsaw, restart to enable changes to the client configuration, etc.\n\n\nIf you are hosting the headless client on a VPS, you should also think about bandwidth usage as well as the security of your VPS. If your VPS is compromised then some hackers could have the credentials to monitor any secret groups that client was connected to.", 
             "title": "Headless Setup"
-        },
+        }, 
         {
-            "location": "/client/headless/#headless-demonsaw-client-setup",
-            "text": "This post documents what it takes to setup a Demonsaw client on a Linux host. We chose to document the setup for a Linux host because it is more common to have a headless client or router on a Linux host than on a Windows host.",
+            "location": "/client/headless/#headless-demonsaw-client-setup", 
+            "text": "This post documents what it takes to setup a Demonsaw client on a Linux host. We chose to document the setup for a Linux host because it is more common to have a headless client or router on a Linux host than on a Windows host.", 
             "title": "Headless Demonsaw Client Setup"
-        },
+        }, 
         {
-            "location": "/client/headless/#download-demonsaw",
-            "text": "Demonsaw has builds for multiple operating systems, for Linux you have the  Debian  build the  Ubuntu  build and the  Raspian  build. Choose the version that you need for your specific Linux distro and download it.",
+            "location": "/client/headless/#download-demonsaw", 
+            "text": "Demonsaw has builds for multiple operating systems, for Linux you have the  Debian  build the  Ubuntu  build and the  Raspian  build. Choose the version that you need for your specific Linux distro and download it.", 
             "title": "Download Demonsaw"
-        },
+        }, 
         {
-            "location": "/client/headless/#extract-verify",
-            "text": "You can extract Demonsaw and run it from wherever you want. If you're running a Demonsaw client off of a headless server it's perfectly fine to put the Demonsaw folder under your home directory. On a desktop Linux Debian distro you might want to put it somewhere better, I like /opt/demonsaw/ so that is what I'll show how to do.  sudo mkdir /opt/demonsaw\nsudo tar xzf demonsaw.tar.gz -C /opt/demonsaw/  The above command extracts far more than you need for a headless router/client, if you want you can just extract 'demonsaw_cli' with  tar -zxcf demonsaw_cli , this is also a good way to update demonsaw without over-writing your toml.  Now you need to ensure that the permissions for the /opt/demonsaw/ folder are for your user, in the example our user is named joe.  sudo chown -R joe /opt/demonsaw  One more important thing to verify is that demonsaw_cli has execute permissions, because sometimes mistakes are made.  sudo chmod +x /opt/demonsaw/demonsaw_cli  You should now be able to launch demonsaw but you'll be missing the demonsaw.toml configuration, currently the demonsaw_cli will not automatically create this file because it is for a headless client.",
+            "location": "/client/headless/#extract-verify", 
+            "text": "You can extract Demonsaw and run it from wherever you want. If you're running a Demonsaw client off of a headless server it's perfectly fine to put the Demonsaw folder under your home directory. On a desktop Linux Debian distro you might want to put it somewhere better, I like /opt/demonsaw/ so that is what I'll show how to do.  sudo mkdir /opt/demonsaw\nsudo tar xzf demonsaw.tar.gz -C /opt/demonsaw/  The above command extracts far more than you need for a headless router/client, if you want you can just extract 'demonsaw_cli' with  tar -zxcf demonsaw_cli , this is also a good way to update demonsaw without over-writing your toml.  Now you need to ensure that the permissions for the /opt/demonsaw/ folder are for your user, in the example our user is named joe.  sudo chown -R joe /opt/demonsaw  One more important thing to verify is that demonsaw_cli has execute permissions, because sometimes mistakes are made.  sudo chmod +x /opt/demonsaw/demonsaw_cli  You should now be able to launch demonsaw but you'll be missing the demonsaw.toml configuration, currently the demonsaw_cli will not automatically create this file because it is for a headless client.", 
             "title": "Extract &amp; Verify"
-        },
+        }, 
         {
-            "location": "/client/headless/#setup-your-demonsaw-config-file",
-            "text": "The easiest way to setup the demonsaw config file is to use the GUI to create the setup you want; You can do it from any operating system as the toml is basically the same, just drop the demonsaw GUI binary somewhere like your desktop and run it, add a client and change all the settings to suit your needs, then save the toml and move it over the the machine running the headless client.  If you're in a rush or don't want to fool around with the GUI, below are links to demonsaw config file examples that you can wget from your host and edit.",
+            "location": "/client/headless/#setup-your-demonsaw-config-file", 
+            "text": "The easiest way to setup the demonsaw config file is to use the GUI to create the setup you want; You can do it from any operating system as the toml is basically the same, just drop the demonsaw GUI binary somewhere like your desktop and run it, add a client and change all the settings to suit your needs, then save the toml and move it over the the machine running the headless client.  If you're in a rush or don't want to fool around with the GUI, below are links to demonsaw config file examples that you can wget from your host and edit.", 
             "title": "Setup your demonsaw config file"
-        },
+        }, 
         {
-            "location": "/client/headless/#toml-examples",
-            "text": "Headless client  Headless client w/ group   With the above example toml file you will need to set the client name, the router to connect to, and the paths and files you would like to share.",
+            "location": "/client/headless/#toml-examples", 
+            "text": "Headless client  Headless client w/ group   With the above example toml file you will need to set the client name, the router to connect to, and the paths and files you would like to share.", 
             "title": "toml examples"
-        },
+        }, 
         {
-            "location": "/client/headless/#launch-test",
-            "text": "At this point you should be able to launch  demonsaw_cli  from the command line, press  C  to see the status of the client/s. It will take a few seconds of waiting, but it should land on success if everything worked, you should see your clients connected to the router now.",
+            "location": "/client/headless/#launch-test", 
+            "text": "At this point you should be able to launch  demonsaw_cli  from the command line, press  C  to see the status of the client/s. It will take a few seconds of waiting, but it should land on success if everything worked, you should see your clients connected to the router now.", 
             "title": "Launch &amp; Test"
-        },
+        }, 
         {
-            "location": "/client/headless/#startup-scripts",
-            "text": "You're now running your own Demonsaw headless client, you probably have it on a VPS somewhere to host files and won't always be able to ssh in to restart demonsaw_cli should it have some issues, or you might not want to have to ssh in just to start demonsaw_cli everytime the server is rebooted; Startup scripts.\nThere are a few ways to do this, I recommend using  Daniel Stinebaugh's startup script , but you can start it how ever you would like, including crontab or init scripts.",
+            "location": "/client/headless/#startup-scripts", 
+            "text": "You're now running your own Demonsaw headless client, you probably have it on a VPS somewhere to host files and won't always be able to ssh in to restart demonsaw_cli should it have some issues, or you might not want to have to ssh in just to start demonsaw_cli everytime the server is rebooted; Startup scripts.\nThere are a few ways to do this, I recommend using  Daniel Stinebaugh's startup script , but you can start it how ever you would like, including crontab or init scripts.", 
             "title": "Startup Scripts"
-        },
+        }, 
         {
-            "location": "/client/headless/#considerations",
-            "text": "So you have a working Demonsaw client now, what is next? The cli has a few options for things such as refreshing so that files added to the share are now visible to demonsaw, restart to enable changes to the client configuration, etc.  If you are hosting the headless client on a VPS, you should also think about bandwidth usage as well as the security of your VPS. If your VPS is compromised then some hackers could have the credentials to monitor any secret groups that client was connected to.",
+            "location": "/client/headless/#considerations", 
+            "text": "So you have a working Demonsaw client now, what is next? The cli has a few options for things such as refreshing so that files added to the share are now visible to demonsaw, restart to enable changes to the client configuration, etc.  If you are hosting the headless client on a VPS, you should also think about bandwidth usage as well as the security of your VPS. If your VPS is compromised then some hackers could have the credentials to monitor any secret groups that client was connected to.", 
             "title": "Considerations"
-        },
+        }, 
         {
-            "location": "/client/troubleshooting/",
-            "text": "Client Troubleshooting\n\n\nSetting up Demonsaw is very straight forward, but sometimes you might run into a simple problem that you overlook. Here we'll cover some of the most common problems when working with Demonsaw, from Client to Router, and aim to be mostly platform neutral.\n\n\nUnable to launching Demonsaw\n\n\n\n\nmake sure that demonsaw.xml is in the same directory and has permissions to write to it.\n\n\nmake sure you are running the correct build for your operating system.\n\n\non *nix based operating system, make sure that demonsaw/demonsaw_cli has execute permissions.\n\n\n\n\n\n\n\nConnectivity Issues\n\n\nClient icon won't stay green\n\n\nThis is usually a sign that your ISP is not handling sockets correctly or your internet could be suffering problems. If it is not either of these it is likely one of the below issues with the router you're connected to.\n\n\n\n\nRouter is running out of entropy\n\n\nToo many sockets open to router (Caused by ISP)\n\n\nRouter is having connectivity issues or DDOS\n\n\n\n\nCannot connect to a router\n\n\n\n\nMake sure router address and port are correct\n\n\nMake sure the passphrase is correct, or empty of the router has no passphrase\n\n\nMake sure a firewall isn't blocking outbound connections or Internet is working\n\n\nIf Message or Transfer key/prime size is set too high it could cause a long delay in connecting to a router. If you need to set it lower you will want to also save and restart demonsaw.\n\n\n\n\n\n\n\nCrashes\n\n\nIf your client crashes when trying to save settings then Demonsaw isn't running with the permissions to save demonsaw.xml.\nFor most all other crashes it would be a problem with Demonsaw, take note of what you did when the crash occured and report the error with as much detail as possible, there might already be a fix in progress.\n\n\n\n\n\nDownload/Upload\n\n\nReasons for downloads not starting\n\n\n\n\nUploader has a full queue (you're waiting in line)\n\n\nUploader is gone away (No one else has the file for it to be swarmed)\n\n\nThe message router assigned you to a data router that is busy (you're waiting for your client to retry download from another data router)\n\n\n\n\nReasons for uploads not starting\n\n\n\n\nThe data router is busy or slow\n\n\nThe downloading client is not ready",
+            "location": "/client/troubleshooting/", 
+            "text": "Client Troubleshooting\n\n\nSetting up Demonsaw is very straight forward, but sometimes you might run into a simple problem that you overlook. Here we'll cover some of the most common problems when working with Demonsaw, from Client to Router, and aim to be mostly platform neutral.\n\n\nUnable to launching Demonsaw\n\n\n\n\nmake sure that demonsaw.xml is in the same directory and has permissions to write to it.\n\n\nmake sure you are running the correct build for your operating system.\n\n\non *nix based operating system, make sure that demonsaw/demonsaw_cli has execute permissions.\n\n\n\n\n\n\n\nConnectivity Issues\n\n\nClient icon won't stay green\n\n\nThis is usually a sign that your ISP is not handling sockets correctly or your internet could be suffering problems. If it is not either of these it is likely one of the below issues with the router you're connected to.\n\n\n\n\nRouter is running out of entropy\n\n\nToo many sockets open to router (Caused by ISP)\n\n\nRouter is having connectivity issues or DDOS\n\n\n\n\nCannot connect to a router\n\n\n\n\nMake sure router address and port are correct\n\n\nMake sure the passphrase is correct, or empty of the router has no passphrase\n\n\nMake sure a firewall isn't blocking outbound connections or Internet is working\n\n\nIf Message or Transfer key/prime size is set too high it could cause a long delay in connecting to a router. If you need to set it lower you will want to also save and restart demonsaw.\n\n\n\n\n\n\n\nCrashes\n\n\nIf your client crashes when trying to save settings then Demonsaw isn't running with the permissions to save demonsaw.xml.\nFor most all other crashes it would be a problem with Demonsaw, take note of what you did when the crash occured and report the error with as much detail as possible, there might already be a fix in progress.\n\n\n\n\n\nDownload/Upload\n\n\nReasons for downloads not starting\n\n\n\n\nUploader has a full queue (you're waiting in line)\n\n\nUploader is gone away (No one else has the file for it to be swarmed)\n\n\nThe message router assigned you to a data router that is busy (you're waiting for your client to retry download from another data router)\n\n\n\n\nReasons for uploads not starting\n\n\n\n\nThe data router is busy or slow\n\n\nThe downloading client is not ready", 
             "title": "Troubleshooting"
-        },
+        }, 
         {
-            "location": "/client/troubleshooting/#client-troubleshooting",
-            "text": "Setting up Demonsaw is very straight forward, but sometimes you might run into a simple problem that you overlook. Here we'll cover some of the most common problems when working with Demonsaw, from Client to Router, and aim to be mostly platform neutral.",
+            "location": "/client/troubleshooting/#client-troubleshooting", 
+            "text": "Setting up Demonsaw is very straight forward, but sometimes you might run into a simple problem that you overlook. Here we'll cover some of the most common problems when working with Demonsaw, from Client to Router, and aim to be mostly platform neutral.", 
             "title": "Client Troubleshooting"
-        },
+        }, 
         {
-            "location": "/client/troubleshooting/#unable-to-launching-demonsaw",
-            "text": "make sure that demonsaw.xml is in the same directory and has permissions to write to it.  make sure you are running the correct build for your operating system.  on *nix based operating system, make sure that demonsaw/demonsaw_cli has execute permissions.",
+            "location": "/client/troubleshooting/#unable-to-launching-demonsaw", 
+            "text": "make sure that demonsaw.xml is in the same directory and has permissions to write to it.  make sure you are running the correct build for your operating system.  on *nix based operating system, make sure that demonsaw/demonsaw_cli has execute permissions.", 
             "title": "Unable to launching Demonsaw"
-        },
+        }, 
         {
-            "location": "/client/troubleshooting/#connectivity-issues",
-            "text": "",
+            "location": "/client/troubleshooting/#connectivity-issues", 
+            "text": "", 
             "title": "Connectivity Issues"
-        },
+        }, 
         {
-            "location": "/client/troubleshooting/#client-icon-wont-stay-green",
-            "text": "This is usually a sign that your ISP is not handling sockets correctly or your internet could be suffering problems. If it is not either of these it is likely one of the below issues with the router you're connected to.   Router is running out of entropy  Too many sockets open to router (Caused by ISP)  Router is having connectivity issues or DDOS",
+            "location": "/client/troubleshooting/#client-icon-wont-stay-green", 
+            "text": "This is usually a sign that your ISP is not handling sockets correctly or your internet could be suffering problems. If it is not either of these it is likely one of the below issues with the router you're connected to.   Router is running out of entropy  Too many sockets open to router (Caused by ISP)  Router is having connectivity issues or DDOS", 
             "title": "Client icon won't stay green"
-        },
+        }, 
         {
-            "location": "/client/troubleshooting/#cannot-connect-to-a-router",
-            "text": "Make sure router address and port are correct  Make sure the passphrase is correct, or empty of the router has no passphrase  Make sure a firewall isn't blocking outbound connections or Internet is working  If Message or Transfer key/prime size is set too high it could cause a long delay in connecting to a router. If you need to set it lower you will want to also save and restart demonsaw.",
+            "location": "/client/troubleshooting/#cannot-connect-to-a-router", 
+            "text": "Make sure router address and port are correct  Make sure the passphrase is correct, or empty of the router has no passphrase  Make sure a firewall isn't blocking outbound connections or Internet is working  If Message or Transfer key/prime size is set too high it could cause a long delay in connecting to a router. If you need to set it lower you will want to also save and restart demonsaw.", 
             "title": "Cannot connect to a router"
-        },
+        }, 
         {
-            "location": "/client/troubleshooting/#crashes",
-            "text": "If your client crashes when trying to save settings then Demonsaw isn't running with the permissions to save demonsaw.xml.\nFor most all other crashes it would be a problem with Demonsaw, take note of what you did when the crash occured and report the error with as much detail as possible, there might already be a fix in progress.",
+            "location": "/client/troubleshooting/#crashes", 
+            "text": "If your client crashes when trying to save settings then Demonsaw isn't running with the permissions to save demonsaw.xml.\nFor most all other crashes it would be a problem with Demonsaw, take note of what you did when the crash occured and report the error with as much detail as possible, there might already be a fix in progress.", 
             "title": "Crashes"
-        },
+        }, 
         {
-            "location": "/client/troubleshooting/#downloadupload",
-            "text": "",
+            "location": "/client/troubleshooting/#downloadupload", 
+            "text": "", 
             "title": "Download/Upload"
-        },
+        }, 
         {
-            "location": "/client/troubleshooting/#reasons-for-downloads-not-starting",
-            "text": "Uploader has a full queue (you're waiting in line)  Uploader is gone away (No one else has the file for it to be swarmed)  The message router assigned you to a data router that is busy (you're waiting for your client to retry download from another data router)",
+            "location": "/client/troubleshooting/#reasons-for-downloads-not-starting", 
+            "text": "Uploader has a full queue (you're waiting in line)  Uploader is gone away (No one else has the file for it to be swarmed)  The message router assigned you to a data router that is busy (you're waiting for your client to retry download from another data router)", 
             "title": "Reasons for downloads not starting"
-        },
+        }, 
         {
-            "location": "/client/troubleshooting/#reasons-for-uploads-not-starting",
-            "text": "The data router is busy or slow  The downloading client is not ready",
+            "location": "/client/troubleshooting/#reasons-for-uploads-not-starting", 
+            "text": "The data router is busy or slow  The downloading client is not ready", 
             "title": "Reasons for uploads not starting"
-        },
+        }, 
         {
-            "location": "/router/",
-            "text": "Router Documentation\n\n\n\n\nInformation will be added as soon as it is available. Currently you can run a router from the Demonsaw 3 GUI but there is no cli build available yet because we're working on the stability of the router.",
+            "location": "/router/", 
+            "text": "", 
             "title": "Getting Started"
-        },
+        }, 
         {
-            "location": "/router/#router-documentation",
-            "text": "Information will be added as soon as it is available. Currently you can run a router from the Demonsaw 3 GUI but there is no cli build available yet because we're working on the stability of the router.",
-            "title": "Router Documentation"
-        },
-        {
-            "location": "/router/headless/",
-            "text": "Headless Demonsaw Router Setup\n\n\nThis post documents what it takes to setup a Demonsaw router on a Linux host, the process is very simple but we'll cover the thinks to look out for and things to think about when setting up a router.\n\n\nDownload Demonsaw\n\n\nDemonsaw has builds for multiple operating systems, for Linux you have the \nDebian\n build the \nUbuntu\n build and the \nRaspian\n build. Choose the version that you need for your specific Linux distro and download it.\n\n\nExtract & Verify\n\n\nYou can extract Demonsaw and run it from wherever you want. If you're running a Demonsaw router off of a headless server it's perfectly fine to put the Demonsaw folder under your home directory. On a desktop Linux Debian distro you might want to put it somewhere better, I like /opt/demonsaw/ so that is what I'll show how to do.\n\n\nsudo mkdir /opt/demonsaw\nsudo tar xzf demonsaw.tar.gz -C /opt/demonsaw/\n\n\n\nThe above command extracts far more than you need for a headless client/router, if you want you can just extract 'demonsaw_cli' with \ntar -zxcf demonsaw_cli\n, this is also a good way to update demonsaw without over-writing your toml.\n\n\nNow you need to ensure that the permissions for the /opt/demonsaw/ folder are for your user, in the example our user is named frank.\n\n\nsudo chown -R frank /opt/demonsaw\n\n\n\nOne more important thing to verify is that demonsaw and demonsaw_cli have execute permissions, because sometimes mistakes are made.\n\n\nsudo chmod +x /opt/demonsaw/demonsaw_cli\n\n\n\nYou should now be able to launch demonsaw but you'll be missing the demonsaw.toml configuration, currently the demonsaw_cli will not automatically create this file because it is for a headless router.\n\n\nSetup your demonsaw config file\n\n\nThe easiest way to setup the demonsaw config file is to use the GUI to create the setup you want; You can do it from any operating system as the toml is basically the same, just drop the demonsaw GUI binary somewhere like your desktop and run it, add a router and change all the settings to suit your needs.\n\n\nIf you're in a rush or don't want to fool around with the GUI, below are links to demonsaw config file examples.\n\n\ntoml examples\n\n\n\n\nHeadless Router\n\n\nHeadless Router and Client\n\n\n\n\nWith any of the above example toml files you will need to set the address to the external IP Address for the router, the Download and Share paths must be valid (it's recommended to leave a trailing slash), passphrase is left empty so you can easily fill it in if needed. And examples with groups need to be changed to match your group setup.\n\n\nLaunch & Test\n\n\nAt this point you should be able to launch \ndemonsaw_cli\n from the command line, press \nC\n to see the status of the client/router. It will take a seconds of waiting, but it should land on success if everything worked.\n\n\nConsiderations\n\n\nSo you have a working Demonsaw router now, what is next? If you plan to scale and build your own private network then you still have a few things that you'll want to work on.\n\n\nStartup Scripts\n\n\nYou're now hosting your own Demonsaw network, you probably have it on a VPS somewhere and won't always be able to ssh in to restart demonsaw_cli should it have some issue, or you might not want to have to ssh in just to start demonsaw_cli everytime the server is rebooted; Startup scripts.\nThere are a few ways to do this, I recommend using \nDaniel Stinebaugh's startup script\n.\n\n\nAdding data routers\n\n\nThe above toml examples are setup so that the router you setup handles the messaging, client search and browse, and the data transfers. If you've ever connected to the Demonbucket network you'll notice that you connect to Bucket1 but when you download something your download goes through another router. You can add as many data routers as you want, in Demonsaw 2.x these are just normal Demonsaw routers (you can disable messaging, search/browse, etc if you want). The easiest way to set this up is again to use the GUI and get your configuration as close as you want it, save it, then edit and move the demonsaw.toml to the router you want to use it on.\n\n\nEntropy (Linux hosts only)\n\n\nYour Demonsaw router, even with 10 people connecting, is using more crypto than a simple https site with 10 people connected. Everything you do in Demonsaw is encrypted, and each client connecting drains a bit of entropy from the server you're running the Demonsaw router off of.\nFor a Demonsaw router you will want an entropy pool size around 2500 or higher, you can check your entropy with the below command.\n\n\nwatch cat /proc/sys/kernel/random/entropy_avail\n\n\n\nThere are a few ways to boost your entropy if it is low, the easiest is to install \nHaveged\n or \nrng-tools\n or both. Below are the commands for Debian, but both tools should be available for other Linux distros. Once you install them you can check your entropy again, you should see an immediate boost.\n\n\nsudo apt-get install haveged\nsudo apt-get install rng-tools\n\n\n\nKeeping your entropy at a usable value will prevent your router from having handshake issues when you start to build your userbase.",
+            "location": "/router/headless/", 
+            "text": "Headless Demonsaw Router Setup\n\n\nThis post documents what it takes to setup a Demonsaw router on a Linux host, the process is very simple but we'll cover the thinks to look out for and things to think about when setting up a router.\n\n\nDownload Demonsaw\n\n\nDemonsaw has builds for multiple operating systems, for Linux you have the \nDebian\n build the \nUbuntu\n build and the \nRaspian\n build. Choose the version that you need for your specific Linux distro and download it.\n\n\nExtract \n Verify\n\n\nYou can extract Demonsaw and run it from wherever you want. If you're running a Demonsaw router off of a headless server it's perfectly fine to put the Demonsaw folder under your home directory. On a desktop Linux Debian distro you might want to put it somewhere better, I like /opt/demonsaw/ so that is what I'll show how to do.\n\n\nsudo mkdir /opt/demonsaw\nsudo tar xzf demonsaw.tar.gz -C /opt/demonsaw/\n\n\n\nThe above command extracts far more than you need for a headless client/router, if you want you can just extract 'demonsaw_cli' with \ntar -zxcf demonsaw_cli\n, this is also a good way to update demonsaw without over-writing your toml.\n\n\nNow you need to ensure that the permissions for the /opt/demonsaw/ folder are for your user, in the example our user is named frank.\n\n\nsudo chown -R frank /opt/demonsaw\n\n\n\nOne more important thing to verify is that demonsaw and demonsaw_cli have execute permissions, because sometimes mistakes are made.\n\n\nsudo chmod +x /opt/demonsaw/demonsaw_cli\n\n\n\nYou should now be able to launch demonsaw but you'll be missing the demonsaw.toml configuration, currently the demonsaw_cli will not automatically create this file because it is for a headless router.\n\n\nSetup your demonsaw config file\n\n\nThe easiest way to setup the demonsaw config file is to use the GUI to create the setup you want; You can do it from any operating system as the toml is basically the same, just drop the demonsaw GUI binary somewhere like your desktop and run it, add a router and change all the settings to suit your needs.\n\n\nIf you're in a rush or don't want to fool around with the GUI, below are links to demonsaw config file examples.\n\n\ntoml examples\n\n\n\n\nHeadless Router\n\n\nHeadless Router and Client\n\n\n\n\nWith any of the above example toml files you will need to set the address to the external IP Address for the router, the Download and Share paths must be valid (it's recommended to leave a trailing slash), passphrase is left empty so you can easily fill it in if needed. And examples with groups need to be changed to match your group setup.\n\n\nLaunch \n Test\n\n\nAt this point you should be able to launch \ndemonsaw_cli\n from the command line, press \nC\n to see the status of the client/router. It will take a seconds of waiting, but it should land on success if everything worked.\n\n\nConsiderations\n\n\nSo you have a working Demonsaw router now, what is next? If you plan to scale and build your own private network then you still have a few things that you'll want to work on.\n\n\nStartup Scripts\n\n\nYou're now hosting your own Demonsaw network, you probably have it on a VPS somewhere and won't always be able to ssh in to restart demonsaw_cli should it have some issue, or you might not want to have to ssh in just to start demonsaw_cli everytime the server is rebooted; Startup scripts.\nThere are a few ways to do this, I recommend using \nDaniel Stinebaugh's startup script\n.\n\n\nAdding data routers\n\n\nThe above toml examples are setup so that the router you setup handles the messaging, client search and browse, and the data transfers. If you've ever connected to the Demonbucket network you'll notice that you connect to Bucket1 but when you download something your download goes through another router. You can add as many data routers as you want, in Demonsaw 2.x these are just normal Demonsaw routers (you can disable messaging, search/browse, etc if you want). The easiest way to set this up is again to use the GUI and get your configuration as close as you want it, save it, then edit and move the demonsaw.toml to the router you want to use it on.\n\n\nEntropy (Linux hosts only)\n\n\nYour Demonsaw router, even with 10 people connecting, is using more crypto than a simple https site with 10 people connected. Everything you do in Demonsaw is encrypted, and each client connecting drains a bit of entropy from the server you're running the Demonsaw router off of.\nFor a Demonsaw router you will want an entropy pool size around 2500 or higher, you can check your entropy with the below command.\n\n\nwatch cat /proc/sys/kernel/random/entropy_avail\n\n\n\nThere are a few ways to boost your entropy if it is low, the easiest is to install \nHaveged\n or \nrng-tools\n or both. Below are the commands for Debian, but both tools should be available for other Linux distros. Once you install them you can check your entropy again, you should see an immediate boost.\n\n\nsudo apt-get install haveged\nsudo apt-get install rng-tools\n\n\n\nKeeping your entropy at a usable value will prevent your router from having handshake issues when you start to build your userbase.", 
             "title": "Headless Setup"
-        },
+        }, 
         {
-            "location": "/router/headless/#headless-demonsaw-router-setup",
-            "text": "This post documents what it takes to setup a Demonsaw router on a Linux host, the process is very simple but we'll cover the thinks to look out for and things to think about when setting up a router.",
+            "location": "/router/headless/#headless-demonsaw-router-setup", 
+            "text": "This post documents what it takes to setup a Demonsaw router on a Linux host, the process is very simple but we'll cover the thinks to look out for and things to think about when setting up a router.", 
             "title": "Headless Demonsaw Router Setup"
-        },
+        }, 
         {
-            "location": "/router/headless/#download-demonsaw",
-            "text": "Demonsaw has builds for multiple operating systems, for Linux you have the  Debian  build the  Ubuntu  build and the  Raspian  build. Choose the version that you need for your specific Linux distro and download it.",
+            "location": "/router/headless/#download-demonsaw", 
+            "text": "Demonsaw has builds for multiple operating systems, for Linux you have the  Debian  build the  Ubuntu  build and the  Raspian  build. Choose the version that you need for your specific Linux distro and download it.", 
             "title": "Download Demonsaw"
-        },
+        }, 
         {
-            "location": "/router/headless/#extract-verify",
-            "text": "You can extract Demonsaw and run it from wherever you want. If you're running a Demonsaw router off of a headless server it's perfectly fine to put the Demonsaw folder under your home directory. On a desktop Linux Debian distro you might want to put it somewhere better, I like /opt/demonsaw/ so that is what I'll show how to do.  sudo mkdir /opt/demonsaw\nsudo tar xzf demonsaw.tar.gz -C /opt/demonsaw/  The above command extracts far more than you need for a headless client/router, if you want you can just extract 'demonsaw_cli' with  tar -zxcf demonsaw_cli , this is also a good way to update demonsaw without over-writing your toml.  Now you need to ensure that the permissions for the /opt/demonsaw/ folder are for your user, in the example our user is named frank.  sudo chown -R frank /opt/demonsaw  One more important thing to verify is that demonsaw and demonsaw_cli have execute permissions, because sometimes mistakes are made.  sudo chmod +x /opt/demonsaw/demonsaw_cli  You should now be able to launch demonsaw but you'll be missing the demonsaw.toml configuration, currently the demonsaw_cli will not automatically create this file because it is for a headless router.",
+            "location": "/router/headless/#extract-verify", 
+            "text": "You can extract Demonsaw and run it from wherever you want. If you're running a Demonsaw router off of a headless server it's perfectly fine to put the Demonsaw folder under your home directory. On a desktop Linux Debian distro you might want to put it somewhere better, I like /opt/demonsaw/ so that is what I'll show how to do.  sudo mkdir /opt/demonsaw\nsudo tar xzf demonsaw.tar.gz -C /opt/demonsaw/  The above command extracts far more than you need for a headless client/router, if you want you can just extract 'demonsaw_cli' with  tar -zxcf demonsaw_cli , this is also a good way to update demonsaw without over-writing your toml.  Now you need to ensure that the permissions for the /opt/demonsaw/ folder are for your user, in the example our user is named frank.  sudo chown -R frank /opt/demonsaw  One more important thing to verify is that demonsaw and demonsaw_cli have execute permissions, because sometimes mistakes are made.  sudo chmod +x /opt/demonsaw/demonsaw_cli  You should now be able to launch demonsaw but you'll be missing the demonsaw.toml configuration, currently the demonsaw_cli will not automatically create this file because it is for a headless router.", 
             "title": "Extract &amp; Verify"
-        },
+        }, 
         {
-            "location": "/router/headless/#setup-your-demonsaw-config-file",
-            "text": "The easiest way to setup the demonsaw config file is to use the GUI to create the setup you want; You can do it from any operating system as the toml is basically the same, just drop the demonsaw GUI binary somewhere like your desktop and run it, add a router and change all the settings to suit your needs.  If you're in a rush or don't want to fool around with the GUI, below are links to demonsaw config file examples.",
+            "location": "/router/headless/#setup-your-demonsaw-config-file", 
+            "text": "The easiest way to setup the demonsaw config file is to use the GUI to create the setup you want; You can do it from any operating system as the toml is basically the same, just drop the demonsaw GUI binary somewhere like your desktop and run it, add a router and change all the settings to suit your needs.  If you're in a rush or don't want to fool around with the GUI, below are links to demonsaw config file examples.", 
             "title": "Setup your demonsaw config file"
-        },
+        }, 
         {
-            "location": "/router/headless/#toml-examples",
-            "text": "Headless Router  Headless Router and Client   With any of the above example toml files you will need to set the address to the external IP Address for the router, the Download and Share paths must be valid (it's recommended to leave a trailing slash), passphrase is left empty so you can easily fill it in if needed. And examples with groups need to be changed to match your group setup.",
+            "location": "/router/headless/#toml-examples", 
+            "text": "Headless Router  Headless Router and Client   With any of the above example toml files you will need to set the address to the external IP Address for the router, the Download and Share paths must be valid (it's recommended to leave a trailing slash), passphrase is left empty so you can easily fill it in if needed. And examples with groups need to be changed to match your group setup.", 
             "title": "toml examples"
-        },
+        }, 
         {
-            "location": "/router/headless/#launch-test",
-            "text": "At this point you should be able to launch  demonsaw_cli  from the command line, press  C  to see the status of the client/router. It will take a seconds of waiting, but it should land on success if everything worked.",
+            "location": "/router/headless/#launch-test", 
+            "text": "At this point you should be able to launch  demonsaw_cli  from the command line, press  C  to see the status of the client/router. It will take a seconds of waiting, but it should land on success if everything worked.", 
             "title": "Launch &amp; Test"
-        },
+        }, 
         {
-            "location": "/router/headless/#considerations",
-            "text": "So you have a working Demonsaw router now, what is next? If you plan to scale and build your own private network then you still have a few things that you'll want to work on.",
+            "location": "/router/headless/#considerations", 
+            "text": "So you have a working Demonsaw router now, what is next? If you plan to scale and build your own private network then you still have a few things that you'll want to work on.", 
             "title": "Considerations"
-        },
+        }, 
         {
-            "location": "/router/headless/#startup-scripts",
-            "text": "You're now hosting your own Demonsaw network, you probably have it on a VPS somewhere and won't always be able to ssh in to restart demonsaw_cli should it have some issue, or you might not want to have to ssh in just to start demonsaw_cli everytime the server is rebooted; Startup scripts.\nThere are a few ways to do this, I recommend using  Daniel Stinebaugh's startup script .",
+            "location": "/router/headless/#startup-scripts", 
+            "text": "You're now hosting your own Demonsaw network, you probably have it on a VPS somewhere and won't always be able to ssh in to restart demonsaw_cli should it have some issue, or you might not want to have to ssh in just to start demonsaw_cli everytime the server is rebooted; Startup scripts.\nThere are a few ways to do this, I recommend using  Daniel Stinebaugh's startup script .", 
             "title": "Startup Scripts"
-        },
+        }, 
         {
-            "location": "/router/headless/#adding-data-routers",
-            "text": "The above toml examples are setup so that the router you setup handles the messaging, client search and browse, and the data transfers. If you've ever connected to the Demonbucket network you'll notice that you connect to Bucket1 but when you download something your download goes through another router. You can add as many data routers as you want, in Demonsaw 2.x these are just normal Demonsaw routers (you can disable messaging, search/browse, etc if you want). The easiest way to set this up is again to use the GUI and get your configuration as close as you want it, save it, then edit and move the demonsaw.toml to the router you want to use it on.",
+            "location": "/router/headless/#adding-data-routers", 
+            "text": "The above toml examples are setup so that the router you setup handles the messaging, client search and browse, and the data transfers. If you've ever connected to the Demonbucket network you'll notice that you connect to Bucket1 but when you download something your download goes through another router. You can add as many data routers as you want, in Demonsaw 2.x these are just normal Demonsaw routers (you can disable messaging, search/browse, etc if you want). The easiest way to set this up is again to use the GUI and get your configuration as close as you want it, save it, then edit and move the demonsaw.toml to the router you want to use it on.", 
             "title": "Adding data routers"
-        },
+        }, 
         {
-            "location": "/router/headless/#entropy-linux-hosts-only",
-            "text": "Your Demonsaw router, even with 10 people connecting, is using more crypto than a simple https site with 10 people connected. Everything you do in Demonsaw is encrypted, and each client connecting drains a bit of entropy from the server you're running the Demonsaw router off of.\nFor a Demonsaw router you will want an entropy pool size around 2500 or higher, you can check your entropy with the below command.  watch cat /proc/sys/kernel/random/entropy_avail  There are a few ways to boost your entropy if it is low, the easiest is to install  Haveged  or  rng-tools  or both. Below are the commands for Debian, but both tools should be available for other Linux distros. Once you install them you can check your entropy again, you should see an immediate boost.  sudo apt-get install haveged\nsudo apt-get install rng-tools  Keeping your entropy at a usable value will prevent your router from having handshake issues when you start to build your userbase.",
+            "location": "/router/headless/#entropy-linux-hosts-only", 
+            "text": "Your Demonsaw router, even with 10 people connecting, is using more crypto than a simple https site with 10 people connected. Everything you do in Demonsaw is encrypted, and each client connecting drains a bit of entropy from the server you're running the Demonsaw router off of.\nFor a Demonsaw router you will want an entropy pool size around 2500 or higher, you can check your entropy with the below command.  watch cat /proc/sys/kernel/random/entropy_avail  There are a few ways to boost your entropy if it is low, the easiest is to install  Haveged  or  rng-tools  or both. Below are the commands for Debian, but both tools should be available for other Linux distros. Once you install them you can check your entropy again, you should see an immediate boost.  sudo apt-get install haveged\nsudo apt-get install rng-tools  Keeping your entropy at a usable value will prevent your router from having handshake issues when you start to build your userbase.", 
             "title": "Entropy (Linux hosts only)"
-        },
+        }, 
         {
-            "location": "/router/troubleshooting/",
-            "text": "Router Troubleshooting\n\n\nSetting up a Demonsaw router takes a bit more effort than starting a client. Here we'll cover troubleshooting steps that will apply to both the headless demonsaw_cli and a Demonsaw router that you started from GUI.\n\n\nIssues starting the router\n\n\n\n\n(*nix) Make sure demonsaw_cli has execute permissions\n\n\n(*nix) If the router is setup for a port below 1024, the router must be run with sudo or moved to a higher port.\n\n\n\n\n\n\n\nConnectivity Issues\n\n\nClients cannot connect\n\n\n\n\n(*nix) If the router is setup for a port below 1024 the router must be run with sudo or moved to a higher port.\n\n\nMake sure that the router is listening on the correct IP Address. (DO NOT USE 0.0.0.0, localhost, 127.0.0.1, etc)\n\n\nMake sure that the router port is not blocked by firewall.\n\n\nIf router is behind a gateway, make sure the port is forwarded to allow outside network connections.\n\n\nVerify that a passphrase wasn't set on the router or the clients are using the correct passphrase.\n\n\nVerify that the clients are using the correct port number to connect to the router.\n\n\nIf connecting to the router by domain name, make sure DNS is working correctly.\n\n\n\n\n\n\n\nFile transfer Issues\n\n\nThe notes are assuming that all clients are unable to perform file transfers.\n\n\n\n\nEnsure that transfer and timeout settings are at defaults. (no crazy changes or errors in configuration)\n\n\nEnsure that transfer is enabled in the router config. (\ntrue\n under action)\n\n\nEnsure that the router hasn't run out of connection sockets or bandwidth.\n\n\nCheck that any data routers added to the 'server' section are in working order.\n\n\n\n\n\n\n\nReliability Issues\n\n\nClients bouncing (Client color bounces between green and blue)\n\n\n\n\nServer could be out of entropy",
+            "location": "/router/troubleshooting/", 
+            "text": "Router Troubleshooting\n\n\nSetting up a Demonsaw router takes a bit more effort than starting a client. Here we'll cover troubleshooting steps that will apply to both the headless demonsaw_cli and a Demonsaw router that you started from GUI.\n\n\nIssues starting the router\n\n\n\n\n(*nix) Make sure demonsaw_cli has execute permissions\n\n\n(*nix) If the router is setup for a port below 1024, the router must be run with sudo or moved to a higher port.\n\n\n\n\n\n\n\nConnectivity Issues\n\n\nClients cannot connect\n\n\n\n\n(*nix) If the router is setup for a port below 1024 the router must be run with sudo or moved to a higher port.\n\n\nMake sure that the router is listening on the correct IP Address. (DO NOT USE 0.0.0.0, localhost, 127.0.0.1, etc)\n\n\nMake sure that the router port is not blocked by firewall.\n\n\nIf router is behind a gateway, make sure the port is forwarded to allow outside network connections.\n\n\nVerify that a passphrase wasn't set on the router or the clients are using the correct passphrase.\n\n\nVerify that the clients are using the correct port number to connect to the router.\n\n\nIf connecting to the router by domain name, make sure DNS is working correctly.\n\n\n\n\n\n\n\nFile transfer Issues\n\n\nThe notes are assuming that all clients are unable to perform file transfers.\n\n\n\n\nEnsure that transfer and timeout settings are at defaults. (no crazy changes or errors in configuration)\n\n\nEnsure that transfer is enabled in the router config. (\ntrue\n under action)\n\n\nEnsure that the router hasn't run out of connection sockets or bandwidth.\n\n\nCheck that any data routers added to the 'server' section are in working order.\n\n\n\n\n\n\n\nReliability Issues\n\n\nClients bouncing (Client color bounces between green and blue)\n\n\n\n\nServer could be out of entropy", 
             "title": "Troubleshooting"
-        },
+        }, 
         {
-            "location": "/router/troubleshooting/#router-troubleshooting",
-            "text": "Setting up a Demonsaw router takes a bit more effort than starting a client. Here we'll cover troubleshooting steps that will apply to both the headless demonsaw_cli and a Demonsaw router that you started from GUI.",
+            "location": "/router/troubleshooting/#router-troubleshooting", 
+            "text": "Setting up a Demonsaw router takes a bit more effort than starting a client. Here we'll cover troubleshooting steps that will apply to both the headless demonsaw_cli and a Demonsaw router that you started from GUI.", 
             "title": "Router Troubleshooting"
-        },
+        }, 
         {
-            "location": "/router/troubleshooting/#issues-starting-the-router",
-            "text": "(*nix) Make sure demonsaw_cli has execute permissions  (*nix) If the router is setup for a port below 1024, the router must be run with sudo or moved to a higher port.",
+            "location": "/router/troubleshooting/#issues-starting-the-router", 
+            "text": "(*nix) Make sure demonsaw_cli has execute permissions  (*nix) If the router is setup for a port below 1024, the router must be run with sudo or moved to a higher port.", 
             "title": "Issues starting the router"
-        },
+        }, 
         {
-            "location": "/router/troubleshooting/#connectivity-issues",
-            "text": "",
+            "location": "/router/troubleshooting/#connectivity-issues", 
+            "text": "", 
             "title": "Connectivity Issues"
-        },
+        }, 
         {
-            "location": "/router/troubleshooting/#clients-cannot-connect",
-            "text": "(*nix) If the router is setup for a port below 1024 the router must be run with sudo or moved to a higher port.  Make sure that the router is listening on the correct IP Address. (DO NOT USE 0.0.0.0, localhost, 127.0.0.1, etc)  Make sure that the router port is not blocked by firewall.  If router is behind a gateway, make sure the port is forwarded to allow outside network connections.  Verify that a passphrase wasn't set on the router or the clients are using the correct passphrase.  Verify that the clients are using the correct port number to connect to the router.  If connecting to the router by domain name, make sure DNS is working correctly.",
+            "location": "/router/troubleshooting/#clients-cannot-connect", 
+            "text": "(*nix) If the router is setup for a port below 1024 the router must be run with sudo or moved to a higher port.  Make sure that the router is listening on the correct IP Address. (DO NOT USE 0.0.0.0, localhost, 127.0.0.1, etc)  Make sure that the router port is not blocked by firewall.  If router is behind a gateway, make sure the port is forwarded to allow outside network connections.  Verify that a passphrase wasn't set on the router or the clients are using the correct passphrase.  Verify that the clients are using the correct port number to connect to the router.  If connecting to the router by domain name, make sure DNS is working correctly.", 
             "title": "Clients cannot connect"
-        },
+        }, 
         {
-            "location": "/router/troubleshooting/#file-transfer-issues",
-            "text": "The notes are assuming that all clients are unable to perform file transfers.   Ensure that transfer and timeout settings are at defaults. (no crazy changes or errors in configuration)  Ensure that transfer is enabled in the router config. ( true  under action)  Ensure that the router hasn't run out of connection sockets or bandwidth.  Check that any data routers added to the 'server' section are in working order.",
+            "location": "/router/troubleshooting/#file-transfer-issues", 
+            "text": "The notes are assuming that all clients are unable to perform file transfers.   Ensure that transfer and timeout settings are at defaults. (no crazy changes or errors in configuration)  Ensure that transfer is enabled in the router config. ( true  under action)  Ensure that the router hasn't run out of connection sockets or bandwidth.  Check that any data routers added to the 'server' section are in working order.", 
             "title": "File transfer Issues"
-        },
+        }, 
         {
-            "location": "/router/troubleshooting/#reliability-issues",
-            "text": "",
+            "location": "/router/troubleshooting/#reliability-issues", 
+            "text": "", 
             "title": "Reliability Issues"
-        },
+        }, 
         {
-            "location": "/router/troubleshooting/#clients-bouncing-client-color-bounces-between-green-and-blue",
-            "text": "Server could be out of entropy",
+            "location": "/router/troubleshooting/#clients-bouncing-client-color-bounces-between-green-and-blue", 
+            "text": "Server could be out of entropy", 
             "title": "Clients bouncing (Client color bounces between green and blue)"
-        },
+        }, 
         {
-            "location": "/resources/",
-            "text": "Resources\n\n\nOfficial Resources & Sites\n\n\n\n\nDemonsaw Website\n\n\nDemonsaw Issue Tracker & Feature Requests- GitHub\n\n\nDemonsaw Documentation - GitHub\n\n\nDemoncrypt (Demonsaw Crypto Layer) - GitHub\n\n\n\n\nCommunity Resources & Sites\n\n\n\n\nDemonBucket Website\n\n\nDemonsaw Linux Repository\n\n\n\n\nTheme Resources\n\n\n\n\nDemonsaw Themes - GitHub\n\n\nQt5 Stylesheet Reference",
-            "title": "Extra Resources"
-        },
+            "location": "/resources/", 
+            "text": "Resources\n\n\nOfficial Resources \n Sites\n\n\n\n\nDemonsaw Website\n\n\nDemonsaw Issue Tracker \n Feature Requests- GitHub\n\n\nDemonsaw Documentation - GitHub\n\n\nDemoncrypt (Demonsaw Crypto Layer) - GitHub\n\n\n\n\nTheme Resources\n\n\n\n\nQt5 Stylesheet Reference", 
+            "title": "Links & Resources"
+        }, 
         {
-            "location": "/resources/#resources",
-            "text": "",
+            "location": "/resources/#resources", 
+            "text": "", 
             "title": "Resources"
-        },
+        }, 
         {
-            "location": "/resources/#official-resources-sites",
-            "text": "Demonsaw Website  Demonsaw Issue Tracker & Feature Requests- GitHub  Demonsaw Documentation - GitHub  Demoncrypt (Demonsaw Crypto Layer) - GitHub",
+            "location": "/resources/#official-resources-sites", 
+            "text": "Demonsaw Website  Demonsaw Issue Tracker   Feature Requests- GitHub  Demonsaw Documentation - GitHub  Demoncrypt (Demonsaw Crypto Layer) - GitHub", 
             "title": "Official Resources &amp; Sites"
-        },
+        }, 
         {
-            "location": "/resources/#community-resources-sites",
-            "text": "DemonBucket Website  Demonsaw Linux Repository",
-            "title": "Community Resources &amp; Sites"
-        },
-        {
-            "location": "/resources/#theme-resources",
-            "text": "Demonsaw Themes - GitHub  Qt5 Stylesheet Reference",
+            "location": "/resources/#theme-resources", 
+            "text": "Qt5 Stylesheet Reference", 
             "title": "Theme Resources"
-        },
+        }, 
         {
-            "location": "/FAQ/",
-            "text": "Demonsaw F.A.Q.\n\n\nWe're going to break the questions down in to three catagories so you can easily find the answers you might have. If you're reading this and have a question you believe should be on here, please let us know in Demonsaw chat.\n\n\n\n\nThe Client\n\n\nHow am I secure?\n\n\nYou get to pick the level of protection connecting to the message router under the security tab. Even connecting to the public group, you will always have at least one layer of crypto.\n\n\nHow am I anonymous?\n\n\nDemonsaw uses routers to handle all data and communications so that clients never have direct contact, preventing clients from identifying clients. That said, the machines running the routers can see the IP addresses, but it is very difficult to correlate a client to an IP, using a private group will prevent anyone from correlating your IP with a client on the network.\n\n\nWhat are groups?\n\n\nGroups allow you to add layers of crypto to your connection to further protect your communications, but groups also isolate you from the public group; \n\n\nYou can use groups like an especially secure channel on top of the router, where you can communicate and share with a group of friends or create a group for making files available for yourself when you are away from home.\n\n\nWhy do I see myself in browse?\n\n\nThis is by design. So that you are able to see your client is working, you can see yourself in the client list and browse (if you're sharing).\n\n\nWhy is there an envelope icon next to a message in chat?\n\n\nThis is how Private Messages (PM) are displayed, it is shown in public chat so that you know a message has come through. To open the message you can double-click the sender name or right-click the message and choose \"Message\".\n\n\n\n\nThe Router\n\n\nWhat role does the router play?\n\n\nMessage routers have several settings allowing you to enable/disable public group, messaging, data transfer, search, and browse. These settings allow you to define what a router supports and how you use it. If you want you can have a message only router and attach data routers to it (like the demonbucket network).\n\n\nWhat type of information does the router store?\n\n\nThe Demonsaw router doesn't log or save any data, and cannot save any data. It reads the configuration file, it relays messages and data across the network, but nothing is ever written to disk.\n\n\n\n\nThe Network\n\n\nThe network is currently hosted and managed by Demonsaw LLC but we are open to adding community provided transfer routers to the mix since clients have the option to deselect routers they don't trust.\n\n\nThe below are a few questions and answers regarding this network and demonsaw networking in general.\n\n\nWhat is router.demonsaw.com?\n\n\nThis is the Demonsaw public message router, where messages, browse, and search is performed. It should be viewed as a sample network to show off how Demonsaw works, how you can use Demonsaw on your network, and to see how well Demonsaw can scale.\n\n\nWhy are my file transfers going through different routers?\n\n\nTo scale our ability to provide high speed and high bandwidth file transfers, we have disabled transfer on the message router (router.demonsaw.com) and added transfer routers to the message router. Additionally, Demonsaw 3 distributes each file transfer across multiple transfer routers for speed and extra anonymity (this is called sharding).",
-            "title": "Demonsaw FAQ"
-        },
+            "location": "/FAQ/", 
+            "text": "Demonsaw F.A.Q.\n\n\nWe're going to break the questions down in to three catagories so you can easily find the answers you might have. If you're reading this and have a question you believe should be on here, please let us know in Demonsaw chat.\n\n\n\n\nThe Client\n\n\nHow am I secure?\n\n\nYou get to pick the level of protection connecting to the message router under the security tab. Even connecting to the public group, you will always have at least one layer of crypto.\n\n\nHow am I anonymous?\n\n\nDemonsaw uses routers to handle all data and communications so that clients never have direct contact, preventing clients from identifying clients. That said, the machines running the routers can see the IP addresses, but it is very difficult to correlate a client to an IP, using a private group will prevent anyone from correlating your IP with a client on the network.\n\n\nWhat are groups?\n\n\nGroups allow you to add layers of crypto to your connection to further protect your communications as well as isolating you from the public group; You can use groups like an especially secure channel on top of the router, where you can communicate and share privately.\n\n\nWhy don't I see myself in browse?\n\n\nThis is by design. You will not see your own client in browse, your shared files in search, or your client in the message list.\n\n\n\n\nThe Router\n\n\nWhat role does the router play?\n\n\nMessage routers have several settings allowing you to enable/disable public group, messaging, data transfer, search, and browse. These settings allow you to define what a router supports and how you use it. If you want you can have a message only router and attach data routers to it (like the demonbucket network).\n\n\nWhat type of information does the router store?\n\n\nThe Demonsaw router doesn't log or save any data, and cannot save any data. It reads the configuration file, it relays messages and data across the network, but nothing is ever written to disk.\n\n\n\n\nThe Network (Official Public Router)\n\n\nThe network that Demonsaw connects to by default is the official Demonsaw public router. It is fully funded and provided by Eijah with a few community routers that were contributed to add bandwidth to the network. It is to show off how you can use Demonsaw and to test how well it can scale. The below are a few questions and answers regarding this network and demonsaw networking in general.\n\n\nWhat is router.demonsaw.com?\n\n\nThis is a sample network, the tutorial level, a public example of the type of network you can create with Demonsaw.\n\n\nWhy are my file transfers going through different routers?\n\n\nTo scale our ability to provide high speed and high bandwidth file transfers, we have disabled transfer on the message router (router.demonsaw.com) and added transfer routers to the message router. Some or possibly most of the transfer routers are contributed and operated by community members.\n\n\nHow does Demonsaw determine what data router I get?\n\n\nDemonsaw 'shards' file transfers, this means that file transfers are broken up and transferred through multiple transfer routers at once. To transfer a single file, depending on the size of the file, Demonsaw can transfer the file across anywhere between 1 to 8 transfer routers at once.", 
+            "title": "Demonsaw FAQs"
+        }, 
         {
-            "location": "/FAQ/#demonsaw-faq",
-            "text": "We're going to break the questions down in to three catagories so you can easily find the answers you might have. If you're reading this and have a question you believe should be on here, please let us know in Demonsaw chat.",
+            "location": "/FAQ/#demonsaw-faq", 
+            "text": "We're going to break the questions down in to three catagories so you can easily find the answers you might have. If you're reading this and have a question you believe should be on here, please let us know in Demonsaw chat.", 
             "title": "Demonsaw F.A.Q."
-        },
+        }, 
         {
-            "location": "/FAQ/#the-client",
-            "text": "",
+            "location": "/FAQ/#the-client", 
+            "text": "", 
             "title": "The Client"
-        },
+        }, 
         {
-            "location": "/FAQ/#how-am-i-secure",
-            "text": "You get to pick the level of protection connecting to the message router under the security tab. Even connecting to the public group, you will always have at least one layer of crypto.",
+            "location": "/FAQ/#how-am-i-secure", 
+            "text": "You get to pick the level of protection connecting to the message router under the security tab. Even connecting to the public group, you will always have at least one layer of crypto.", 
             "title": "How am I secure?"
-        },
+        }, 
         {
-            "location": "/FAQ/#how-am-i-anonymous",
-            "text": "Demonsaw uses routers to handle all data and communications so that clients never have direct contact, preventing clients from identifying clients. That said, the machines running the routers can see the IP addresses, but it is very difficult to correlate a client to an IP, using a private group will prevent anyone from correlating your IP with a client on the network.",
+            "location": "/FAQ/#how-am-i-anonymous", 
+            "text": "Demonsaw uses routers to handle all data and communications so that clients never have direct contact, preventing clients from identifying clients. That said, the machines running the routers can see the IP addresses, but it is very difficult to correlate a client to an IP, using a private group will prevent anyone from correlating your IP with a client on the network.", 
             "title": "How am I anonymous?"
-        },
+        }, 
         {
-            "location": "/FAQ/#what-are-groups",
-            "text": "Groups allow you to add layers of crypto to your connection to further protect your communications, but groups also isolate you from the public group;   You can use groups like an especially secure channel on top of the router, where you can communicate and share with a group of friends or create a group for making files available for yourself when you are away from home.",
+            "location": "/FAQ/#what-are-groups", 
+            "text": "Groups allow you to add layers of crypto to your connection to further protect your communications as well as isolating you from the public group; You can use groups like an especially secure channel on top of the router, where you can communicate and share privately.", 
             "title": "What are groups?"
-        },
+        }, 
         {
-            "location": "/FAQ/#why-do-i-see-myself-in-browse",
-            "text": "This is by design. So that you are able to see your client is working, you can see yourself in the client list and browse (if you're sharing).",
-            "title": "Why do I see myself in browse?"
-        },
+            "location": "/FAQ/#why-dont-i-see-myself-in-browse", 
+            "text": "This is by design. You will not see your own client in browse, your shared files in search, or your client in the message list.", 
+            "title": "Why don't I see myself in browse?"
+        }, 
         {
-            "location": "/FAQ/#why-is-there-an-envelope-icon-next-to-a-message-in-chat",
-            "text": "This is how Private Messages (PM) are displayed, it is shown in public chat so that you know a message has come through. To open the message you can double-click the sender name or right-click the message and choose \"Message\".",
-            "title": "Why is there an envelope icon next to a message in chat?"
-        },
-        {
-            "location": "/FAQ/#the-router",
-            "text": "",
+            "location": "/FAQ/#the-router", 
+            "text": "", 
             "title": "The Router"
-        },
+        }, 
         {
-            "location": "/FAQ/#what-role-does-the-router-play",
-            "text": "Message routers have several settings allowing you to enable/disable public group, messaging, data transfer, search, and browse. These settings allow you to define what a router supports and how you use it. If you want you can have a message only router and attach data routers to it (like the demonbucket network).",
+            "location": "/FAQ/#what-role-does-the-router-play", 
+            "text": "Message routers have several settings allowing you to enable/disable public group, messaging, data transfer, search, and browse. These settings allow you to define what a router supports and how you use it. If you want you can have a message only router and attach data routers to it (like the demonbucket network).", 
             "title": "What role does the router play?"
-        },
+        }, 
         {
-            "location": "/FAQ/#what-type-of-information-does-the-router-store",
-            "text": "The Demonsaw router doesn't log or save any data, and cannot save any data. It reads the configuration file, it relays messages and data across the network, but nothing is ever written to disk.",
+            "location": "/FAQ/#what-type-of-information-does-the-router-store", 
+            "text": "The Demonsaw router doesn't log or save any data, and cannot save any data. It reads the configuration file, it relays messages and data across the network, but nothing is ever written to disk.", 
             "title": "What type of information does the router store?"
-        },
+        }, 
         {
-            "location": "/FAQ/#the-network",
-            "text": "The network is currently hosted and managed by Demonsaw LLC but we are open to adding community provided transfer routers to the mix since clients have the option to deselect routers they don't trust.  The below are a few questions and answers regarding this network and demonsaw networking in general.",
-            "title": "The Network"
-        },
+            "location": "/FAQ/#the-network-official-public-router", 
+            "text": "The network that Demonsaw connects to by default is the official Demonsaw public router. It is fully funded and provided by Eijah with a few community routers that were contributed to add bandwidth to the network. It is to show off how you can use Demonsaw and to test how well it can scale. The below are a few questions and answers regarding this network and demonsaw networking in general.", 
+            "title": "The Network (Official Public Router)"
+        }, 
         {
-            "location": "/FAQ/#what-is-routerdemonsawcom",
-            "text": "This is the Demonsaw public message router, where messages, browse, and search is performed. It should be viewed as a sample network to show off how Demonsaw works, how you can use Demonsaw on your network, and to see how well Demonsaw can scale.",
+            "location": "/FAQ/#what-is-routerdemonsawcom", 
+            "text": "This is a sample network, the tutorial level, a public example of the type of network you can create with Demonsaw.", 
             "title": "What is router.demonsaw.com?"
-        },
+        }, 
         {
-            "location": "/FAQ/#why-are-my-file-transfers-going-through-different-routers",
-            "text": "To scale our ability to provide high speed and high bandwidth file transfers, we have disabled transfer on the message router (router.demonsaw.com) and added transfer routers to the message router. Additionally, Demonsaw 3 distributes each file transfer across multiple transfer routers for speed and extra anonymity (this is called sharding).",
+            "location": "/FAQ/#why-are-my-file-transfers-going-through-different-routers", 
+            "text": "To scale our ability to provide high speed and high bandwidth file transfers, we have disabled transfer on the message router (router.demonsaw.com) and added transfer routers to the message router. Some or possibly most of the transfer routers are contributed and operated by community members.", 
             "title": "Why are my file transfers going through different routers?"
-        },
+        }, 
         {
-            "location": "/features/",
-            "text": "Demonsaw 3 Features\n\n\nThis page aims to document the known features to be released in Demonsaw 3.0 as well as some of the that are on the features request list that were planned for eventual integration with Demonsaw 3.\n\n\n\n\n3.0 Features\n\n\n\n\n\n\nFaster networking thanks to full code re-write; making the switch to binary json, LZ4 compression, socket re-use, and multiple tunnels per socket.\n\n\n\n\n\n\nTOML configuration file (NO MORE XML!!)\n\n\n\n\n\n\nA client can now connect to multiple message routers at once.\n\n\n\n\n\n\nClients can choose which data routers to trust or add additional data routers to use with clients they trust on the network.\n\n\n\n\n\n\nBetter UI; ability to switch themes, move around UI components, and pop-out components.\n\n\n\n\n\n\nBetter Linux support; no more gstreamer !!\n\n\n\n\n\n\nClients can choose their own color, can mute themselves, and PM messages show in the public chat list with a message icon next to them so you never miss a PM.\n\n\n\n\n\n\n\n\n3.1 and Beyond\n\n\nThe below list is in no specific order, does not promise any timeline for release, and doesn't promise that the feature will be added; these are merely goals for development.\n\n\n\n\n\n\nTwo-Way file sync (#DropDropbox)\n\n\n\n\n\n\nSocks5 Proxy\n\n\n\n\n\n\nRouter hops\n\n\n\n\n\n\nVideo streaming (Demoncast)\n\n\n\n\n\n\nMinimize to notification area\n\n\n\n\n\n\nRouter federation (Linked message routers)\n\n\n\n\n\n\nVoice over IP\n\n\n\n\n\n\nIdentity system\n\n\n\n\n\n\nOffline messaging support (receive PM when you come online)",
-            "title": "DS 3.0 Features"
-        },
+            "location": "/FAQ/#how-does-demonsaw-determine-what-data-router-i-get", 
+            "text": "Demonsaw 'shards' file transfers, this means that file transfers are broken up and transferred through multiple transfer routers at once. To transfer a single file, depending on the size of the file, Demonsaw can transfer the file across anywhere between 1 to 8 transfer routers at once.", 
+            "title": "How does Demonsaw determine what data router I get?"
+        }, 
         {
-            "location": "/features/#demonsaw-3-features",
-            "text": "This page aims to document the known features to be released in Demonsaw 3.0 as well as some of the that are on the features request list that were planned for eventual integration with Demonsaw 3.",
-            "title": "Demonsaw 3 Features"
-        },
+            "location": "/roadmap/", 
+            "text": "Demonsaw Roadmap\n\n\nThe below is a rough roadmap for Demonsaw features. There is no guarantee of timeline, release date, or that a feature will drop with the version listed below. This roadmap will change throughout development and as community needs change.\n\n\nDemonsaw 3.1.0\n\n\n\n\nFolder download\n\n\nDownload/Upload Queue\n\n\n\n\nDemonsaw 3.2.0\n\n\n\n\nAudio notifications\n\n\n\n\nDemonsaw 4\n\n\n\n\nTwo-way file sync\n\n\nVOIP\n\n\n\n\nOther items with unknown placement on the roadmap\n\n\nThese items will be moved into the correct roadmap location as development progresses\n\n\n\n\nMinimize to tray\n\n\nSaving transfer router state\n\n\nGroup MOTD\n\n\nncurses/cli build with full cli UI including chat\n\n\nFolder search\n\n\nBandwidth/Rate limiting", 
+            "title": "Roadmap"
+        }, 
         {
-            "location": "/features/#30-features",
-            "text": "Faster networking thanks to full code re-write; making the switch to binary json, LZ4 compression, socket re-use, and multiple tunnels per socket.    TOML configuration file (NO MORE XML!!)    A client can now connect to multiple message routers at once.    Clients can choose which data routers to trust or add additional data routers to use with clients they trust on the network.    Better UI; ability to switch themes, move around UI components, and pop-out components.    Better Linux support; no more gstreamer !!    Clients can choose their own color, can mute themselves, and PM messages show in the public chat list with a message icon next to them so you never miss a PM.",
-            "title": "3.0 Features"
-        },
+            "location": "/roadmap/#demonsaw-roadmap", 
+            "text": "The below is a rough roadmap for Demonsaw features. There is no guarantee of timeline, release date, or that a feature will drop with the version listed below. This roadmap will change throughout development and as community needs change.", 
+            "title": "Demonsaw Roadmap"
+        }, 
         {
-            "location": "/features/#31-and-beyond",
-            "text": "The below list is in no specific order, does not promise any timeline for release, and doesn't promise that the feature will be added; these are merely goals for development.    Two-Way file sync (#DropDropbox)    Socks5 Proxy    Router hops    Video streaming (Demoncast)    Minimize to notification area    Router federation (Linked message routers)    Voice over IP    Identity system    Offline messaging support (receive PM when you come online)",
-            "title": "3.1 and Beyond"
+            "location": "/roadmap/#demonsaw-310", 
+            "text": "Folder download  Download/Upload Queue", 
+            "title": "Demonsaw 3.1.0"
+        }, 
+        {
+            "location": "/roadmap/#demonsaw-320", 
+            "text": "Audio notifications", 
+            "title": "Demonsaw 3.2.0"
+        }, 
+        {
+            "location": "/roadmap/#demonsaw-4", 
+            "text": "Two-way file sync  VOIP", 
+            "title": "Demonsaw 4"
+        }, 
+        {
+            "location": "/roadmap/#other-items-with-unknown-placement-on-the-roadmap", 
+            "text": "These items will be moved into the correct roadmap location as development progresses   Minimize to tray  Saving transfer router state  Group MOTD  ncurses/cli build with full cli UI including chat  Folder search  Bandwidth/Rate limiting", 
+            "title": "Other items with unknown placement on the roadmap"
         }
     ]
 }

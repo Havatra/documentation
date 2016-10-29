@@ -1,24 +1,15 @@
-# Short Intro to Demonsaw 3
+# Short Intro to Demonsaw
 
 ## Overview
 
 Demonsaw is a secure and anonymous information sharing application that makes security simple and gives you back control of your data. Demonsaw provides you with a way to create your own network or join a public Demonsaw network so that you can share and communicate securely.
 
-<p style="color:#33CC99;">Demonsaw 2 and Demonsaw 3 are not compatible with each other, they connect to completely different networks.</p>
-
-If you don't find answers here, try the [F.A.Q.](https://docs.demonsaw.com/FAQ/)
 
 ## Getting Started
 
 First thing first! You need to [download Demonsaw](https://demonsaw.com/)!
 
 Demonsaw is provided without installers, as a stand-alone application so that it can be run from or stashed anywhere you want. Just download the version you need for your operating system, extract it somewhere, and launch Demonsaw.
-
-#### Want an Installer?
-
-The community (dekka) has provided a Linux repository for Debian and Ubuntu, and also has rpm packages for Fedora/Redhat.
-
-Want to learn more? Check out [repo.dsrouters.com](https://repo.dsrouters.com/)
 
 ## How it Works
 
@@ -35,12 +26,6 @@ If you were to sniff your local traffic and peer into the Demonsaw communication
 
 In essence, Demonsaw clients and routers are both behaving as both an HTTP server and a client, allowing them to send messages and data back and forth all while looking like normal web traffic.
 
-
-### Downloads
-Another big change in Demonsaw 3 is the way downloads are performed. Below is a list of the changes.
-
-* File sharding; file transfers are broken into chunks and transferred across multiple data routers instead of just one.
-* Multi-threaded file transfer; acts as a method for throttling transfer but allows you to use all your upload bandwidth.
 
 
 ### Crypto
@@ -68,4 +53,3 @@ If you want to connect to a public router but be hidden from the public group, y
 <iframe width="100%" height="480px" frameborder="no" scrolling="no" class="embed-responsive embed-responsive-16by9" src="net-diagram.html" style="background-color:transparent;border:0;"></iframe>
 -->
 
-[Interactive Client](../client/interactive_image.html)

@@ -30,8 +30,8 @@ The easiest way to setup the demonsaw config file is to use the GUI to create th
 If you're in a rush or don't want to fool around with the GUI, below are links to demonsaw config file examples.
 
 ### toml examples
-* [Headless Router](../examples/router-demonsaw.txt)
-* Headless Router and Client (Coming soon!)
+* [Headless Router](../examples/router-demonsaw.toml)
+* [Headless Router and Client](../examples/router_and_client-demonsaw.toml)
 
 With any of the above example toml files you will need to set the address to the external IP Address for the router, the Download and Share paths must be valid (it's recommended to leave a trailing slash), passphrase is left empty so you can easily fill it in if needed. And examples with groups need to be changed to match your group setup.
 
